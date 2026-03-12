@@ -11,42 +11,34 @@
 
 <style>
 
-/* HEADER GRID */
+/* HEADER */
 
 .detail-head{
 display:grid;
-grid-template-columns:200px 1fr 200px;
+grid-template-columns:1fr 200px;
 align-items:center;
-padding:20px;
-gap:10px;
-min-height:200px;
+padding:20px 30px;
+min-height:180px;
 }
 
-/* kiri */
-
-.dh-left{
-font-size:12px;
-line-height:1.4;
-}
-
-/* tengah */
+/* AREA ANGKA */
 
 .dh-mid{
 display:flex;
 align-items:flex-end;
 justify-content:center;
-gap:20px;
+gap:40px;
 }
 
-/* tahun */
+/* TAHUN */
 
 .badge-tahun-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:90px;
+font-size:100px;
 font-weight:700;
 }
 
-/* no dus */
+/* NO DUS */
 
 .badge-no-wrap{
 display:flex;
@@ -55,13 +47,13 @@ align-items:center;
 }
 
 .badge-no-lbl{
-font-size:18px;
+font-size:20px;
 font-weight:700;
 }
 
 .badge-no-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:170px;
+font-size:180px;
 font-weight:700;
 line-height:0.8;
 }
@@ -70,15 +62,12 @@ line-height:0.8;
 
 .qr-box{
 display:flex;
-flex-direction:column;
-align-items:center;
-padding-right:10px;
+justify-content:flex-end;
 }
 
 #qr-render{
 width:160px;
 height:160px;
-margin-top:10px;
 }
 
 /* PRINT */
@@ -90,10 +79,6 @@ margin-top:10px;
 .nav-duo,
 .no-print{
 display:none!important;
-}
-
-.detail-head{
-grid-template-columns:200px 1fr 200px;
 }
 
 }
@@ -109,10 +94,12 @@ grid-template-columns:200px 1fr 200px;
 
 <a class="brand" href="index.html">
 <div class="brand-icon">🗂️</div>
+
 <div>
 <div class="brand-name">Arsip Akuntansi HK Bhirawa</div>
 <div class="brand-sub">Created By NasZ</div>
 </div>
+
 </a>
 
 <div class="header-actions">
@@ -138,12 +125,6 @@ grid-template-columns:200px 1fr 200px;
 <div class="detail-card">
 
 <div class="detail-head">
-
-<div class="dh-left">
-<div id="d-num">—</div>
-<div id="d-title">—</div>
-<div>★ Dokumen Milik Akuntansi</div>
-</div>
 
 <div class="dh-mid">
 
