@@ -15,7 +15,7 @@
 
 .detail-head{
 display:grid;
-grid-template-columns:1fr 240px;
+grid-template-columns:1fr 260px;
 align-items:center;
 padding:20px 40px;
 min-height:190px;
@@ -67,7 +67,8 @@ color:#ffffff;
 .qr-box{
 display:flex;
 justify-content:flex-end;
-padding-right:10px;
+padding-right:20px;
+overflow:visible;
 }
 
 #qr-render{
@@ -84,6 +85,11 @@ height:180px;
 .nav-duo,
 .no-print{
 display:none!important;
+}
+
+.detail-head{
+grid-template-columns:1fr 260px;
+overflow:visible;
 }
 
 .badge-tahun-big,
