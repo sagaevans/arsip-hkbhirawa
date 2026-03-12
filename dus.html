@@ -12,7 +12,7 @@
 
 <style>
 
-/* HEADER LAYOUT */
+/* HEADER */
 
 .detail-head{
 display:grid;
@@ -29,7 +29,16 @@ font-size:12px;
 line-height:1.4;
 }
 
-/* area angka */
+.detail-title{
+font-size:14px;
+font-weight:600;
+}
+
+.detail-ket{
+margin-top:4px;
+}
+
+/* area tengah */
 
 .dh-mid{
 display:flex;
@@ -66,7 +75,7 @@ margin-bottom:-10px;
 
 .badge-no-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:180px;
+font-size:190px;
 font-weight:700;
 line-height:0.85;
 letter-spacing:-4px;
@@ -74,7 +83,7 @@ max-width:220px;
 overflow:hidden;
 }
 
-/* QR */
+/* qr */
 
 .qr-box{
 width:190px;
@@ -88,7 +97,8 @@ align-items:center;
 width:170px;
 height:170px;
 }
-/* PRINT MODE */
+
+/* PRINT */
 
 @media print{
 
@@ -99,16 +109,12 @@ height:170px;
 display:none!important;
 }
 
-.detail-head{
-grid-template-columns:180px 1fr 200px;
-}
-
 .badge-tahun-big{
-font-size:100px;
+font-size:90px;
 }
 
 .badge-no-big{
-font-size:250px;
+font-size:220px;
 }
 
 }
@@ -165,7 +171,7 @@ font-size:250px;
 
 <div class="detail-head">
 
-<!-- INFO KIRI -->
+<!-- kiri -->
 
 <div class="dh-left">
 
@@ -177,7 +183,7 @@ font-size:250px;
 
 </div>
 
-<!-- ANGKA -->
+<!-- tengah -->
 
 <div class="dh-mid">
 
@@ -193,7 +199,7 @@ font-size:250px;
 
 </div>
 
-<!-- QR -->
+<!-- kanan -->
 
 <div class="qr-box">
 
