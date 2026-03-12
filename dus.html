@@ -16,48 +16,41 @@
 
 .detail-head{
 display:grid;
-grid-template-columns:180px 1fr 200px;
+grid-template-columns:180px 1fr 190px;
 align-items:center;
 gap:20px;
 padding:20px 24px;
 }
 
-/* INFO KIRI */
+/* kiri */
 
 .dh-left{
 font-size:12px;
 line-height:1.4;
 }
 
-.detail-title{
-font-size:14px;
-font-weight:600;
-}
-
-.detail-ket{
-margin-top:4px;
-}
-
-/* BAGIAN ANGKA */
+/* area angka */
 
 .dh-mid{
 display:flex;
 align-items:flex-end;
 justify-content:center;
-gap:30px;
+gap:20px;
+max-width:420px;
+margin:auto;
 }
 
-/* TAHUN */
+/* tahun */
 
 .badge-tahun-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:90px;
+font-size:80px;
 font-weight:700;
-letter-spacing:-2px;
 line-height:1;
+letter-spacing:-2px;
 }
 
-/* NO DUS */
+/* no dus */
 
 .badge-no-wrap{
 display:flex;
@@ -73,16 +66,19 @@ margin-bottom:-10px;
 
 .badge-no-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:220px;
+font-size:180px;
 font-weight:700;
 line-height:0.85;
-letter-spacing:-6px;
+letter-spacing:-4px;
+max-width:220px;
+overflow:hidden;
 }
 
 /* QR */
 
 .qr-box{
 width:190px;
+min-width:190px;
 display:flex;
 flex-direction:column;
 align-items:center;
@@ -92,7 +88,6 @@ align-items:center;
 width:170px;
 height:170px;
 }
-
 /* PRINT MODE */
 
 @media print{
