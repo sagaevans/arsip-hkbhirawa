@@ -1,193 +1,546 @@
 [
   {
-    "id": 1, "no_dus": 1, "tahun": "2010",
+    "id": 1,
+    "no_dus": 1,
+    "tahun": "2010",
     "label": "DUS 1 – 2010",
     "keterangan": "Arsip Pajak 2010",
     "dokumen": [
-      { "no":1, "nama":"SPT PPN" },
-      { "no":2, "nama":"SPT PPH/21, 23, 25" },
-      { "no":3, "nama":"FAKTUR PAJAK STANDAR JAN-JULI" },
-      { "no":4, "nama":"FAKTUR PAJAK STANDAR AGS-DES" },
-      { "no":5, "nama":"KONFIRMASI PESANAN (16580-17060)" },
-      { "no":6, "nama":"KONFIRMASI PESANAN (17061-17517)" },
-      { "no":7, "nama":"REKON PPN MASUKAN 2008-2010" }
+      {
+        "no": 1,
+        "nama": "SPT PPN"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPH/21, 23, 25"
+      },
+      {
+        "no": 3,
+        "nama": "FAKTUR PAJAK STANDAR JAN-JULI"
+      },
+      {
+        "no": 4,
+        "nama": "FAKTUR PAJAK STANDAR AGS-DES"
+      },
+      {
+        "no": 5,
+        "nama": "KONFIRMASI PESANAN (16580-17060)"
+      },
+      {
+        "no": 6,
+        "nama": "KONFIRMASI PESANAN (17061-17517)"
+      },
+      {
+        "no": 7,
+        "nama": "REKON PPN MASUKAN 2008-2010"
+      }
     ]
   },
   {
-    "id": 2, "no_dus": 2, "tahun": "2010",
+    "id": 2,
+    "no_dus": 2,
+    "tahun": "2010",
     "label": "DUS 2 – 2010",
     "keterangan": "Arsip Keuangan & Surat Jalan 2010",
     "dokumen": [
-      { "no":1,  "nama":"FAKTUR PAJAK MASUKAN" },
-      { "no":2,  "nama":"BUKTI POTONG PPH22" },
-      { "no":3,  "nama":"SURAT LAIN-LAIN PAJAK" },
-      { "no":4,  "nama":"SURAT JALAN JAN-MARET" },
-      { "no":5,  "nama":"SURAT JALAN APRIL-MEI" },
-      { "no":6,  "nama":"SURAT JALAN JUNI" },
-      { "no":7,  "nama":"SURAT JALAN JULI" },
-      { "no":8,  "nama":"SURAT JALAN AGUSTUS-SEPTEMBER" },
-      { "no":9,  "nama":"SURAT JALAN OKTOBER-DESEMBER" },
-      { "no":10, "nama":"BUKTI KAS MASUK 2010-2011" }
+      {
+        "no": 1,
+        "nama": "FAKTUR PAJAK MASUKAN"
+      },
+      {
+        "no": 2,
+        "nama": "BUKTI POTONG PPH22"
+      },
+      {
+        "no": 3,
+        "nama": "SURAT LAIN-LAIN PAJAK"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT JALAN JAN-MARET"
+      },
+      {
+        "no": 5,
+        "nama": "SURAT JALAN APRIL-MEI"
+      },
+      {
+        "no": 6,
+        "nama": "SURAT JALAN JUNI"
+      },
+      {
+        "no": 7,
+        "nama": "SURAT JALAN JULI"
+      },
+      {
+        "no": 8,
+        "nama": "SURAT JALAN AGUSTUS-SEPTEMBER"
+      },
+      {
+        "no": 9,
+        "nama": "SURAT JALAN OKTOBER-DESEMBER"
+      },
+      {
+        "no": 10,
+        "nama": "BUKTI KAS MASUK 2010-2011"
+      }
     ]
   },
   {
-    "id": 3, "no_dus": 1, "tahun": "2012",
+    "id": 3,
+    "no_dus": 1,
+    "tahun": "2012",
     "label": "DUS 1 – 2012",
     "keterangan": "Arsip Umum & Produksi 2012",
     "dokumen": [
-      { "no":1, "nama":"PEMBERITAHUAN EXPOR BARANG" },
-      { "no":2, "nama":"KONTRAK & PERJANJIAN LAIN" },
-      { "no":3, "nama":"KERTAS KERJA 2012" },
-      { "no":4, "nama":"LAPORAN PRODUKSI JAN-MEI" },
-      { "no":5, "nama":"LAPORAN PRODUKSI JUNI-DES" },
-      { "no":6, "nama":"LAPORAN BIAYA PER COST CENTER" },
-      { "no":7, "nama":"NOTA ONGKOS ANGKUT" },
-      { "no":8, "nama":"TANDA TERIMA BUKTI POTONG" },
-      { "no":9, "nama":"MIRO BHIRAWA 2012-2013" }
+      {
+        "no": 1,
+        "nama": "PEMBERITAHUAN EXPOR BARANG"
+      },
+      {
+        "no": 2,
+        "nama": "KONTRAK & PERJANJIAN LAIN"
+      },
+      {
+        "no": 3,
+        "nama": "KERTAS KERJA 2012"
+      },
+      {
+        "no": 4,
+        "nama": "LAPORAN PRODUKSI JAN-MEI"
+      },
+      {
+        "no": 5,
+        "nama": "LAPORAN PRODUKSI JUNI-DES"
+      },
+      {
+        "no": 6,
+        "nama": "LAPORAN BIAYA PER COST CENTER"
+      },
+      {
+        "no": 7,
+        "nama": "NOTA ONGKOS ANGKUT"
+      },
+      {
+        "no": 8,
+        "nama": "TANDA TERIMA BUKTI POTONG"
+      },
+      {
+        "no": 9,
+        "nama": "MIRO BHIRAWA 2012-2013"
+      }
     ]
   },
   {
-    "id": 4, "no_dus": 2, "tahun": "2012",
+    "id": 4,
+    "no_dus": 2,
+    "tahun": "2012",
     "label": "DUS 2 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-0000 s/d 15-0340",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-0000-0021" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-0022-0060" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-0061-0096" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-0097-0145" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-0146-0200" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-0201-0235" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-0236-0282" },
-      { "no":8, "nama":"BBK (BUKTI BANK KELUAR) 15-0283-0340" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0000-0021"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0022-0060"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0061-0096"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0097-0145"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0146-0200"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0201-0235"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0236-0282"
+      },
+      {
+        "no": 8,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0283-0340"
+      }
     ]
   },
   {
-    "id": 5, "no_dus": 3, "tahun": "2012",
+    "id": 5,
+    "no_dus": 3,
+    "tahun": "2012",
     "label": "DUS 3 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-0341 s/d 15-0682",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-0341-0396" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-0397-0433" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-0434-0460" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-0461-0520" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-0521-0560" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-0561-0620" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-0621-0682" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0341-0396"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0397-0433"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0434-0460"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0461-0520"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0521-0560"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0561-0620"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0621-0682"
+      }
     ]
   },
   {
-    "id": 6, "no_dus": 4, "tahun": "2012",
+    "id": 6,
+    "no_dus": 4,
+    "tahun": "2012",
     "label": "DUS 4 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-0683 s/d 15-1039",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-0683-0724" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-0725-0780" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-0781-0837" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-0838-0868" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-0869-0925" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-0926-0971" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-0972-1039" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0683-0724"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0725-0780"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0781-0837"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0838-0868"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0869-0925"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0926-0971"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-0972-1039"
+      }
     ]
   },
   {
-    "id": 7, "no_dus": 5, "tahun": "2012",
+    "id": 7,
+    "no_dus": 5,
+    "tahun": "2012",
     "label": "DUS 5 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-1040 s/d 15-1420",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-1040-1080" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-1081-1139" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-1140-1176" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-1177-1219" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-1220-1270" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-1271-1340" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-1341-1420" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1040-1080"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1081-1139"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1140-1176"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1177-1219"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1220-1270"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1271-1340"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1341-1420"
+      }
     ]
   },
   {
-    "id": 8, "no_dus": 6, "tahun": "2012",
+    "id": 8,
+    "no_dus": 6,
+    "tahun": "2012",
     "label": "DUS 6 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-1421 s/d 15-1799",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-1021-1476" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-1477-1503" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-1504-1559" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-1560-1610" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-1611-1665" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-1666-1730" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-1731-1799" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1021-1476"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1477-1503"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1504-1559"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1560-1610"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1611-1665"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1666-1730"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1731-1799"
+      }
     ]
   },
   {
-    "id": 9, "no_dus": 7, "tahun": "2012",
+    "id": 9,
+    "no_dus": 7,
+    "tahun": "2012",
     "label": "DUS 7 – 2012",
     "keterangan": "BBK Bukti Bank Keluar 15-1800 s/d 15-2059",
     "dokumen": [
-      { "no":1, "nama":"BBK (BUKTI BANK KELUAR) 15-1800-1869" },
-      { "no":2, "nama":"BBK (BUKTI BANK KELUAR) 15-1870-1897" },
-      { "no":3, "nama":"BBK (BUKTI BANK KELUAR) 15-1898-1910" },
-      { "no":4, "nama":"BBK (BUKTI BANK KELUAR) 15-1911-1924" },
-      { "no":5, "nama":"BBK (BUKTI BANK KELUAR) 15-1925-1954" },
-      { "no":6, "nama":"BBK (BUKTI BANK KELUAR) 15-1955-1999" },
-      { "no":7, "nama":"BBK (BUKTI BANK KELUAR) 15-2000-2014" },
-      { "no":8, "nama":"BBK (BUKTI BANK KELUAR) 15-2015-2059" }
+      {
+        "no": 1,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1800-1869"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1870-1897"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1898-1910"
+      },
+      {
+        "no": 4,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1911-1924"
+      },
+      {
+        "no": 5,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1925-1954"
+      },
+      {
+        "no": 6,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-1955-1999"
+      },
+      {
+        "no": 7,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-2000-2014"
+      },
+      {
+        "no": 8,
+        "nama": "BBK (BUKTI BANK KELUAR) 15-2015-2059"
+      }
     ]
   },
   {
-    "id": 10, "no_dus": 8, "tahun": "2012",
+    "id": 10,
+    "no_dus": 8,
+    "tahun": "2012",
     "label": "DUS 8 – 2012",
     "keterangan": "BBK/BBM 10-0000 s/d 10-1919",
     "dokumen": [
-      { "no":1,  "nama":"BBK/BBM 10-0000-0170" },
-      { "no":2,  "nama":"BBK/BBM 10-0171-0350" },
-      { "no":3,  "nama":"BBK/BBM 10-0351-0539" },
-      { "no":4,  "nama":"BBK/BBM 10-0540-0640" },
-      { "no":5,  "nama":"BBK/BBM 10-0641-0765" },
-      { "no":6,  "nama":"BBK/BBM 10-0766-0838" },
-      { "no":7,  "nama":"BBK/BBM 10-0839-0959" },
-      { "no":8,  "nama":"BBK/BBM 10-0960-1211" },
-      { "no":9,  "nama":"BBK/BBM 10-1212-1355" },
-      { "no":10, "nama":"BBK/BBM 10-1356-1532" },
-      { "no":11, "nama":"BBK/BBM 10-1533-1644" },
-      { "no":12, "nama":"BBK/BBM 10-1645-1793" },
-      { "no":13, "nama":"BBK/BBM 10-1794-1919" }
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10-0000-0170"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10-0171-0350"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10-0351-0539"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10-0540-0640"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10-0641-0765"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 10-0766-0838"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 10-0839-0959"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 10-0960-1211"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10-1212-1355"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10-1356-1532"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10-1533-1644"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10-1645-1793"
+      },
+      {
+        "no": 13,
+        "nama": "BBK/BBM 10-1794-1919"
+      }
     ]
   },
   {
-    "id": 11, "no_dus": 9, "tahun": "2012",
+    "id": 11,
+    "no_dus": 9,
+    "tahun": "2012",
     "label": "DUS 9 – 2012",
     "keterangan": "BBK/BBM 10-1920 s/d 10-3519",
     "dokumen": [
-      { "no":1,  "nama":"BBK/BBM 10-1920-2050" },
-      { "no":2,  "nama":"BBK/BBM 10-2051-2192" },
-      { "no":3,  "nama":"BBK/BBM 10-2193-2284" },
-      { "no":4,  "nama":"BBK/BBM 10-2285-2420" },
-      { "no":5,  "nama":"BBK/BBM 10-2421-2554" },
-      { "no":6,  "nama":"BBK/BBM 10-2555-2739" },
-      { "no":7,  "nama":"BBK/BBM 10-2740-2853" },
-      { "no":8,  "nama":"BBK/BBM 10-2854-2977" },
-      { "no":9,  "nama":"BBK/BBM 10-2978-3050" },
-      { "no":10, "nama":"BBK/BBM 10-3051-3171" },
-      { "no":11, "nama":"BBK/BBM 10-3172-3416" },
-      { "no":12, "nama":"BBK/BBM 10-3417-3519" }
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10-1920-2050"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10-2051-2192"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10-2193-2284"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10-2285-2420"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10-2421-2554"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 10-2555-2739"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 10-2740-2853"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 10-2854-2977"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10-2978-3050"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10-3051-3171"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10-3172-3416"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10-3417-3519"
+      }
     ]
   },
   {
-    "id": 12, "no_dus": 10, "tahun": "2012",
+    "id": 12,
+    "no_dus": 10,
+    "tahun": "2012",
     "label": "DUS 10 – 2012",
     "keterangan": "BBK/BBM 10-3520 s/d 10-5530",
     "dokumen": [
-      { "no":1,  "nama":"BBK/BBM 10-3520-3704" },
-      { "no":2,  "nama":"BBK/BBM 10-3705-3795" },
-      { "no":3,  "nama":"BBK/BBM 10-3796-3949" },
-      { "no":4,  "nama":"BBK/BBM 10-3950-4204" },
-      { "no":5,  "nama":"BBK/BBM 10-4205-4332" },
-      { "no":6,  "nama":"BBK/BBM 10-4333-4400" },
-      { "no":7,  "nama":"BBK/BBM 10-4401-4550" },
-      { "no":8,  "nama":"BBK/BBM 10-4551-4780" },
-      { "no":9,  "nama":"BBK/BBM 10-4781-4933" },
-      { "no":10, "nama":"BBK/BBM 10-4934-5064" },
-      { "no":11, "nama":"BBK/BBM 10-5065-5247" },
-      { "no":12, "nama":"BBK/BBM 10-5248-5530" }
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10-3520-3704"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10-3705-3795"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10-3796-3949"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10-3950-4204"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10-4205-4332"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 10-4333-4400"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 10-4401-4550"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 10-4551-4780"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10-4781-4933"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10-4934-5064"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10-5065-5247"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10-5248-5530"
+      }
     ]
+  },
+  {
+    "id": 13,
+    "no_dus": 1,
+    "tahun": "20025",
+    "label": "DUS 1 – 20025",
+    "keterangan": "Arsip BBK",
+    "dokumen": []
   }
 ]
