@@ -10,11 +10,11 @@
 /* HEADER CARD */
 .detail-head {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr 210px;
   align-items: center;
-  padding: 20px 32px;
-  min-height: 200px;
-  gap: 12px;
+  padding: 16px 24px 16px 32px;
+  min-height: 210px;
+  gap: 8px;
   overflow: hidden;
 }
 
@@ -22,19 +22,19 @@
 .dh-mid {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 24px;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* TAHUN — lebih kecil, tetap terbaca */
+/* TAHUN */
 .badge-tahun-big {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 66px;
+  font-size: 80px;
   font-weight: 700;
   white-space: nowrap;
   color: #ffffff;
   opacity: 0.9;
-  letter-spacing: -2px;
+  letter-spacing: -3px;
 }
 
 /* NO DUS */
@@ -45,48 +45,48 @@
   justify-content: center;
 }
 .badge-no-lbl {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: #ffffff;
   opacity: 0.75;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 
-/* ANGKA DUS — besar, auto-scale 1-2-3 digit */
+/* ANGKA DUS — besar, center, auto-scale */
 .badge-no-big {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
-  font-size: clamp(110px, 14vw, 170px);
-  line-height: 0.85;
+  font-size: clamp(120px, 15vw, 180px);
+  line-height: 0.82;
   text-align: center;
   white-space: nowrap;
   color: #ffffff;
 }
 
-/* QR — terkontrol, tidak keluar kotak */
+/* QR — mepet kotak, tidak keluar */
 .qr-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 194px;
-  height: 194px;
+  width: 205px;
+  height: 205px;
   flex-shrink: 0;
   background: #ffffff;
   border-radius: 6px;
-  padding: 3px;
+  padding: 2px;
   box-sizing: border-box;
 }
 #qr-render {
-  width: 188px !important;
-  height: 188px !important;
+  width: 201px !important;
+  height: 201px !important;
   display: block;
 }
 #qr-render canvas,
 #qr-render img {
-  width: 188px !important;
-  height: 188px !important;
+  width: 201px !important;
+  height: 201px !important;
   display: block;
 }
 
@@ -99,18 +99,18 @@
     display: none !important;
   }
   .detail-head {
-    grid-template-columns: 1fr 170px;
-    padding: 14px 20px;
-    min-height: 170px;
+    grid-template-columns: 1fr 175px;
+    padding: 12px 16px 12px 20px;
+    min-height: 175px;
     overflow: hidden;
   }
   .badge-tahun-big {
-    font-size: 48px;
+    font-size: 56px;
     color: #000 !important;
     opacity: 1;
   }
   .badge-no-big {
-    font-size: clamp(100px, 13vw, 150px);
+    font-size: clamp(100px, 13vw, 155px);
     color: #000 !important;
   }
   .badge-no-lbl {
@@ -118,16 +118,18 @@
     opacity: 1;
   }
   .qr-box {
-    width: 162px;
-    height: 162px;
-    padding: 3px;
+    width: 168px;
+    height: 168px;
+    padding: 2px;
     background: #fff;
     border: 1px solid #ccc;
   }
   #qr-render,
   #qr-render canvas,
   #qr-render img {
-    width: 154px !important;
+    width: 162px !important;
+    height: 162px !important;
+  }
     height: 154px !important;
   }
 }
@@ -183,6 +185,10 @@
       <div class="meta-item">
         <span class="meta-key">Jumlah Dokumen</span>
         <span class="meta-val" id="d-total">—</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Keterangan</span>
+        <span class="meta-val" id="d-ket">—</span>
       </div>
     </div>
   </div>
