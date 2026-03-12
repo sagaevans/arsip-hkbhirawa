@@ -10,12 +10,12 @@
 /* HEADER CARD */
 .detail-head {
   display: grid;
-  grid-template-columns: 1fr 155px;
+  grid-template-columns: 1fr 180px;
   align-items: center;
   padding: 24px 32px;
-  min-height: 160px;
+  min-height: 180px;
   gap: 16px;
-  overflow: hidden; /* QR tidak keluar kotak */
+  overflow: hidden;
 }
 
 /* AREA ANGKA */
@@ -58,7 +58,7 @@
 .badge-no-big {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
-  font-size: clamp(80px, 11vw, 140px);
+  font-size: clamp(100px, 13vw, 160px);
   line-height: 0.85;
   text-align: center;
   white-space: nowrap;
@@ -70,8 +70,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
-  height: 140px;
+  width: 170px;
+  height: 170px;
   flex-shrink: 0;
   background: #ffffff;
   border-radius: 6px;
@@ -79,14 +79,14 @@
   box-sizing: border-box;
 }
 #qr-render {
-  width: 128px !important;
-  height: 128px !important;
+  width: 158px !important;
+  height: 158px !important;
   display: block;
 }
 #qr-render canvas,
 #qr-render img {
-  width: 128px !important;
-  height: 128px !important;
+  width: 158px !important;
+  height: 158px !important;
   display: block;
 }
 
@@ -99,9 +99,9 @@
     display: none !important;
   }
   .detail-head {
-    grid-template-columns: 1fr 140px;
+    grid-template-columns: 1fr 160px;
     padding: 16px 24px;
-    min-height: 140px;
+    min-height: 160px;
     overflow: hidden;
   }
   .badge-tahun-big {
@@ -110,7 +110,7 @@
     opacity: 1;
   }
   .badge-no-big {
-    font-size: clamp(70px, 10vw, 120px);
+    font-size: clamp(90px, 12vw, 140px);
     color: #000 !important;
   }
   .badge-no-lbl {
@@ -118,8 +118,8 @@
     opacity: 1;
   }
   .qr-box {
-    width: 120px;
-    height: 120px;
+    width: 148px;
+    height: 148px;
     padding: 4px;
     background: #fff;
     border: 1px solid #ccc;
@@ -127,8 +127,8 @@
   #qr-render,
   #qr-render canvas,
   #qr-render img {
-    width: 110px !important;
-    height: 110px !important;
+    width: 138px !important;
+    height: 138px !important;
   }
 }
 </style>
