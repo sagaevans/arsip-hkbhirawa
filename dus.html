@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Detail Dus – Arsip HK Bhirawa</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com"></script>
 <style>
-/* HEADER CARD */
+/* --- TAMPILAN LAYAR (WEB VIEW) --- */
 .detail-head {
   display: grid;
   grid-template-columns: 1fr 210px;
@@ -15,131 +15,121 @@
   padding: 12px 16px 12px 24px;
   min-height: 210px;
   gap: 8px;
-  overflow: hidden;
+  background: #1a2a40; /* Warna Navy sesuai gambar */
+  border-radius: 8px 8px 0 0;
 }
 
-/* AREA ANGKA — tahun kiri jauh, no dus lebih ke kanan */
 .dh-mid {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 48px;
-  padding-left: 8px;
-  height: 100%;
+  gap: 60px;
 }
 
-/* TAHUN — lebih besar */
 .badge-tahun-big {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 140px;
+  font-size: 100px;
   font-weight: 700;
-  white-space: nowrap;
   color: #ffffff;
-  opacity: 1;
-  letter-spacing: -3px;
-  align-self: center;
 }
 
-/* NO DUS */
 .badge-no-wrap {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: center;
-  margin-top: -6px;
-}
-.badge-no-lbl {
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-  opacity: 0.65;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 2px;
+  align-items: center;
 }
 
-/* ANGKA DUS */
+.badge-no-lbl {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
 .badge-no-big {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
-  font-size: clamp(200px, 19vw, 210px);
-  line-height: 0.95;
-  text-align: center;
-  white-space: nowrap;
+  font-size: 160px;
+  line-height: 0.9;
   color: #ffffff;
-  letter-spacing: -4px;
 }
 
-/* QR — mepet kotak, tidak keluar */
 .qr-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 205px;
-  height: 205px;
-  flex-shrink: 0;
   background: #ffffff;
-  border-radius: 6px;
-  padding: 2px;
-  box-sizing: border-box;
-}
-#qr-render {
-  width: 201px !important;
-  height: 201px !important;
-  display: block;
-}
-#qr-render canvas,
-#qr-render img {
-  width: 201px !important;
-  height: 201px !important;
-  display: block;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-/* PRINT MODE */
+/* --- MODIFIKASI PRINT VIEW (SESUAI PERMINTAAN) --- */
 @media print {
-  .site-header,
-  .breadcrumb,
-  .nav-duo,
-  .no-print {
+  .site-header, .breadcrumb, .nav-duo, .no-print {
     display: none !important;
   }
+
+  .detail-card {
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+  }
+
   .detail-head {
-    grid-template-columns: 1fr 175px;
-    padding: 10px 14px 10px 18px;
-    min-height: 175px;
-    overflow: hidden;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    background: #fff !important;
+    padding: 20px !important;
+    border-bottom: 2px solid #000;
   }
-  .dh-mid { gap: 12px; }
+
+  .dh-mid {
+    display: flex !important;
+    align-items: flex-end !important; /* Agar tahun dan no dus sejajar di bawah */
+    gap: 50px !important;
+  }
+
+  /* TAHUN: Dibuat lebih besar (Print) */
   .badge-tahun-big {
-    font-size: 44px;
+    font-size: 90px !important; 
     color: #000 !important;
-    opacity: 1;
+    margin: 0 !important;
+    line-height: 1 !important;
   }
-  .badge-no-big {
-    font-size: clamp(110px, 14vw, 160px);
-    color: #000 !important;
-    letter-spacing: -3px;
+
+  /* WRAPPER NO DUS: Label di atas angka & sejajar tengah */
+  .badge-no-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
+
   .badge-no-lbl {
+    font-size: 24px !important;
     color: #000 !important;
-    opacity: 1;
+    margin-bottom: -10px !important; /* Merapatkan label ke angka */
+    font-weight: 800 !important;
   }
+
+  /* NO DUS: Jauh lebih besar (Print) */
+  .badge-no-big {
+    font-size: 220px !important; 
+    color: #000 !important;
+    line-height: 0.8 !important;
+    margin: 0 !important;
+  }
+
   .qr-box {
-    width: 168px;
-    height: 168px;
-    padding: 2px;
-    background: #fff;
-    border: 1px solid #ccc;
+    width: 170px !important;
+    height: 170px !important;
+    border: 1px solid #000 !important;
+    padding: 5px !important;
   }
-  #qr-render,
-  #qr-render canvas,
-  #qr-render img {
-    width: 162px !important;
-    height: 162px !important;
-  }
-    height: 154px !important;
+
+  #qr-render, #qr-render canvas, #qr-render img {
+    width: 160px !important;
+    height: 160px !important;
   }
 }
 </style>
@@ -204,9 +194,7 @@
 
   <div class="table-wrap">
     <div class="table-head">
-      <span class="table-head-title">
-        📄 DAFTAR DOKUMEN — <span id="doc-count">—</span>
-      </span>
+      <span class="table-head-title">📄 DAFTAR DOKUMEN — <span id="doc-count">—</span></span>
       <div class="search-wrap no-print" style="max-width:240px">
         <span class="search-ico">🔍</span>
         <input id="doc-search" type="search" placeholder="Cari dokumen…">
@@ -220,11 +208,7 @@
         </tr>
       </thead>
       <tbody id="doc-body">
-        <tr>
-          <td colspan="2" style="padding:40px;text-align:center;color:var(--muted)">
-            Memuat data…
-          </td>
-        </tr>
+        <tr><td colspan="2" style="padding:40px;text-align:center;">Memuat data…</td></tr>
       </tbody>
     </table>
   </div>
