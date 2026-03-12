@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Panel – Arsip HK Bhirawa</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0d1b2a;
+    --navy2: #1a2d45;
+    --navy3: #243854;
+    --gold: #c9a84c;
+    --gold2: #e8c46a;
+    --white: #f0f4f8;
+    --gray: #8a9bb0;
+    --red: #e05c5c;
+    --green: #4caf82;
+    --bg: #0a1520;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Syne', sans-serif;
+    background: var(--bg);
+    color: var(--white);
+    min-height: 100vh;
+  }
+
+  /* ── LOGIN ── */
+  #login-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at 30% 40%, #1a2d45 0%, #0a1520 70%);
+  }
+  .login-box {
+    background: var(--navy2);
+    border: 1px solid var(--navy3);
+    border-top: 3px solid var(--gold);
+    padding: 48px 40px;
+    width: 420px;
+    border-radius: 4px;
+  }
+  .login-box .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+  .login-box .brand-icon {
+    width: 44px; height: 44px;
+    background: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 18px; color: var(--navy); border-radius: 2px;
+  }
+  .login-box .brand-text { font-size: 13px; line-height: 1.4; color: var(--gray); }
+  .login-box .brand-text strong { display: block; font-size: 16px; color: var(--white); font-weight: 700; }
+  .login-box h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+  .login-box p { color: var(--gray); font-size: 13px; margin-bottom: 28px; line-height: 1.6; }
+  .field label { display: block; font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--gold); margin-bottom: 8px; text-transform: uppercase; }
+  .field input {
+    width: 100%; padding: 12px 16px;
+    background: var(--navy); border: 1px solid var(--navy3);
+    color: var(--white); font-family: 'JetBrains Mono', monospace; font-size: 13px;
+    border-radius: 3px; outline: none; transition: border .2s;
+  }
+  .field input:focus { border-color: var(--gold); }
+  .field { margin-bottom: 20px; }
+  .btn-primary {
+    width: 100%; padding: 13px;
+    background: var(--gold); color: var(--navy);
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
+    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
+    letter-spacing: .05em;
+  }
+  .btn-primary:hover { background: var(--gold2); }
+  .login-hint {
+    margin-top: 16px; font-size: 11px; color: var(--gray); text-align: center; line-height: 1.6;
+  }
+  .login-hint a { color: var(--gold); text-decoration: none; }
+
+  /* ── MAIN APP ── */
+  #app { display: none; }
+  .topbar {
+    background: var(--navy2);
+    border-bottom: 1px solid var(--navy3);
+    padding: 0 32px;
+    height: 60px;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+  }
+  .topbar-left { display: flex; align-items: center; gap: 16px; }
+  .topbar-brand { display: flex; align-items: center; gap: 12px; }
+  .topbar-icon {
+    width: 32px; height: 32px; background: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 13px; color: var(--navy); border-radius: 2px;
+  }
+  .topbar-title { font-weight: 700; font-size: 15px; }
+  .topbar-badge {
+    background: var(--navy3); color: var(--gold);
+    font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 2px;
+    letter-spacing: .08em; text-transform: uppercase;
+  }
+  .topbar-right { display: flex; align-items: center; gap: 12px; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
+  .status-text { font-size: 12px; color: var(--gray); }
+  .btn-logout {
+    padding: 7px 16px; background: transparent;
+    border: 1px solid var(--navy3); color: var(--gray);
+    font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600;
+    border-radius: 3px; cursor: pointer; transition: all .2s;
+  }
+  .btn-logout:hover { border-color: var(--red); color: var(--red); }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
+
+  /* ── STATS ── */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; }
+  .stat-card {
+    background: var(--navy2); border: 1px solid var(--navy3);
+    padding: 20px 24px; border-radius: 4px;
+  }
+  .stat-card .stat-num { font-size: 32px; font-weight: 800; color: var(--gold); }
+  .stat-card .stat-label { font-size: 11px; color: var(--gray); letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
+
+  /* ── TOOLBAR ── */
+  .toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 20px; gap: 12px; flex-wrap: wrap;
+  }
+  .toolbar-left { display: flex; align-items: center; gap: 12px; }
+  .section-title { font-size: 18px; font-weight: 800; }
+  .btn-add {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 20px; background: var(--gold); color: var(--navy);
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px;
+    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
+  }
+  .btn-add:hover { background: var(--gold2); }
+  .search-wrap { position: relative; }
+  .search-wrap input {
+    padding: 9px 14px 9px 36px;
+    background: var(--navy2); border: 1px solid var(--navy3);
+    color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px;
+    border-radius: 3px; outline: none; width: 220px; transition: border .2s;
+  }
+  .search-wrap input:focus { border-color: var(--gold); }
+  .search-wrap .search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--gray); font-size: 14px; }
+
+  /* ── DUS LIST ── */
+  .dus-grid { display: flex; flex-direction: column; gap: 12px; }
+  .dus-card {
+    background: var(--navy2); border: 1px solid var(--navy3);
+    border-radius: 4px; overflow: hidden; transition: border-color .2s;
+  }
+  .dus-card:hover { border-color: var(--navy3); }
+  .dus-header {
+    display: flex; align-items: center; padding: 16px 20px;
+    cursor: pointer; gap: 16px; user-select: none;
+  }
+  .dus-num {
+    min-width: 48px; height: 48px; background: var(--navy3);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 18px; color: var(--gold); border-radius: 3px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .dus-info { flex: 1; }
+  .dus-info .dus-label { font-weight: 700; font-size: 15px; }
+  .dus-info .dus-ket { font-size: 12px; color: var(--gray); margin-top: 3px; }
+  .dus-meta { display: flex; align-items: center; gap: 8px; }
+  .dus-year {
+    background: var(--navy3); color: var(--gold);
+    font-size: 11px; font-weight: 600; padding: 4px 10px;
+    border-radius: 2px; font-family: 'JetBrains Mono', monospace;
+  }
+  .dus-count { font-size: 12px; color: var(--gray); }
+  .dus-actions { display: flex; gap: 8px; }
+  .btn-icon {
+    width: 32px; height: 32px; border-radius: 3px; border: none;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 14px; transition: all .2s;
+  }
+  .btn-edit { background: var(--navy3); color: var(--white); }
+  .btn-edit:hover { background: var(--gold); color: var(--navy); }
+  .btn-delete { background: var(--navy3); color: var(--white); }
+  .btn-delete:hover { background: var(--red); color: #fff; }
+  .chevron { transition: transform .3s; font-size: 12px; color: var(--gray); }
+  .chevron.open { transform: rotate(180deg); }
+
+  /* ── DOKUMEN LIST ── */
+  .dok-panel { display: none; border-top: 1px solid var(--navy3); }
+  .dok-panel.open { display: block; }
+  .dok-toolbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 12px 20px; background: var(--bg);
+  }
+  .dok-toolbar span { font-size: 11px; color: var(--gray); letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
+  .btn-add-dok {
+    display: flex; align-items: center; gap: 6px;
+    padding: 6px 14px; background: transparent;
+    border: 1px solid var(--gold); color: var(--gold);
+    font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600;
+    border-radius: 3px; cursor: pointer; transition: all .2s;
+  }
+  .btn-add-dok:hover { background: var(--gold); color: var(--navy); }
+  .dok-list { }
+  .dok-item {
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 20px; border-top: 1px solid var(--navy3);
+    transition: background .15s;
+  }
+  .dok-item:hover { background: rgba(255,255,255,.02); }
+  .dok-no {
+    min-width: 28px; height: 28px; background: var(--navy3);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; color: var(--gray); border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .dok-name { flex: 1; font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+  .dok-actions { display: flex; gap: 6px; }
+  .btn-dok-edit { background: transparent; border: 1px solid var(--navy3); color: var(--gray); }
+  .btn-dok-edit:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-dok-del { background: transparent; border: 1px solid var(--navy3); color: var(--gray); }
+  .btn-dok-del:hover { border-color: var(--red); color: var(--red); }
+
+  /* ── MODAL ── */
+  .modal-bg {
+    position: fixed; inset: 0; background: rgba(10,21,32,.85);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 200; backdrop-filter: blur(4px);
+  }
+  .modal-bg.hidden { display: none; }
+  .modal {
+    background: var(--navy2); border: 1px solid var(--navy3);
+    border-top: 3px solid var(--gold);
+    padding: 36px 32px; width: 480px; border-radius: 4px;
+    max-height: 90vh; overflow-y: auto;
+  }
+  .modal h3 { font-size: 18px; font-weight: 800; margin-bottom: 24px; }
+  .modal .field input, .modal .field textarea {
+    width: 100%; padding: 10px 14px;
+    background: var(--navy); border: 1px solid var(--navy3);
+    color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px;
+    border-radius: 3px; outline: none; transition: border .2s;
+  }
+  .modal .field input:focus, .modal .field textarea:focus { border-color: var(--gold); }
+  .modal .field textarea { resize: vertical; min-height: 80px; }
+  .modal-actions { display: flex; gap: 10px; margin-top: 24px; justify-content: flex-end; }
+  .btn-cancel {
+    padding: 10px 20px; background: transparent;
+    border: 1px solid var(--navy3); color: var(--gray);
+    font-family: 'Syne', sans-serif; font-weight: 600; font-size: 13px;
+    border-radius: 3px; cursor: pointer; transition: all .2s;
+  }
+  .btn-cancel:hover { border-color: var(--gray); color: var(--white); }
+  .btn-save {
+    padding: 10px 24px; background: var(--gold); color: var(--navy);
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px;
+    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
+  }
+  .btn-save:hover { background: var(--gold2); }
+  .btn-save:disabled { opacity: .5; cursor: not-allowed; }
+
+  /* ── TOAST ── */
+  #toast {
+    position: fixed; bottom: 32px; right: 32px;
+    padding: 14px 20px; border-radius: 4px;
+    font-size: 13px; font-weight: 600; z-index: 999;
+    transform: translateY(80px); opacity: 0;
+    transition: all .3s; pointer-events: none;
+  }
+  #toast.show { transform: translateY(0); opacity: 1; }
+  #toast.success { background: var(--green); color: #fff; }
+  #toast.error { background: var(--red); color: #fff; }
+  #toast.loading { background: var(--gold); color: var(--navy); }
+
+  .empty-state {
+    text-align: center; padding: 48px; color: var(--gray); font-size: 13px;
+  }
+  .divider { height: 1px; background: var(--navy3); margin: 8px 0; }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="login-screen">
+  <div class="login-box">
+    <div class="brand">
+      <div class="brand-icon">HK</div>
+      <div class="brand-text">
+        <strong>Arsip HK Bhirawa</strong>
+        Admin Panel
+      </div>
+    </div>
+    <h2>Masuk Admin</h2>
+    <p>Masukkan GitHub Personal Access Token Anda untuk mengakses panel admin dan mengelola data arsip.</p>
+    <div class="field">
+      <label>GitHub Token</label>
+      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="field">
+      <label>Repository</label>
+      <input type="text" id="repo-input" value="sagaevans/arsip-hkbhirawa" placeholder="username/repo">
+    </div>
+    <button class="btn-primary" onclick="doLogin()">Masuk →</button>
+    <div class="login-hint">
+      Token hanya disimpan di browser Anda dan tidak dikirim ke mana pun selain GitHub API.<br>
+      <a href="https://github.com/settings/tokens" target="_blank">Buat token baru di GitHub →</a>
+    </div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app">
+  <div class="topbar">
+    <div class="topbar-left">
+      <div class="topbar-brand">
+        <div class="topbar-icon">HK</div>
+        <span class="topbar-title">Arsip HK Bhirawa</span>
+      </div>
+      <span class="topbar-badge">Admin Panel</span>
+    </div>
+    <div class="topbar-right">
+      <div class="status-dot"></div>
+      <span class="status-text" id="status-text">Terhubung</span>
+      <button class="btn-logout" onclick="doLogout()">Keluar</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat-card">
+        <div class="stat-num" id="stat-dus">–</div>
+        <div class="stat-label">Total Dus</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-dok">–</div>
+        <div class="stat-label">Total Dokumen</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num" id="stat-tahun">–</div>
+        <div class="stat-label">Rentang Tahun</div>
+      </div>
+    </div>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <div class="toolbar-left">
+        <span class="section-title">Daftar Dus</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Cari dus..." id="search-input" oninput="renderDus()">
+        </div>
+        <button class="btn-add" onclick="openAddDus()">＋ Tambah Dus</button>
+      </div>
+    </div>
+
+    <!-- Dus List -->
+    <div class="dus-grid" id="dus-grid"></div>
+  </div>
+</div>
+
+<!-- MODAL DUS -->
+<div class="modal-bg hidden" id="modal-dus">
+  <div class="modal">
+    <h3 id="modal-dus-title">Tambah Dus Baru</h3>
+    <div class="field">
+      <label>No Dus</label>
+      <input type="number" id="f-no-dus" placeholder="contoh: 1">
+    </div>
+    <div class="field">
+      <label>Tahun</label>
+      <input type="text" id="f-tahun" placeholder="contoh: 2010">
+    </div>
+    <div class="field">
+      <label>Label</label>
+      <input type="text" id="f-label" placeholder="contoh: DUS 1 – 2010">
+    </div>
+    <div class="field">
+      <label>Keterangan</label>
+      <textarea id="f-ket" placeholder="contoh: Arsip Pajak 2010"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('modal-dus')">Batal</button>
+      <button class="btn-save" id="btn-save-dus" onclick="saveDus()">Simpan</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DOKUMEN -->
+<div class="modal-bg hidden" id="modal-dok">
+  <div class="modal">
+    <h3 id="modal-dok-title">Tambah Dokumen</h3>
+    <div class="field">
+      <label>Nama Dokumen</label>
+      <input type="text" id="f-dok-nama" placeholder="contoh: SPT PPN">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('modal-dok')">Batal</button>
+      <button class="btn-save" id="btn-save-dok" onclick="saveDok()">Simpan</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<script>
+// ── STATE ──
+let TOKEN = '';
+let REPO = '';
+let DATA = [];
+let FILE_SHA = '';
+const FILE_PATH = 'data/arsip.json';
+
+let editDusIdx = null;   // index in DATA array, null = new
+let editDokDusIdx = null;
+let editDokIdx = null;   // null = new
+
+// ── AUTH ──
+async function doLogin() {
+  TOKEN = document.getElementById('token-input').value.trim();
+  REPO  = document.getElementById('repo-input').value.trim();
+  if (!TOKEN || !REPO) return showToast('Isi token dan repo dulu!', 'error');
+  showToast('Menghubungkan...', 'loading');
+  const ok = await loadData();
+  if (ok) {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    renderDus();
+    renderStats();
+    showToast('Berhasil masuk!', 'success');
+  }
+}
+function doLogout() {
+  TOKEN = ''; REPO = ''; DATA = []; FILE_SHA = '';
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('app').style.display = 'none';
+  document.getElementById('token-input').value = '';
+}
+
+// ── GITHUB API ──
+async function ghGet(path) {
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github.v3+json' }
+  });
+  if (!r.ok) throw new Error(`GET ${path} failed: ${r.status}`);
+  return r.json();
+}
+async function ghPut(path, content, sha, message) {
+  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+    method: 'PUT',
+    headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
+  });
+  if (!r.ok) {
+    const err = await r.json();
+    throw new Error(err.message || 'PUT failed');
+  }
+  return r.json();
+}
+
+async function loadData() {
+  try {
+    const res = await ghGet(FILE_PATH);
+    FILE_SHA = res.sha;
+    DATA = JSON.parse(decodeURIComponent(escape(atob(res.content.replace(/\n/g,'')))));
+    return true;
+  } catch(e) {
+    showToast('Gagal: ' + e.message, 'error');
+    return false;
+  }
+}
+async function saveData(message) {
+  const btn = document.getElementById('btn-save-dus') || document.getElementById('btn-save-dok');
+  if (btn) btn.disabled = true;
+  showToast('Menyimpan ke GitHub...', 'loading');
+  try {
+    const json = JSON.stringify(DATA, null, 2);
+    const res = await ghPut(FILE_PATH, json, FILE_SHA, message);
+    FILE_SHA = res.content.sha;
+    showToast('✓ Tersimpan! Website akan update ~1 menit.', 'success');
+    return true;
+  } catch(e) {
+    showToast('Gagal simpan: ' + e.message, 'error');
+    return false;
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
+// ── RENDER ──
+function renderStats() {
+  const totalDok = DATA.reduce((s, d) => s + d.dokumen.length, 0);
+  const tahuns = [...new Set(DATA.map(d => d.tahun))].sort();
+  document.getElementById('stat-dus').textContent = DATA.length;
+  document.getElementById('stat-dok').textContent = totalDok;
+  document.getElementById('stat-tahun').textContent = tahuns.length > 1 ? `${tahuns[0]}–${tahuns[tahuns.length-1]}` : (tahuns[0] || '–');
+}
+
+function renderDus() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  const grid = document.getElementById('dus-grid');
+  const filtered = DATA.filter(d =>
+    d.label.toLowerCase().includes(q) ||
+    d.keterangan.toLowerCase().includes(q) ||
+    d.tahun.includes(q)
+  );
+  if (!filtered.length) {
+    grid.innerHTML = '<div class="empty-state">Tidak ada dus ditemukan.</div>';
+    return;
+  }
+  grid.innerHTML = filtered.map(d => {
+    const idx = DATA.indexOf(d);
+    return `
+    <div class="dus-card" id="dus-card-${idx}">
+      <div class="dus-header" onclick="toggleDok(${idx})">
+        <div class="dus-num">${d.no_dus}</div>
+        <div class="dus-info">
+          <div class="dus-label">${d.label}</div>
+          <div class="dus-ket">${d.keterangan}</div>
+        </div>
+        <div class="dus-meta">
+          <span class="dus-year">${d.tahun}</span>
+          <span class="dus-count">${d.dokumen.length} dok</span>
+        </div>
+        <div class="dus-actions" onclick="event.stopPropagation()">
+          <button class="btn-icon btn-edit" onclick="openEditDus(${idx})" title="Edit Dus">✏️</button>
+          <button class="btn-icon btn-delete" onclick="deleteDus(${idx})" title="Hapus Dus">🗑️</button>
+        </div>
+        <span class="chevron" id="chev-${idx}">▼</span>
+      </div>
+      <div class="dok-panel" id="dok-panel-${idx}">
+        <div class="dok-toolbar">
+          <span>Daftar Dokumen</span>
+          <button class="btn-add-dok" onclick="openAddDok(${idx})">＋ Tambah Dokumen</button>
+        </div>
+        <div class="dok-list">
+          ${d.dokumen.length === 0 ? '<div class="empty-state" style="padding:24px">Belum ada dokumen.</div>' :
+            d.dokumen.map((dk, di) => `
+            <div class="dok-item">
+              <div class="dok-no">${dk.no}</div>
+              <div class="dok-name">${dk.nama}</div>
+              <div class="dok-actions">
+                <button class="btn-icon btn-dok-edit" onclick="openEditDok(${idx},${di})" title="Edit">✏️</button>
+                <button class="btn-icon btn-dok-del" onclick="deleteDok(${idx},${di})" title="Hapus">🗑️</button>
+              </div>
+            </div>`).join('')}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  renderStats();
+}
+
+function toggleDok(idx) {
+  const panel = document.getElementById(`dok-panel-${idx}`);
+  const chev  = document.getElementById(`chev-${idx}`);
+  panel.classList.toggle('open');
+  chev.classList.toggle('open');
+}
+
+// ── DUS CRUD ──
+function openAddDus() {
+  editDusIdx = null;
+  document.getElementById('modal-dus-title').textContent = 'Tambah Dus Baru';
+  document.getElementById('f-no-dus').value = '';
+  document.getElementById('f-tahun').value = '';
+  document.getElementById('f-label').value = '';
+  document.getElementById('f-ket').value = '';
+  openModal('modal-dus');
+}
+function openEditDus(idx) {
+  editDusIdx = idx;
+  const d = DATA[idx];
+  document.getElementById('modal-dus-title').textContent = 'Edit Dus';
+  document.getElementById('f-no-dus').value = d.no_dus;
+  document.getElementById('f-tahun').value = d.tahun;
+  document.getElementById('f-label').value = d.label;
+  document.getElementById('f-ket').value = d.keterangan;
+  openModal('modal-dus');
+}
+async function saveDus() {
+  const no_dus = parseInt(document.getElementById('f-no-dus').value);
+  const tahun  = document.getElementById('f-tahun').value.trim();
+  const label  = document.getElementById('f-label').value.trim();
+  const ket    = document.getElementById('f-ket').value.trim();
+  if (!tahun || !label || !ket || !no_dus) return showToast('Semua field wajib diisi!', 'error');
+
+  if (editDusIdx === null) {
+    const newId = DATA.length ? Math.max(...DATA.map(d => d.id)) + 1 : 1;
+    DATA.push({ id: newId, no_dus, tahun, label, keterangan: ket, dokumen: [] });
+  } else {
+    DATA[editDusIdx] = { ...DATA[editDusIdx], no_dus, tahun, label, keterangan: ket };
+  }
+  const ok = await saveData(editDusIdx === null ? `Tambah dus: ${label}` : `Edit dus: ${label}`);
+  if (ok) { closeModal('modal-dus'); renderDus(); }
+}
+async function deleteDus(idx) {
+  const d = DATA[idx];
+  if (!confirm(`Hapus "${d.label}" beserta ${d.dokumen.length} dokumen di dalamnya?`)) return;
+  DATA.splice(idx, 1);
+  const ok = await saveData(`Hapus dus: ${d.label}`);
+  if (ok) renderDus();
+  else DATA.splice(idx, 0, d);
+}
+
+// ── DOKUMEN CRUD ──
+function openAddDok(dusIdx) {
+  editDokDusIdx = dusIdx;
+  editDokIdx = null;
+  document.getElementById('modal-dok-title').textContent = `Tambah Dokumen – ${DATA[dusIdx].label}`;
+  document.getElementById('f-dok-nama').value = '';
+  openModal('modal-dok');
+}
+function openEditDok(dusIdx, dokIdx) {
+  editDokDusIdx = dusIdx;
+  editDokIdx = dokIdx;
+  const dk = DATA[dusIdx].dokumen[dokIdx];
+  document.getElementById('modal-dok-title').textContent = 'Edit Dokumen';
+  document.getElementById('f-dok-nama').value = dk.nama;
+  openModal('modal-dok');
+}
+async function saveDok() {
+  const nama = document.getElementById('f-dok-nama').value.trim();
+  if (!nama) return showToast('Nama dokumen wajib diisi!', 'error');
+  const dus = DATA[editDokDusIdx];
+  if (editDokIdx === null) {
+    const newNo = dus.dokumen.length ? Math.max(...dus.dokumen.map(d => d.no)) + 1 : 1;
+    dus.dokumen.push({ no: newNo, nama });
+  } else {
+    dus.dokumen[editDokIdx].nama = nama;
+  }
+  const ok = await saveData(editDokIdx === null ? `Tambah dokumen: ${nama}` : `Edit dokumen: ${nama}`);
+  if (ok) { closeModal('modal-dok'); renderDus(); }
+}
+async function deleteDok(dusIdx, dokIdx) {
+  const dk = DATA[dusIdx].dokumen[dokIdx];
+  if (!confirm(`Hapus dokumen "${dk.nama}"?`)) return;
+  DATA[dusIdx].dokumen.splice(dokIdx, 1);
+  // Renumber
+  DATA[dusIdx].dokumen.forEach((d, i) => d.no = i + 1);
+  const ok = await saveData(`Hapus dokumen: ${dk.nama}`);
+  if (ok) renderDus();
+  else { DATA[dusIdx].dokumen.splice(dokIdx, 0, dk); renderDus(); }
+}
+
+// ── MODAL HELPERS ──
+function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
+function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+document.querySelectorAll('.modal-bg').forEach(bg => {
+  bg.addEventListener('click', e => { if (e.target === bg) bg.classList.add('hidden'); });
+});
+
+// ── TOAST ──
+let toastTimer;
+function showToast(msg, type = 'success') {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = `show ${type}`;
+  clearTimeout(toastTimer);
+  if (type !== 'loading') toastTimer = setTimeout(() => t.className = '', 3500);
+}
+
+// Auto-fill label when no_dus & tahun filled
+['f-no-dus','f-tahun'].forEach(id => {
+  document.getElementById(id).addEventListener('input', () => {
+    if (editDusIdx !== null) return;
+    const no = document.getElementById('f-no-dus').value;
+    const th = document.getElementById('f-tahun').value;
+    if (no && th) document.getElementById('f-label').value = `DUS ${no} – ${th}`;
+  });
+});
+</script>
+</body>
+</html>
