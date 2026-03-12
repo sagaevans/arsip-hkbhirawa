@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Detail Dus – Arsip HK Bhirawa</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="https://cdnjs.cloudflare.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
 /* --- TAMPILAN LAYAR (WEB VIEW) --- */
 .detail-head {
@@ -15,8 +15,7 @@
   padding: 12px 16px 12px 24px;
   min-height: 210px;
   gap: 8px;
-  background: #1a2a40; /* Warna Navy sesuai gambar */
-  border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
 .dh-mid {
@@ -32,37 +31,65 @@
   font-size: 100px;
   font-weight: 700;
   color: #ffffff;
+  letter-spacing: -4px;
+  flex-shrink: 0;
 }
 
 .badge-no-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 .badge-no-lbl {
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 700;
   color: #ffffff;
-  opacity: 0.8;
+  opacity: 0.65;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin-bottom: 4px;
 }
 
 .badge-no-big {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
-  font-size: 160px;
-  line-height: 0.9;
+  font-size: clamp(140px, 19vw, 210px);
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
   color: #ffffff;
+  letter-spacing: -4px;
 }
 
+/* QR web */
 .qr-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
   background: #ffffff;
-  padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+#qr-render {
+  width: 196px !important;
+  height: 196px !important;
+  display: block;
+}
+#qr-render canvas,
+#qr-render img {
+  width: 196px !important;
+  height: 196px !important;
+  display: block;
 }
 
-/* --- MODIFIKASI PRINT VIEW (SESUAI PERMINTAAN) --- */
+/* --- PRINT VIEW --- */
 @media print {
   .site-header, .breadcrumb, .nav-duo, .no-print {
     display: none !important;
@@ -74,62 +101,75 @@
   }
 
   .detail-head {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-between !important;
+    display: grid !important;
+    grid-template-columns: 1fr 200px !important;
     align-items: center !important;
     background: #fff !important;
-    padding: 20px !important;
+    padding: 16px 16px 16px 20px !important;
+    min-height: 180px !important;
+    gap: 8px !important;
+    overflow: hidden !important;
     border-bottom: 2px solid #000;
   }
 
   .dh-mid {
     display: flex !important;
-    align-items: flex-end !important; /* Agar tahun dan no dus sejajar di bawah */
-    gap: 50px !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 40px !important;
   }
 
-  /* TAHUN: Dibuat lebih besar (Print) */
   .badge-tahun-big {
-    font-size: 90px !important; 
+    font-size: 90px !important;
     color: #000 !important;
-    margin: 0 !important;
+    letter-spacing: -3px !important;
     line-height: 1 !important;
+    flex-shrink: 0 !important;
   }
 
-  /* WRAPPER NO DUS: Label di atas angka & sejajar tengah */
   .badge-no-wrap {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    align-self: center !important;
   }
 
   .badge-no-lbl {
-    font-size: 24px !important;
+    font-size: 14px !important;
     color: #000 !important;
-    margin-bottom: -10px !important; /* Merapatkan label ke angka */
+    opacity: 1 !important;
     font-weight: 800 !important;
+    margin-bottom: 0 !important;
+    letter-spacing: 0.1em !important;
   }
 
-  /* NO DUS: Jauh lebih besar (Print) */
   .badge-no-big {
-    font-size: 220px !important; 
+    font-size: 160px !important;
     color: #000 !important;
-    line-height: 0.8 !important;
-    margin: 0 !important;
+    line-height: 0.9 !important;
+    letter-spacing: -4px !important;
   }
 
+  /* QR print — mepet kotak, besar */
   .qr-box {
-    width: 170px !important;
-    height: 170px !important;
-    border: 1px solid #000 !important;
-    padding: 5px !important;
+    width: 192px !important;
+    height: 192px !important;
+    padding: 2px !important;
+    background: #fff !important;
+    border: 2px solid #000 !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
-
-  #qr-render, #qr-render canvas, #qr-render img {
-    width: 160px !important;
-    height: 160px !important;
+  #qr-render,
+  #qr-render canvas,
+  #qr-render img {
+    width: 186px !important;
+    height: 186px !important;
+    display: block !important;
   }
 }
 </style>
@@ -208,7 +248,7 @@
         </tr>
       </thead>
       <tbody id="doc-body">
-        <tr><td colspan="2" style="padding:40px;text-align:center;">Memuat data…</td></tr>
+        <tr><td colspan="2" style="padding:40px;text-align:center;color:var(--muted)">Memuat data…</td></tr>
       </tbody>
     </table>
   </div>
