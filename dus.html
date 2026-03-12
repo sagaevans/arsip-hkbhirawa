@@ -11,16 +11,15 @@
 
 <style>
 
-/* =========================
-HEADER LAYOUT LABEL DUS
-========================= */
+/* HEADER */
 
 .detail-head{
 display:grid;
-grid-template-columns:1fr 160px;
+grid-template-columns:1fr 200px;
 align-items:center;
-padding:18px 28px;
-min-height:150px;
+padding:20px 40px;
+min-height:180px;
+overflow:visible;
 }
 
 /* AREA ANGKA */
@@ -29,16 +28,17 @@ min-height:150px;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:40px;
+gap:35px;
 }
 
 /* TAHUN */
 
 .badge-tahun-big{
 font-family:'IBM Plex Mono',monospace;
+font-size:90px;
 font-weight:700;
-font-size:70px;
 white-space:nowrap;
+color:#ffffff;
 }
 
 /* NO DUS */
@@ -51,39 +51,38 @@ justify-content:center;
 }
 
 .badge-no-lbl{
-font-size:16px;
+font-size:18px;
 font-weight:700;
-margin-bottom:4px;
+color:#ffffff;
 }
 
-/* ANGKA DUS STABIL */
+/* ANGKA DUS AUTO SCALE */
 
 .badge-no-big{
 font-family:'IBM Plex Mono',monospace;
 font-weight:700;
-font-size:clamp(90px,9vw,130px);
-line-height:0.85;
+font-size:clamp(110px,12vw,160px);
+line-height:0.8;
+text-align:center;
 white-space:nowrap;
+color:#ffffff;
 }
 
-/* =========================
-QR CODE
-========================= */
+/* QR */
 
 .qr-box{
 display:flex;
-justify-content:center;
+justify-content:flex-end;
 align-items:center;
+padding-right:10px;
 }
 
 #qr-render{
-width:130px;
-height:130px;
+width:160px;
+height:160px;
 }
 
-/* =========================
-PRINT MODE
-========================= */
+/* PRINT MODE */
 
 @media print{
 
@@ -94,8 +93,10 @@ PRINT MODE
 display:none!important;
 }
 
-.detail-head{
-grid-template-columns:1fr 150px;
+.badge-tahun-big,
+.badge-no-big,
+.badge-no-lbl{
+color:#000!important;
 }
 
 }
