@@ -15,10 +15,10 @@
 
 .detail-head{
 display:grid;
-grid-template-columns:1fr 260px;
+grid-template-columns:1fr 200px;
 align-items:center;
 padding:20px 40px;
-min-height:190px;
+min-height:180px;
 overflow:visible;
 }
 
@@ -26,9 +26,9 @@ overflow:visible;
 
 .dh-mid{
 display:flex;
-align-items:flex-end;
+align-items:center;
 justify-content:center;
-gap:30px;
+gap:35px;
 }
 
 /* TAHUN */
@@ -37,6 +37,7 @@ gap:30px;
 font-family:'IBM Plex Mono',monospace;
 font-size:90px;
 font-weight:700;
+white-space:nowrap;
 color:#ffffff;
 }
 
@@ -46,6 +47,7 @@ color:#ffffff;
 display:flex;
 flex-direction:column;
 align-items:center;
+justify-content:center;
 }
 
 .badge-no-lbl{
@@ -54,11 +56,15 @@ font-weight:700;
 color:#ffffff;
 }
 
+/* ANGKA DUS AUTO SCALE */
+
 .badge-no-big{
 font-family:'IBM Plex Mono',monospace;
-font-size:150px;
 font-weight:700;
+font-size:clamp(110px,12vw,160px);
 line-height:0.8;
+text-align:center;
+white-space:nowrap;
 color:#ffffff;
 }
 
@@ -67,13 +73,13 @@ color:#ffffff;
 .qr-box{
 display:flex;
 justify-content:flex-end;
-padding-right:20px;
-overflow:visible;
+align-items:center;
+padding-right:10px;
 }
 
 #qr-render{
-width:180px;
-height:180px;
+width:160px;
+height:160px;
 }
 
 /* PRINT MODE */
@@ -85,11 +91,6 @@ height:180px;
 .nav-duo,
 .no-print{
 display:none!important;
-}
-
-.detail-head{
-grid-template-columns:1fr 260px;
-overflow:visible;
 }
 
 .badge-tahun-big,
