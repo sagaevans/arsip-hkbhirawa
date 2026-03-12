@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Detail Dus – Arsip HK Bhirawa</title>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+
+/* HEADER */
+
+.detail-head{
+display:grid;
+grid-template-columns:1fr 200px;
+align-items:center;
+padding:20px 40px;
+min-height:180px;
+overflow:visible;
+}
+
+/* AREA ANGKA */
+
+.dh-mid{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:35px;
+}
+
+/* TAHUN */
+
+.badge-tahun-big{
+font-family:'IBM Plex Mono',monospace;
+font-size:90px;
+font-weight:700;
+white-space:nowrap;
+color:#ffffff;
+}
+
+/* NO DUS */
+
+.badge-no-wrap{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+}
+
+.badge-no-lbl{
+font-size:18px;
+font-weight:700;
+color:#ffffff;
+}
+
+/* ANGKA DUS AUTO SCALE */
+
+.badge-no-big{
+font-family:'IBM Plex Mono',monospace;
+font-weight:700;
+font-size:clamp(110px,12vw,160px);
+line-height:0.8;
+text-align:center;
+white-space:nowrap;
+color:#ffffff;
+}
+
+/* QR */
+
+.qr-box{
+display:flex;
+justify-content:flex-end;
+align-items:center;
+padding-right:10px;
+}
+
+#qr-render{
+width:160px;
+height:160px;
+}
+
+/* PRINT MODE */
+
+@media print{
+
+.site-header,
+.breadcrumb,
+.nav-duo,
+.no-print{
+display:none!important;
+}
+
+.badge-tahun-big,
+.badge-no-big,
+.badge-no-lbl{
+color:#000!important;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="header-inner">
+
+<a class="brand" href="index.html">
+<div class="brand-icon">🗂️</div>
+
+<div>
+<div class="brand-name">Arsip Akuntansi HK Bhirawa</div>
+<div class="brand-sub">Created By NasZ</div>
+</div>
+
+</a>
+
+<div class="header-actions">
+<button class="btn btn-outline btn-sm" onclick="window.print()">🖨️ Print</button>
+</div>
+
+</div>
+</header>
+
+<main class="main">
+
+<nav class="breadcrumb">
+<a href="index.html">🏠 Beranda</a>
+<span class="bc-sep">›</span>
+<span id="d-num">—</span>
+</nav>
+
+<div class="nav-duo">
+<a id="nav-prev" class="btn btn-ghost btn-sm" href="#">← Sebelumnya</a>
+<a id="nav-next" class="btn btn-ghost btn-sm" href="#">Berikutnya →</a>
+</div>
+
+<div class="detail-card">
+
+<div class="detail-head">
+
+<div class="dh-mid">
+
+<span class="badge-tahun-big" id="badge-tahun">—</span>
+
+<div class="badge-no-wrap">
+<div class="badge-no-lbl">No Dus</div>
+<div class="badge-no-big" id="badge-label">—</div>
+</div>
+
+</div>
+
+<div class="qr-box">
+<div id="qr-render"></div>
+
+</div>
+
+</div>
+
+<div class="meta-bar">
+
+<div class="meta-item">
+<span class="meta-key">Tahun</span>
+<span class="meta-val" id="d-tahun">—</span>
+</div>
+
+<div class="meta-item">
+<span class="meta-key">Jumlah Dokumen</span>
+<span class="meta-val" id="d-total">—</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="table-wrap">
+
+<div class="table-head">
+
+<span class="table-head-title">
+📄 DAFTAR DOKUMEN — <span id="doc-count">—</span>
+</span>
+
+<div class="search-wrap no-print" style="max-width:240px">
+<span class="search-ico">🔍</span>
+<input id="doc-search" type="search" placeholder="Cari dokumen…">
+</div>
+
+</div>
+
+<table>
+
+<thead>
+<tr>
+<th style="width:44px">No</th>
+<th>Nama Dokumen</th>
+</tr>
+</thead>
+
+<tbody id="doc-body">
+<tr>
+<td colspan="2" style="padding:40px;text-align:center;color:var(--muted)">
+Memuat data…
+</td>
+</tr>
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/dus.js"></script>
+
+</body>
+</html>
