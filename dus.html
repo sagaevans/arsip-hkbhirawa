@@ -36,6 +36,7 @@ gap:40px;
 font-family:'IBM Plex Mono',monospace;
 font-size:100px;
 font-weight:700;
+color:#ffffff;
 }
 
 /* NO DUS */
@@ -49,6 +50,7 @@ align-items:center;
 .badge-no-lbl{
 font-size:20px;
 font-weight:700;
+color:#ffffff;
 }
 
 .badge-no-big{
@@ -56,6 +58,7 @@ font-family:'IBM Plex Mono',monospace;
 font-size:180px;
 font-weight:700;
 line-height:0.8;
+color:#ffffff;
 }
 
 /* QR */
@@ -70,7 +73,7 @@ width:160px;
 height:160px;
 }
 
-/* PRINT */
+/* PRINT MODE */
 
 @media print{
 
@@ -79,6 +82,12 @@ height:160px;
 .nav-duo,
 .no-print{
 display:none!important;
+}
+
+.badge-tahun-big,
+.badge-no-big,
+.badge-no-lbl{
+color:#000000!important;
 }
 
 }
