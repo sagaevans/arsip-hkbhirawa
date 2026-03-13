@@ -686,5 +686,13 @@
         "nama": "BBK 15- 2956 - 2985"
       }
     ]
+  },
+  {
+    "id": 18,
+    "no_dus": 15,
+    "tahun": "2012",
+    "label": "DUS 15 – 2012",
+    "keterangan": "BBK DAN FAKTUR PAJAK MASUKAN",
+    "dokumen": []
   }
 ]
