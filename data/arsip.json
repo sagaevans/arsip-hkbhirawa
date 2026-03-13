@@ -719,5 +719,13 @@
         "nama": "FAKTUR PAJAK MASUKAN APRIL - JULI"
       }
     ]
+  },
+  {
+    "id": 19,
+    "no_dus": 16,
+    "tahun": "2012",
+    "label": "DUS 16 – 2012",
+    "keterangan": "FAKTUR PAJAK MASUKAN DAN FP MASUKAN (KUNING)",
+    "dokumen": []
   }
 ]
