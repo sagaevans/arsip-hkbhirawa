@@ -612,5 +612,13 @@
         "nama": "BBK 15- 2580 -2619"
       }
     ]
+  },
+  {
+    "id": 16,
+    "no_dus": 13,
+    "tahun": "2012",
+    "label": "DUS 13 – 2012",
+    "keterangan": "BBK 2620 - 2804",
+    "dokumen": []
   }
 ]
