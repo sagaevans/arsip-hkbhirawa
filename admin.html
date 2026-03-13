@@ -70,6 +70,8 @@
   .btn-add:hover { background: var(--gold2); }
   .btn-excel { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: transparent; border: 1px solid var(--green); color: var(--green); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; border-radius: 3px; cursor: pointer; transition: all .2s; }
   .btn-excel:hover { background: var(--green); color: var(--navy); }
+  .btn-import-dok-global { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: transparent; border: 1px solid var(--blue); color: var(--blue); font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; border-radius: 3px; cursor: pointer; transition: all .2s; }
+  .btn-import-dok-global:hover { background: var(--blue); color: #fff; }
   .search-wrap { position: relative; }
   .search-wrap input { padding: 9px 14px 9px 36px; background: var(--navy2); border: 1px solid var(--navy3); color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px; border-radius: 3px; outline: none; width: 220px; transition: border .2s; }
   .search-wrap input:focus { border-color: var(--gold); }
@@ -156,7 +158,15 @@
   .tab-btn { padding: 8px 16px; background: var(--navy3); color: var(--gray); border: none; border-radius: 3px; font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600; cursor: pointer; transition: all .2s; }
   .tab-btn.active { background: var(--gold); color: var(--navy); }
 
-  /* ── TOAST ── */
+  .import-group { background: var(--bg); border: 1px solid var(--navy3); border-radius: 3px; margin-top: 8px; overflow: hidden; }
+  .import-group-header { padding: 8px 12px; background: var(--navy3); font-size: 11px; font-weight: 700; color: var(--gold); display: flex; justify-content: space-between; }
+  .import-group-rows { padding: 0; }
+  .import-group-row { padding: 6px 12px; font-size: 12px; border-bottom: 1px solid rgba(255,255,255,.04); display: flex; gap: 12px; }
+  .import-group-row:last-child { border-bottom: none; }
+  .import-group-row .row-no { color: var(--gray); font-family: 'JetBrains Mono', monospace; min-width: 24px; }
+  .import-group-row .row-nama { color: var(--white); }
+  .import-warn { background: rgba(224,92,92,.12); border: 1px solid var(--red); border-radius: 3px; padding: 10px 14px; font-size: 12px; color: var(--red); margin-top: 10px; line-height: 1.6; }
+  .import-warn strong { display: block; margin-bottom: 4px; }
   #toast { position: fixed; bottom: 32px; right: 32px; padding: 14px 20px; border-radius: 4px; font-size: 13px; font-weight: 600; z-index: 999; transform: translateY(80px); opacity: 0; transition: all .3s; pointer-events: none; }
   #toast.show { transform: translateY(0); opacity: 1; }
   #toast.success { background: var(--green); color: #fff; }
@@ -238,7 +248,8 @@
           <span class="search-icon">🔍</span>
           <input type="text" placeholder="Cari dus..." id="search-input" oninput="renderDus()">
         </div>
-        <button class="btn-excel" onclick="openExcelDus()">📋 Import dari Excel</button>
+        <button class="btn-import-dok-global" onclick="openExcelDokGlobal()">📥 Import Dokumen Excel</button>
+        <button class="btn-excel" onclick="openExcelDus()">📋 Import Dus Excel</button>
         <button class="btn-add" onclick="openAddDus()">＋ Tambah Dus</button>
       </div>
     </div>
@@ -370,6 +381,45 @@
     <div class="modal-actions">
       <button class="btn-cancel" onclick="closeModal('modal-excel-dok')">Batal</button>
       <button class="btn-save btn-save-green" id="btn-import-dok" onclick="importExcelDok()" disabled>Import</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODAL EXCEL IMPORT – DOKUMEN GLOBAL -->
+<div class="modal-bg hidden" id="modal-excel-dok-global">
+  <div class="modal modal-wide">
+    <h3>📥 Import Dokumen dari Excel (Multi-DUS)</h3>
+
+    <div class="paste-info">
+      <strong>Format kolom Excel yang didukung:</strong>
+      Paste data dengan kolom: <code>NO DUS</code> &nbsp;|&nbsp; <code>tahun</code> &nbsp;|&nbsp; <code>no dokumen</code><br>
+      Boleh ada header atau tidak. Sistem otomatis cocokkan NO DUS ke Dus yang ada.<br>
+      Contoh: <code>11 &nbsp; 2012 &nbsp; 15-2060 - 2082</code>
+    </div>
+
+    <div class="field">
+      <label>Paste data Excel di sini</label>
+      <textarea class="paste-area" id="excel-dok-global-raw" placeholder="Tempel data Excel di sini..." oninput="parseExcelDokGlobal()"></textarea>
+    </div>
+
+    <div id="excel-dok-global-config" style="display:none">
+      <div class="preview-label">Pemetaan Kolom</div>
+      <div class="col-map" id="dok-global-col-map"></div>
+
+      <div id="excel-dok-global-preview-wrap">
+        <div class="preview-label">
+          Preview — dikelompokkan per DUS
+          <span class="preview-count" id="excel-dok-global-count"></span>
+        </div>
+        <div id="excel-dok-global-preview" style="max-height:260px;overflow-y:auto;"></div>
+        <div id="excel-dok-global-warn"></div>
+      </div>
+    </div>
+
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal('modal-excel-dok-global')">Batal</button>
+      <button class="btn-save btn-save-green" id="btn-import-dok-global" onclick="importExcelDokGlobal()" disabled>Import</button>
     </div>
   </div>
 </div>
@@ -858,6 +908,187 @@ async function importExcelDok() {
       const chev = document.getElementById(`chev-${editDokDusIdx}`);
       if (panel && !panel.classList.contains('open')) { panel.classList.add('open'); chev.classList.add('open'); }
     }, 100);
+  }
+}
+
+
+// ══════════════════════════════════════════════
+// ── EXCEL IMPORT – DOKUMEN GLOBAL (Multi-DUS) ──
+// ══════════════════════════════════════════════
+
+function openExcelDokGlobal() {
+  document.getElementById('excel-dok-global-raw').value = '';
+  document.getElementById('excel-dok-global-config').style.display = 'none';
+  document.getElementById('btn-import-dok-global').disabled = true;
+  window._globalDokResult = null;
+  openModal('modal-excel-dok-global');
+}
+
+function parseExcelDokGlobal() {
+  const raw = document.getElementById('excel-dok-global-raw').value;
+  const rows = parseExcelData(raw);
+  if (!rows.length) {
+    document.getElementById('excel-dok-global-config').style.display = 'none';
+    document.getElementById('btn-import-dok-global').disabled = true;
+    return;
+  }
+
+  const numCols = Math.max(...rows.map(r => r.length));
+  const colOptions = Array.from({ length: numCols }, (_, i) => {
+    const sample = rows.slice(0, 3).map(r => r[i]||'').join(', ');
+    return `<option value="${i}">Kolom ${i+1}: ${sample.substring(0,28)}</option>`;
+  }).join('');
+  const noneOpt = `<option value="-1">— Tidak digunakan —</option>`;
+
+  // Auto-detect columns
+  function guessCol(keywords) {
+    // Check header row first
+    const header = rows[0];
+    for (let ci = 0; ci < header.length; ci++) {
+      const h = (header[ci]||'').toLowerCase().replace(/[^a-z0-9]/g,' ').trim();
+      if (keywords.some(k => h.includes(k))) return ci;
+    }
+    // Fallback: check data content
+    for (let ci = 0; ci < numCols; ci++) {
+      const samples = rows.slice(0,4).map(r => (r[ci]||'').toLowerCase());
+      if (samples.some(s => keywords.some(k => s.includes(k)))) return ci;
+    }
+    return -1;
+  }
+
+  const gNoDus = guessCol(['no dus','no_dus','nodus','dus']) !== -1
+    ? guessCol(['no dus','no_dus','nodus','dus']) : 0;
+  const gTahun = guessCol(['tahun','year','thn']) !== -1
+    ? guessCol(['tahun','year','thn']) : (numCols > 1 ? 1 : -1);
+  const gNamaDok = guessCol(['no dokumen','dokumen','doc','nama','no.dok','nodokumen']) !== -1
+    ? guessCol(['no dokumen','dokumen','doc','nama','no.dok','nodokumen']) : (numCols > 2 ? 2 : (numCols > 1 ? 1 : 0));
+
+  document.getElementById('dok-global-col-map').innerHTML = `
+    <div class="col-map-item">
+      <label>NO DUS *</label>
+      <select id="cm-g-no-dus" onchange="previewDokGlobal()">${colOptions}</select>
+    </div>
+    <div class="col-map-item">
+      <label>Tahun (opsional)</label>
+      <select id="cm-g-tahun" onchange="previewDokGlobal()">${noneOpt}${colOptions}</select>
+    </div>
+    <div class="col-map-item" style="grid-column:1/-1">
+      <label>No / Nama Dokumen *</label>
+      <select id="cm-g-dok-nama" onchange="previewDokGlobal()">${colOptions}</select>
+    </div>`;
+
+  document.getElementById('cm-g-no-dus').value    = gNoDus >= 0 ? gNoDus : 0;
+  document.getElementById('cm-g-tahun').value     = gTahun >= 0 ? gTahun : -1;
+  document.getElementById('cm-g-dok-nama').value  = gNamaDok >= 0 ? gNamaDok : 0;
+
+  document.getElementById('excel-dok-global-config').style.display = 'block';
+  previewDokGlobal();
+}
+
+function previewDokGlobal() {
+  const ciNoDus  = parseInt(document.getElementById('cm-g-no-dus').value);
+  const ciTahun  = parseInt(document.getElementById('cm-g-tahun').value);
+  const ciNama   = parseInt(document.getElementById('cm-g-dok-nama').value);
+
+  const allRows = parseExcelData(document.getElementById('excel-dok-global-raw').value);
+
+  // Detect & skip header row
+  let startRow = 0;
+  if (allRows[0]) {
+    const firstNoDus = (allRows[0][ciNoDus]||'').toLowerCase();
+    if (isNaN(parseInt(firstNoDus)) && firstNoDus !== '') startRow = 1;
+  }
+
+  const dataRows = allRows.slice(startRow).filter(r => (r[ciNoDus]||'').trim() !== '' && (r[ciNama]||'').trim() !== '');
+
+  // Group by no_dus + tahun
+  const groups = {}; // key: "no_dus|tahun"
+  dataRows.forEach(r => {
+    const noDus = parseInt(r[ciNoDus]);
+    const tahun = ciTahun >= 0 ? (r[ciTahun]||'').trim() : '';
+    const nama  = (r[ciNama]||'').trim();
+    if (isNaN(noDus) || !nama) return;
+    const key = `${noDus}|${tahun}`;
+    if (!groups[key]) groups[key] = { noDus, tahun, docs: [] };
+    groups[key].docs.push(nama);
+  });
+
+  // Match to existing DATA
+  const matched = [], unmatched = [];
+  Object.values(groups).forEach(g => {
+    // Find DUS by no_dus (and optionally tahun)
+    const candidates = DATA.filter(d => d.no_dus === g.noDus);
+    let match = null;
+    if (candidates.length === 1) {
+      match = candidates[0];
+    } else if (candidates.length > 1 && g.tahun) {
+      match = candidates.find(d => d.tahun === g.tahun) || candidates[0];
+    } else if (candidates.length > 1) {
+      match = candidates[0];
+    }
+    if (match) {
+      matched.push({ dus: match, noDus: g.noDus, tahun: g.tahun, docs: g.docs });
+    } else {
+      unmatched.push(g);
+    }
+  });
+
+  const totalDok = matched.reduce((s, m) => s + m.docs.length, 0);
+  document.getElementById('excel-dok-global-count').textContent = `${totalDok} dokumen → ${matched.length} DUS`;
+  document.getElementById('excel-dok-global-count').className = `preview-count ${totalDok === 0 ? 'warn' : ''}`;
+
+  // Render grouped preview
+  const previewEl = document.getElementById('excel-dok-global-preview');
+  previewEl.innerHTML = matched.map(m => `
+    <div class="import-group">
+      <div class="import-group-header">
+        <span>${m.dus.label} <span style="color:var(--gray);font-weight:400">(${m.dus.tahun})</span></span>
+        <span style="color:var(--white)">${m.docs.length} dok akan ditambahkan</span>
+      </div>
+      <div class="import-group-rows">
+        ${m.docs.slice(0,5).map((d, i) => `
+          <div class="import-group-row">
+            <span class="row-no">${i+1}</span>
+            <span class="row-nama">${d}</span>
+          </div>`).join('')}
+        ${m.docs.length > 5 ? `<div class="import-group-row" style="color:var(--gray)">... dan ${m.docs.length - 5} lainnya</div>` : ''}
+      </div>
+    </div>`).join('');
+
+  // Warn about unmatched
+  const warnEl = document.getElementById('excel-dok-global-warn');
+  if (unmatched.length) {
+    warnEl.innerHTML = `<div class="import-warn">
+      <strong>⚠ ${unmatched.length} grup tidak cocok dengan DUS manapun:</strong>
+      ${unmatched.map(u => `NO DUS <b>${u.noDus}</b>${u.tahun ? ' tahun '+u.tahun : ''} (${u.docs.length} dok) — DUS ini tidak ditemukan, akan dilewati.`).join('<br>')}
+    </div>`;
+  } else {
+    warnEl.innerHTML = '';
+  }
+
+  document.getElementById('btn-import-dok-global').disabled = totalDok === 0;
+  window._globalDokResult = matched;
+}
+
+async function importExcelDokGlobal() {
+  const matched = window._globalDokResult;
+  if (!matched || !matched.length) return;
+
+  let totalAdded = 0;
+  matched.forEach(m => {
+    const dus = m.dus;
+    const startNo = dus.dokumen.length ? Math.max(...dus.dokumen.map(d => d.no)) + 1 : 1;
+    m.docs.forEach((nama, i) => {
+      dus.dokumen.push({ no: startNo + i, nama });
+      totalAdded++;
+    });
+  });
+
+  const dusNames = matched.map(m => m.dus.label).join(', ');
+  const ok = await saveData(`Import ${totalAdded} dokumen ke ${matched.length} dus: ${dusNames.substring(0,80)}`);
+  if (ok) {
+    closeModal('modal-excel-dok-global');
+    renderDus();
   }
 }
 
