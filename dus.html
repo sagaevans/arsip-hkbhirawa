@@ -17,7 +17,6 @@
   gap: 8px;
   overflow: hidden;
 }
-
 .dh-mid {
   display: flex;
   flex-direction: row;
@@ -25,7 +24,6 @@
   justify-content: flex-start;
   gap: 60px;
 }
-
 .badge-tahun-big {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 100px;
@@ -34,7 +32,6 @@
   letter-spacing: -4px;
   flex-shrink: 0;
 }
-
 .badge-no-wrap {
   display: flex;
   flex-direction: column;
@@ -42,7 +39,6 @@
   justify-content: center;
   align-self: center;
 }
-
 .badge-no-lbl {
   font-size: 13px;
   font-weight: 700;
@@ -52,7 +48,6 @@
   text-transform: uppercase;
   margin-bottom: 4px;
 }
-
 .badge-no-big {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 700;
@@ -63,8 +58,6 @@
   color: #ffffff;
   letter-spacing: -4px;
 }
-
-/* QR web */
 .qr-box {
   display: flex;
   justify-content: center;
@@ -77,17 +70,8 @@
   padding: 2px;
   box-sizing: border-box;
 }
-#qr-render {
-  width: 196px !important;
-  height: 196px !important;
-  display: block;
-}
-#qr-render canvas,
-#qr-render img {
-  width: 196px !important;
-  height: 196px !important;
-  display: block;
-}
+#qr-render { width: 196px !important; height: 196px !important; display: block; }
+#qr-render canvas, #qr-render img { width: 196px !important; height: 196px !important; display: block; }
 
 /* --- PRINT VIEW --- */
 @media print {
@@ -95,55 +79,41 @@
     size: A4 portrait;
     margin: 10mm 12mm 10mm 12mm;
   }
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
 
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
+  .site-header, .breadcrumb, .nav-duo, .no-print { display: none !important; }
+  body { font-size: 12pt !important; }
 
-  .site-header, .breadcrumb, .nav-duo, .no-print {
-    display: none !important;
-  }
-
-  body {
-    font-size: 12pt !important;
-  }
-
-  /* ── HEADER CARD ── */
+  /* ── HEADER CARD — sama persis seperti versi asli ── */
   .detail-card {
     border: 1.5px solid #000 !important;
     box-shadow: none !important;
-    margin-bottom: 6mm !important;
+    margin-bottom: 5mm !important;
   }
-
   .detail-head {
     display: grid !important;
-    grid-template-columns: 1fr 148px !important;
+    grid-template-columns: 1fr 168px !important;
     align-items: center !important;
     background: #fff !important;
-    padding: 8px 10px 8px 18px !important;
-    min-height: 148px !important;
-    max-height: 148px !important;
+    padding: 12px 12px 12px 20px !important;
+    min-height: 165px !important;
     gap: 8px !important;
     overflow: hidden !important;
     border-bottom: 2px solid #000 !important;
   }
-
   .dh-mid {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 32px !important;
+    gap: 40px !important;
   }
-
   .badge-tahun-big {
-    font-size: 78px !important;
+    font-size: 90px !important;
     color: #000 !important;
     letter-spacing: -3px !important;
     line-height: 1 !important;
     flex-shrink: 0 !important;
   }
-
   .badge-no-wrap {
     display: flex !important;
     flex-direction: column !important;
@@ -151,27 +121,23 @@
     justify-content: center !important;
     align-self: center !important;
   }
-
   .badge-no-lbl {
-    font-size: 11px !important;
+    font-size: 14px !important;
     color: #000 !important;
     opacity: 1 !important;
     font-weight: 800 !important;
     margin-bottom: 0 !important;
     letter-spacing: 0.1em !important;
   }
-
   .badge-no-big {
-    font-size: 140px !important;
+    font-size: 160px !important;
     color: #000 !important;
-    line-height: 0.88 !important;
+    line-height: 0.9 !important;
     letter-spacing: -4px !important;
   }
-
-  /* QR print */
   .qr-box {
-    width: 140px !important;
-    height: 140px !important;
+    width: 160px !important;
+    height: 160px !important;
     padding: 2px !important;
     background: #fff !important;
     border: 2px solid #000 !important;
@@ -182,11 +148,9 @@
     align-items: center !important;
     overflow: hidden !important;
   }
-  #qr-render,
-  #qr-render canvas,
-  #qr-render img {
-    width: 134px !important;
-    height: 134px !important;
+  #qr-render, #qr-render canvas, #qr-render img {
+    width: 154px !important;
+    height: 154px !important;
     display: block !important;
   }
 
@@ -198,11 +162,9 @@
     display: flex !important;
     align-items: center !important;
   }
-  .meta-item {
-    padding: 4px 16px 4px 0 !important;
-  }
+  .meta-item { padding: 4px 20px 4px 0 !important; }
   .meta-key {
-    font-size: 8.5pt !important;
+    font-size: 8pt !important;
     letter-spacing: 0.08em !important;
     color: #555 !important;
     text-transform: uppercase !important;
@@ -221,70 +183,58 @@
   .table-wrap {
     border: 1.5px solid #000 !important;
     box-shadow: none !important;
-    page-break-inside: avoid !important;
   }
-
   .table-head {
-    padding: 6px 12px !important;
+    padding: 5px 14px !important;
     border-bottom: 1.5px solid #000 !important;
     background: #fff !important;
   }
-
   .table-head-title {
     font-size: 9pt !important;
     font-weight: 800 !important;
     letter-spacing: 0.08em !important;
     color: #000 !important;
   }
-
   table {
     width: 100% !important;
     border-collapse: collapse !important;
     table-layout: fixed !important;
   }
-
   thead th {
-    font-size: 8.5pt !important;
+    font-size: 9pt !important;
     font-weight: 700 !important;
-    padding: 5px 10px !important;
+    padding: 6px 14px !important;
     letter-spacing: 0.07em !important;
     text-transform: uppercase !important;
     color: #333 !important;
     border-bottom: 1.5px solid #000 !important;
-    background: #f5f5f5 !important;
+    background: #f0f0f0 !important;
   }
+  thead th:first-child { width: 46px !important; text-align: center !important; }
 
-  thead th:first-child {
-    width: 38px !important;
-    text-align: center !important;
-  }
-
-  /* ── DOCUMENT ROWS — kunci utama ── */
+  /* ── DOCUMENT ROWS ──
+     Sisa ruang A4 setelah header+meta+table-head ≈ 186mm
+     13 baris → tiap baris ≈ 14.3mm
+     font 13pt + padding 9px atas-bawah mengisi tepat
+  ── */
   tbody tr td {
-    font-size: 11pt !important;       /* ukuran font nama dokumen */
-    font-weight: 600 !important;
-    padding: 6px 10px !important;     /* padding atas-bawah per baris */
-    line-height: 1.25 !important;
+    font-size: 13pt !important;
+    font-weight: 700 !important;
+    padding: 9px 14px !important;
+    line-height: 1.15 !important;
     color: #000 !important;
-    border-bottom: 0.5px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
     vertical-align: middle !important;
   }
-
   tbody tr td:first-child {
     text-align: center !important;
-    font-size: 9pt !important;
-    font-weight: 500 !important;
-    color: #555 !important;
-    width: 38px !important;
+    font-size: 10pt !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+    width: 46px !important;
   }
-
-  tbody tr:last-child td {
-    border-bottom: none !important;
-  }
-
-  tbody tr:nth-child(even) td {
-    background: #fafafa !important;
-  }
+  tbody tr:last-child td { border-bottom: none !important; }
+  tbody tr:nth-child(even) td { background: #f8f8f8 !important; }
 }
 </style>
 </head>
