@@ -320,5 +320,60 @@
 
 <script src="js/data.js"></script>
 <script src="js/dus.js"></script>
+<script>
+// ── DYNAMIC PRINT FONT SIZE ──
+// Hitung font size optimal berdasarkan jumlah baris dokumen
+// supaya tabel selalu memenuhi halaman A4 secara proporsional
+
+function adjustPrintFontSize() {
+  const rows = document.querySelectorAll('#doc-body tr').length;
+  if (rows === 0) return;
+
+  // Ruang tersedia di A4 setelah header + meta bar + table head
+  // (dikalibrasi: 13 baris pas mengisi ~183mm dengan font 17pt padding 11px)
+  const availableMm = 183;
+  const perRowMm    = availableMm / rows;
+
+  // Font: kalibrasi dari 13 baris → 17pt = perRowMm 14.1mm
+  // ratio = 17 / 14.1 = 1.205
+  const fontPt   = Math.min(perRowMm * 1.205, 36); // max 36pt (jika cuma 1-2 baris)
+  const padPx    = Math.max(perRowMm * 2.3, 3);     // min 3px
+
+  let style = document.getElementById('dynamic-print-style');
+  if (!style) {
+    style = document.createElement('style');
+    style.id = 'dynamic-print-style';
+    document.head.appendChild(style);
+  }
+
+  style.textContent = `
+    @media print {
+      tbody tr td {
+        font-size: ${fontPt.toFixed(1)}pt !important;
+        font-weight: 700 !important;
+        padding: ${padPx.toFixed(1)}px 14px !important;
+        line-height: 1.1 !important;
+        vertical-align: middle !important;
+      }
+      tbody tr td:first-child {
+        font-size: ${(fontPt * 0.72).toFixed(1)}pt !important;
+        font-weight: 600 !important;
+        text-align: center !important;
+        color: #444 !important;
+        width: 46px !important;
+      }
+    }
+  `;
+}
+
+// Jalankan sebelum print dialog muncul
+window.addEventListener('beforeprint', adjustPrintFontSize);
+
+// Fallback: tombol print di halaman juga trigger adjust dulu
+const btnPrint = document.querySelector('.btn-outline[onclick="window.print()"]');
+if (btnPrint) {
+  btnPrint.addEventListener('click', adjustPrintFontSize, true);
+}
+</script>
 </body>
 </html>
