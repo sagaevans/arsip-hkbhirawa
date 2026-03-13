@@ -3,674 +3,322 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin Panel – Arsip HK Bhirawa</title>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<title>Detail Dus – Arsip HK Bhirawa</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
-  :root {
-    --navy: #0d1b2a;
-    --navy2: #1a2d45;
-    --navy3: #243854;
-    --gold: #c9a84c;
-    --gold2: #e8c46a;
-    --white: #f0f4f8;
-    --gray: #8a9bb0;
-    --red: #e05c5c;
-    --green: #4caf82;
-    --bg: #0a1520;
+/* --- TAMPILAN LAYAR (WEB VIEW) --- */
+.detail-head {
+  display: grid;
+  grid-template-columns: 1fr 210px;
+  align-items: center;
+  padding: 12px 16px 12px 24px;
+  min-height: 210px;
+  gap: 8px;
+  overflow: hidden;
+}
+.dh-mid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
+}
+.badge-tahun-big {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 100px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -4px;
+  flex-shrink: 0;
+}
+.badge-no-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+.badge-no-lbl {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0.65;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.badge-no-big {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 700;
+  font-size: clamp(140px, 19vw, 210px);
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+  color: #ffffff;
+  letter-spacing: -4px;
+}
+.qr-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+#qr-render { width: 196px !important; height: 196px !important; display: block; }
+#qr-render canvas, #qr-render img { width: 196px !important; height: 196px !important; display: block; }
+
+/* --- PRINT VIEW --- */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm 10mm 12mm;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Syne', sans-serif;
-    background: var(--bg);
-    color: var(--white);
-    min-height: 100vh;
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  .site-header, .breadcrumb, .nav-duo, .no-print { display: none !important; }
+  body { font-size: 12pt !important; }
+
+  /* ── HEADER CARD — sama persis seperti versi asli ── */
+  .detail-card {
+    border: 1.5px solid #000 !important;
+    box-shadow: none !important;
+    margin-bottom: 5mm !important;
+  }
+  .detail-head {
+    display: grid !important;
+    grid-template-columns: 1fr 168px !important;
+    align-items: center !important;
+    background: #fff !important;
+    padding: 12px 12px 12px 20px !important;
+    min-height: 165px !important;
+    gap: 8px !important;
+    overflow: hidden !important;
+    border-bottom: 2px solid #000 !important;
+  }
+  .dh-mid {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 40px !important;
+  }
+  .badge-tahun-big {
+    font-size: 90px !important;
+    color: #000 !important;
+    letter-spacing: -3px !important;
+    line-height: 1 !important;
+    flex-shrink: 0 !important;
+  }
+  .badge-no-wrap {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+  }
+  .badge-no-lbl {
+    font-size: 14px !important;
+    color: #000 !important;
+    opacity: 1 !important;
+    font-weight: 800 !important;
+    margin-bottom: 0 !important;
+    letter-spacing: 0.1em !important;
+  }
+  .badge-no-big {
+    font-size: 160px !important;
+    color: #000 !important;
+    line-height: 0.9 !important;
+    letter-spacing: -4px !important;
+  }
+  .qr-box {
+    width: 160px !important;
+    height: 160px !important;
+    padding: 2px !important;
+    background: #fff !important;
+    border: 2px solid #000 !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+  #qr-render, #qr-render canvas, #qr-render img {
+    width: 154px !important;
+    height: 154px !important;
+    display: block !important;
   }
 
-  /* ── LOGIN ── */
-  #login-screen {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: radial-gradient(ellipse at 30% 40%, #1a2d45 0%, #0a1520 70%);
+  /* ── META BAR ── */
+  .meta-bar {
+    padding: 5px 18px !important;
+    gap: 0 !important;
+    border-bottom: 1px solid #ccc !important;
+    display: flex !important;
+    align-items: center !important;
   }
-  .login-box {
-    background: var(--navy2);
-    border: 1px solid var(--navy3);
-    border-top: 3px solid var(--gold);
-    padding: 48px 40px;
-    width: 420px;
-    border-radius: 4px;
+  .meta-item { padding: 4px 20px 4px 0 !important; }
+  .meta-key {
+    font-size: 8pt !important;
+    letter-spacing: 0.08em !important;
+    color: #555 !important;
+    text-transform: uppercase !important;
+    display: block !important;
+    line-height: 1.2 !important;
   }
-  .login-box .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
-  .login-box .brand-icon {
-    width: 44px; height: 44px;
-    background: var(--gold);
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 18px; color: var(--navy); border-radius: 2px;
+  .meta-val {
+    font-size: 10pt !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    display: block !important;
+    line-height: 1.3 !important;
   }
-  .login-box .brand-text { font-size: 13px; line-height: 1.4; color: var(--gray); }
-  .login-box .brand-text strong { display: block; font-size: 16px; color: var(--white); font-weight: 700; }
-  .login-box h2 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
-  .login-box p { color: var(--gray); font-size: 13px; margin-bottom: 28px; line-height: 1.6; }
-  .field label { display: block; font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--gold); margin-bottom: 8px; text-transform: uppercase; }
-  .field input {
-    width: 100%; padding: 12px 16px;
-    background: var(--navy); border: 1px solid var(--navy3);
-    color: var(--white); font-family: 'JetBrains Mono', monospace; font-size: 13px;
-    border-radius: 3px; outline: none; transition: border .2s;
-  }
-  .field input:focus { border-color: var(--gold); }
-  .field { margin-bottom: 20px; }
-  .btn-primary {
-    width: 100%; padding: 13px;
-    background: var(--gold); color: var(--navy);
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px;
-    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
-    letter-spacing: .05em;
-  }
-  .btn-primary:hover { background: var(--gold2); }
-  .login-hint {
-    margin-top: 16px; font-size: 11px; color: var(--gray); text-align: center; line-height: 1.6;
-  }
-  .login-hint a { color: var(--gold); text-decoration: none; }
 
-  /* ── MAIN APP ── */
-  #app { display: none; }
-  .topbar {
-    background: var(--navy2);
-    border-bottom: 1px solid var(--navy3);
-    padding: 0 32px;
-    height: 60px;
-    display: flex; align-items: center; justify-content: space-between;
-    position: sticky; top: 0; z-index: 100;
+  /* ── TABLE ── */
+  .table-wrap {
+    border: 1.5px solid #000 !important;
+    box-shadow: none !important;
   }
-  .topbar-left { display: flex; align-items: center; gap: 16px; }
-  .topbar-brand { display: flex; align-items: center; gap: 12px; }
-  .topbar-icon {
-    width: 32px; height: 32px; background: var(--gold);
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 13px; color: var(--navy); border-radius: 2px;
+  .table-head {
+    padding: 5px 14px !important;
+    border-bottom: 1.5px solid #000 !important;
+    background: #fff !important;
   }
-  .topbar-title { font-weight: 700; font-size: 15px; }
-  .topbar-badge {
-    background: var(--navy3); color: var(--gold);
-    font-size: 10px; font-weight: 600; padding: 3px 8px; border-radius: 2px;
-    letter-spacing: .08em; text-transform: uppercase;
+  .table-head-title {
+    font-size: 9pt !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.08em !important;
+    color: #000 !important;
   }
-  .topbar-right { display: flex; align-items: center; gap: 12px; }
-  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); }
-  .status-text { font-size: 12px; color: var(--gray); }
-  .btn-logout {
-    padding: 7px 16px; background: transparent;
-    border: 1px solid var(--navy3); color: var(--gray);
-    font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600;
-    border-radius: 3px; cursor: pointer; transition: all .2s;
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
   }
-  .btn-logout:hover { border-color: var(--red); color: var(--red); }
+  thead th {
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+    padding: 6px 14px !important;
+    letter-spacing: 0.07em !important;
+    text-transform: uppercase !important;
+    color: #333 !important;
+    border-bottom: 1.5px solid #000 !important;
+    background: #f0f0f0 !important;
+  }
+  thead th:first-child { width: 46px !important; text-align: center !important; }
 
-  .container { max-width: 1100px; margin: 0 auto; padding: 32px 24px; }
-
-  /* ── STATS ── */
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 32px; }
-  .stat-card {
-    background: var(--navy2); border: 1px solid var(--navy3);
-    padding: 20px 24px; border-radius: 4px;
+  /* ── DOCUMENT ROWS ──
+     Sisa ruang A4 setelah header+meta+table-head ≈ 186mm
+     13 baris → tiap baris ≈ 14.3mm
+     font 13pt + padding 9px atas-bawah mengisi tepat
+  ── */
+  tbody tr td {
+    font-size: 17pt !important;
+    font-weight: 700 !important;
+    padding: 11px 14px !important;
+    line-height: 1.1 !important;
+    color: #000 !important;
+    border-bottom: 1px solid #ddd !important;
+    vertical-align: middle !important;
   }
-  .stat-card .stat-num { font-size: 32px; font-weight: 800; color: var(--gold); }
-  .stat-card .stat-label { font-size: 11px; color: var(--gray); letter-spacing: .08em; text-transform: uppercase; margin-top: 4px; }
-
-  /* ── TOOLBAR ── */
-  .toolbar {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-bottom: 20px; gap: 12px; flex-wrap: wrap;
+  tbody tr td:first-child {
+    text-align: center !important;
+    font-size: 12pt !important;
+    font-weight: 600 !important;
+    color: #444 !important;
+    width: 46px !important;
   }
-  .toolbar-left { display: flex; align-items: center; gap: 12px; }
-  .section-title { font-size: 18px; font-weight: 800; }
-  .btn-add {
-    display: flex; align-items: center; gap: 8px;
-    padding: 10px 20px; background: var(--gold); color: var(--navy);
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px;
-    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
-  }
-  .btn-add:hover { background: var(--gold2); }
-  .search-wrap { position: relative; }
-  .search-wrap input {
-    padding: 9px 14px 9px 36px;
-    background: var(--navy2); border: 1px solid var(--navy3);
-    color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px;
-    border-radius: 3px; outline: none; width: 220px; transition: border .2s;
-  }
-  .search-wrap input:focus { border-color: var(--gold); }
-  .search-wrap .search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--gray); font-size: 14px; }
-
-  /* ── DUS LIST ── */
-  .dus-grid { display: flex; flex-direction: column; gap: 12px; }
-  .dus-card {
-    background: var(--navy2); border: 1px solid var(--navy3);
-    border-radius: 4px; overflow: hidden; transition: border-color .2s;
-  }
-  .dus-card:hover { border-color: var(--navy3); }
-  .dus-header {
-    display: flex; align-items: center; padding: 16px 20px;
-    cursor: pointer; gap: 16px; user-select: none;
-  }
-  .dus-num {
-    min-width: 48px; height: 48px; background: var(--navy3);
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 18px; color: var(--gold); border-radius: 3px;
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .dus-info { flex: 1; }
-  .dus-info .dus-label { font-weight: 700; font-size: 15px; }
-  .dus-info .dus-ket { font-size: 12px; color: var(--gray); margin-top: 3px; }
-  .dus-meta { display: flex; align-items: center; gap: 8px; }
-  .dus-year {
-    background: var(--navy3); color: var(--gold);
-    font-size: 11px; font-weight: 600; padding: 4px 10px;
-    border-radius: 2px; font-family: 'JetBrains Mono', monospace;
-  }
-  .dus-count { font-size: 12px; color: var(--gray); }
-  .dus-actions { display: flex; gap: 8px; }
-  .btn-icon {
-    width: 32px; height: 32px; border-radius: 3px; border: none;
-    cursor: pointer; display: flex; align-items: center; justify-content: center;
-    font-size: 14px; transition: all .2s;
-  }
-  .btn-edit { background: var(--navy3); color: var(--white); }
-  .btn-edit:hover { background: var(--gold); color: var(--navy); }
-  .btn-delete { background: var(--navy3); color: var(--white); }
-  .btn-delete:hover { background: var(--red); color: #fff; }
-  .chevron { transition: transform .3s; font-size: 12px; color: var(--gray); }
-  .chevron.open { transform: rotate(180deg); }
-
-  /* ── DOKUMEN LIST ── */
-  .dok-panel { display: none; border-top: 1px solid var(--navy3); }
-  .dok-panel.open { display: block; }
-  .dok-toolbar {
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 12px 20px; background: var(--bg);
-  }
-  .dok-toolbar span { font-size: 11px; color: var(--gray); letter-spacing: .08em; text-transform: uppercase; font-weight: 600; }
-  .btn-add-dok {
-    display: flex; align-items: center; gap: 6px;
-    padding: 6px 14px; background: transparent;
-    border: 1px solid var(--gold); color: var(--gold);
-    font-family: 'Syne', sans-serif; font-size: 12px; font-weight: 600;
-    border-radius: 3px; cursor: pointer; transition: all .2s;
-  }
-  .btn-add-dok:hover { background: var(--gold); color: var(--navy); }
-  .dok-list { }
-  .dok-item {
-    display: flex; align-items: center; gap: 12px;
-    padding: 10px 20px; border-top: 1px solid var(--navy3);
-    transition: background .15s;
-  }
-  .dok-item:hover { background: rgba(255,255,255,.02); }
-  .dok-no {
-    min-width: 28px; height: 28px; background: var(--navy3);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 11px; color: var(--gray); border-radius: 2px;
-    font-family: 'JetBrains Mono', monospace;
-  }
-  .dok-name { flex: 1; font-size: 13px; font-weight: 600; letter-spacing: .02em; }
-  .dok-actions { display: flex; gap: 6px; }
-  .btn-dok-edit { background: transparent; border: 1px solid var(--navy3); color: var(--gray); }
-  .btn-dok-edit:hover { border-color: var(--gold); color: var(--gold); }
-  .btn-dok-del { background: transparent; border: 1px solid var(--navy3); color: var(--gray); }
-  .btn-dok-del:hover { border-color: var(--red); color: var(--red); }
-
-  /* ── MODAL ── */
-  .modal-bg {
-    position: fixed; inset: 0; background: rgba(10,21,32,.85);
-    display: flex; align-items: center; justify-content: center;
-    z-index: 200; backdrop-filter: blur(4px);
-  }
-  .modal-bg.hidden { display: none; }
-  .modal {
-    background: var(--navy2); border: 1px solid var(--navy3);
-    border-top: 3px solid var(--gold);
-    padding: 36px 32px; width: 480px; border-radius: 4px;
-    max-height: 90vh; overflow-y: auto;
-  }
-  .modal h3 { font-size: 18px; font-weight: 800; margin-bottom: 24px; }
-  .modal .field input, .modal .field textarea {
-    width: 100%; padding: 10px 14px;
-    background: var(--navy); border: 1px solid var(--navy3);
-    color: var(--white); font-family: 'Syne', sans-serif; font-size: 13px;
-    border-radius: 3px; outline: none; transition: border .2s;
-  }
-  .modal .field input:focus, .modal .field textarea:focus { border-color: var(--gold); }
-  .modal .field textarea { resize: vertical; min-height: 80px; }
-  .modal-actions { display: flex; gap: 10px; margin-top: 24px; justify-content: flex-end; }
-  .btn-cancel {
-    padding: 10px 20px; background: transparent;
-    border: 1px solid var(--navy3); color: var(--gray);
-    font-family: 'Syne', sans-serif; font-weight: 600; font-size: 13px;
-    border-radius: 3px; cursor: pointer; transition: all .2s;
-  }
-  .btn-cancel:hover { border-color: var(--gray); color: var(--white); }
-  .btn-save {
-    padding: 10px 24px; background: var(--gold); color: var(--navy);
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px;
-    border: none; border-radius: 3px; cursor: pointer; transition: background .2s;
-  }
-  .btn-save:hover { background: var(--gold2); }
-  .btn-save:disabled { opacity: .5; cursor: not-allowed; }
-
-  /* ── TOAST ── */
-  #toast {
-    position: fixed; bottom: 32px; right: 32px;
-    padding: 14px 20px; border-radius: 4px;
-    font-size: 13px; font-weight: 600; z-index: 999;
-    transform: translateY(80px); opacity: 0;
-    transition: all .3s; pointer-events: none;
-  }
-  #toast.show { transform: translateY(0); opacity: 1; }
-  #toast.success { background: var(--green); color: #fff; }
-  #toast.error { background: var(--red); color: #fff; }
-  #toast.loading { background: var(--gold); color: var(--navy); }
-
-  .empty-state {
-    text-align: center; padding: 48px; color: var(--gray); font-size: 13px;
-  }
-  .divider { height: 1px; background: var(--navy3); margin: 8px 0; }
+  tbody tr:last-child td { border-bottom: none !important; }
+  tbody tr:nth-child(even) td { background: #f8f8f8 !important; }
+}
 </style>
 </head>
 <body>
-
-<!-- LOGIN -->
-<div id="login-screen">
-  <div class="login-box">
-    <div class="brand">
-      <div class="brand-icon">HK</div>
-      <div class="brand-text">
-        <strong>Arsip HK Bhirawa</strong>
-        Admin Panel
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <div class="brand-icon">🗂️</div>
+      <div>
+        <div class="brand-name">Arsip Akuntansi HK Bhirawa</div>
+        <div class="brand-sub">Created By NAS</div>
       </div>
-    </div>
-    <h2>Masuk Admin</h2>
-    <p>Masukkan GitHub Personal Access Token Anda untuk mengakses panel admin dan mengelola data arsip.</p>
-    <div class="field">
-      <label>GitHub Token</label>
-      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
-    </div>
-    <div class="field">
-      <label>Repository</label>
-      <input type="text" id="repo-input" value="sagaevans/arsip-hkbhirawa" placeholder="username/repo">
-    </div>
-    <button class="btn-primary" onclick="doLogin()">Masuk →</button>
-    <div class="login-hint">
-      Token hanya disimpan di browser Anda dan tidak dikirim ke mana pun selain GitHub API.<br>
-      <a href="https://github.com/settings/tokens" target="_blank">Buat token baru di GitHub →</a>
+    </a>
+    <div class="header-actions">
+      <button class="btn btn-outline btn-sm" onclick="window.print()">🖨️ Print</button>
     </div>
   </div>
-</div>
+</header>
 
-<!-- APP -->
-<div id="app">
-  <div class="topbar">
-    <div class="topbar-left">
-      <div class="topbar-brand">
-        <div class="topbar-icon">HK</div>
-        <span class="topbar-title">Arsip HK Bhirawa</span>
+<main class="main">
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Beranda</a>
+    <span class="bc-sep">›</span>
+    <span id="d-num">—</span>
+  </nav>
+
+  <div class="nav-duo">
+    <a id="nav-prev" class="btn btn-ghost btn-sm" href="#">← Sebelumnya</a>
+    <a id="nav-next" class="btn btn-ghost btn-sm" href="#">Berikutnya →</a>
+  </div>
+
+  <div class="detail-card">
+    <div class="detail-head">
+      <div class="dh-mid">
+        <span class="badge-tahun-big" id="badge-tahun">—</span>
+        <div class="badge-no-wrap">
+          <div class="badge-no-lbl">No Dus</div>
+          <div class="badge-no-big" id="badge-label">—</div>
+        </div>
       </div>
-      <span class="topbar-badge">Admin Panel</span>
+      <div class="qr-box">
+        <div id="qr-render"></div>
+      </div>
     </div>
-    <div class="topbar-right">
-      <div class="status-dot"></div>
-      <span class="status-text" id="status-text">Terhubung</span>
-      <button class="btn-logout" onclick="doLogout()">Keluar</button>
+
+    <div class="meta-bar">
+      <div class="meta-item">
+        <span class="meta-key">Tahun</span>
+        <span class="meta-val" id="d-tahun">—</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Jumlah Dokumen</span>
+        <span class="meta-val" id="d-total">—</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-key">Keterangan</span>
+        <span class="meta-val" id="d-title">—</span>
+      </div>
     </div>
   </div>
 
-  <div class="container">
-    <!-- Stats -->
-    <div class="stats">
-      <div class="stat-card">
-        <div class="stat-num" id="stat-dus">–</div>
-        <div class="stat-label">Total Dus</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num" id="stat-dok">–</div>
-        <div class="stat-label">Total Dokumen</div>
-      </div>
-      <div class="stat-card">
-        <div class="stat-num" id="stat-tahun">–</div>
-        <div class="stat-label">Rentang Tahun</div>
+  <div class="table-wrap">
+    <div class="table-head">
+      <span class="table-head-title">📄 DAFTAR DOKUMEN — <span id="doc-count">—</span></span>
+      <div class="search-wrap no-print" style="max-width:240px">
+        <span class="search-ico">🔍</span>
+        <input id="doc-search" type="search" placeholder="Cari dokumen…">
       </div>
     </div>
-
-    <!-- Toolbar -->
-    <div class="toolbar">
-      <div class="toolbar-left">
-        <span class="section-title">Daftar Dus</span>
-      </div>
-      <div style="display:flex;gap:10px;align-items:center;">
-        <div class="search-wrap">
-          <span class="search-icon">🔍</span>
-          <input type="text" placeholder="Cari dus..." id="search-input" oninput="renderDus()">
-        </div>
-        <button class="btn-add" onclick="openAddDus()">＋ Tambah Dus</button>
-      </div>
-    </div>
-
-    <!-- Dus List -->
-    <div class="dus-grid" id="dus-grid"></div>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:44px">No</th>
+          <th>Nama Dokumen</th>
+        </tr>
+      </thead>
+      <tbody id="doc-body">
+        <tr><td colspan="2" style="padding:40px;text-align:center;color:var(--muted)">Memuat data…</td></tr>
+      </tbody>
+    </table>
   </div>
-</div>
+</main>
 
-<!-- MODAL DUS -->
-<div class="modal-bg hidden" id="modal-dus">
-  <div class="modal">
-    <h3 id="modal-dus-title">Tambah Dus Baru</h3>
-    <div class="field">
-      <label>No Dus</label>
-      <input type="number" id="f-no-dus" placeholder="contoh: 1">
-    </div>
-    <div class="field">
-      <label>Tahun</label>
-      <input type="text" id="f-tahun" placeholder="contoh: 2010">
-    </div>
-    <div class="field">
-      <label>Label</label>
-      <input type="text" id="f-label" placeholder="contoh: DUS 1 – 2010">
-    </div>
-    <div class="field">
-      <label>Keterangan</label>
-      <textarea id="f-ket" placeholder="contoh: Arsip Pajak 2010"></textarea>
-    </div>
-    <div class="modal-actions">
-      <button class="btn-cancel" onclick="closeModal('modal-dus')">Batal</button>
-      <button class="btn-save" id="btn-save-dus" onclick="saveDus()">Simpan</button>
-    </div>
-  </div>
-</div>
-
-<!-- MODAL DOKUMEN -->
-<div class="modal-bg hidden" id="modal-dok">
-  <div class="modal">
-    <h3 id="modal-dok-title">Tambah Dokumen</h3>
-    <div class="field">
-      <label>Nama Dokumen</label>
-      <input type="text" id="f-dok-nama" placeholder="contoh: SPT PPN">
-    </div>
-    <div class="modal-actions">
-      <button class="btn-cancel" onclick="closeModal('modal-dok')">Batal</button>
-      <button class="btn-save" id="btn-save-dok" onclick="saveDok()">Simpan</button>
-    </div>
-  </div>
-</div>
-
-<!-- TOAST -->
-<div id="toast"></div>
-
-<script>
-// ── STATE ──
-let TOKEN = '';
-let REPO = '';
-let DATA = [];
-let FILE_SHA = '';
-const FILE_PATH = 'data/arsip.json';
-
-let editDusIdx = null;   // index in DATA array, null = new
-let editDokDusIdx = null;
-let editDokIdx = null;   // null = new
-
-// ── AUTH ──
-async function doLogin() {
-  TOKEN = document.getElementById('token-input').value.trim();
-  REPO  = document.getElementById('repo-input').value.trim();
-  if (!TOKEN || !REPO) return showToast('Isi token dan repo dulu!', 'error');
-  showToast('Menghubungkan...', 'loading');
-  const ok = await loadData();
-  if (ok) {
-    document.getElementById('login-screen').style.display = 'none';
-    document.getElementById('app').style.display = 'block';
-    renderDus();
-    renderStats();
-    showToast('Berhasil masuk!', 'success');
-  }
-}
-function doLogout() {
-  TOKEN = ''; REPO = ''; DATA = []; FILE_SHA = '';
-  document.getElementById('login-screen').style.display = 'flex';
-  document.getElementById('app').style.display = 'none';
-  document.getElementById('token-input').value = '';
-}
-
-// ── GITHUB API ──
-async function ghGet(path) {
-  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-    headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github.v3+json' }
-  });
-  if (!r.ok) throw new Error(`GET ${path} failed: ${r.status}`);
-  return r.json();
-}
-async function ghPut(path, content, sha, message) {
-  const r = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-    method: 'PUT',
-    headers: { Authorization: `Bearer ${TOKEN}`, Accept: 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message, content: btoa(unescape(encodeURIComponent(content))), sha })
-  });
-  if (!r.ok) {
-    const err = await r.json();
-    throw new Error(err.message || 'PUT failed');
-  }
-  return r.json();
-}
-
-async function loadData() {
-  try {
-    const res = await ghGet(FILE_PATH);
-    FILE_SHA = res.sha;
-    DATA = JSON.parse(decodeURIComponent(escape(atob(res.content.replace(/\n/g,'')))));
-    return true;
-  } catch(e) {
-    showToast('Gagal: ' + e.message, 'error');
-    return false;
-  }
-}
-async function saveData(message) {
-  const btn = document.getElementById('btn-save-dus') || document.getElementById('btn-save-dok');
-  if (btn) btn.disabled = true;
-  showToast('Menyimpan ke GitHub...', 'loading');
-  try {
-    const json = JSON.stringify(DATA, null, 2);
-    const res = await ghPut(FILE_PATH, json, FILE_SHA, message);
-    FILE_SHA = res.content.sha;
-    showToast('✓ Tersimpan! Website akan update ~1 menit.', 'success');
-    return true;
-  } catch(e) {
-    showToast('Gagal simpan: ' + e.message, 'error');
-    return false;
-  } finally {
-    if (btn) btn.disabled = false;
-  }
-}
-
-// ── RENDER ──
-function renderStats() {
-  const totalDok = DATA.reduce((s, d) => s + d.dokumen.length, 0);
-  const tahuns = [...new Set(DATA.map(d => d.tahun))].sort();
-  document.getElementById('stat-dus').textContent = DATA.length;
-  document.getElementById('stat-dok').textContent = totalDok;
-  document.getElementById('stat-tahun').textContent = tahuns.length > 1 ? `${tahuns[0]}–${tahuns[tahuns.length-1]}` : (tahuns[0] || '–');
-}
-
-function renderDus() {
-  const q = document.getElementById('search-input').value.toLowerCase();
-  const grid = document.getElementById('dus-grid');
-  const filtered = DATA.filter(d =>
-    d.label.toLowerCase().includes(q) ||
-    d.keterangan.toLowerCase().includes(q) ||
-    d.tahun.includes(q)
-  );
-  if (!filtered.length) {
-    grid.innerHTML = '<div class="empty-state">Tidak ada dus ditemukan.</div>';
-    return;
-  }
-  grid.innerHTML = filtered.map(d => {
-    const idx = DATA.indexOf(d);
-    return `
-    <div class="dus-card" id="dus-card-${idx}">
-      <div class="dus-header" onclick="toggleDok(${idx})">
-        <div class="dus-num">${d.no_dus}</div>
-        <div class="dus-info">
-          <div class="dus-label">${d.label}</div>
-          <div class="dus-ket">${d.keterangan}</div>
-        </div>
-        <div class="dus-meta">
-          <span class="dus-year">${d.tahun}</span>
-          <span class="dus-count">${d.dokumen.length} dok</span>
-        </div>
-        <div class="dus-actions" onclick="event.stopPropagation()">
-          <button class="btn-icon btn-edit" onclick="openEditDus(${idx})" title="Edit Dus">✏️</button>
-          <button class="btn-icon btn-delete" onclick="deleteDus(${idx})" title="Hapus Dus">🗑️</button>
-        </div>
-        <span class="chevron" id="chev-${idx}">▼</span>
-      </div>
-      <div class="dok-panel" id="dok-panel-${idx}">
-        <div class="dok-toolbar">
-          <span>Daftar Dokumen</span>
-          <button class="btn-add-dok" onclick="openAddDok(${idx})">＋ Tambah Dokumen</button>
-        </div>
-        <div class="dok-list">
-          ${d.dokumen.length === 0 ? '<div class="empty-state" style="padding:24px">Belum ada dokumen.</div>' :
-            d.dokumen.map((dk, di) => `
-            <div class="dok-item">
-              <div class="dok-no">${dk.no}</div>
-              <div class="dok-name">${dk.nama}</div>
-              <div class="dok-actions">
-                <button class="btn-icon btn-dok-edit" onclick="openEditDok(${idx},${di})" title="Edit">✏️</button>
-                <button class="btn-icon btn-dok-del" onclick="deleteDok(${idx},${di})" title="Hapus">🗑️</button>
-              </div>
-            </div>`).join('')}
-        </div>
-      </div>
-    </div>`;
-  }).join('');
-  renderStats();
-}
-
-function toggleDok(idx) {
-  const panel = document.getElementById(`dok-panel-${idx}`);
-  const chev  = document.getElementById(`chev-${idx}`);
-  panel.classList.toggle('open');
-  chev.classList.toggle('open');
-}
-
-// ── DUS CRUD ──
-function openAddDus() {
-  editDusIdx = null;
-  document.getElementById('modal-dus-title').textContent = 'Tambah Dus Baru';
-  document.getElementById('f-no-dus').value = '';
-  document.getElementById('f-tahun').value = '';
-  document.getElementById('f-label').value = '';
-  document.getElementById('f-ket').value = '';
-  openModal('modal-dus');
-}
-function openEditDus(idx) {
-  editDusIdx = idx;
-  const d = DATA[idx];
-  document.getElementById('modal-dus-title').textContent = 'Edit Dus';
-  document.getElementById('f-no-dus').value = d.no_dus;
-  document.getElementById('f-tahun').value = d.tahun;
-  document.getElementById('f-label').value = d.label;
-  document.getElementById('f-ket').value = d.keterangan;
-  openModal('modal-dus');
-}
-async function saveDus() {
-  const no_dus = parseInt(document.getElementById('f-no-dus').value);
-  const tahun  = document.getElementById('f-tahun').value.trim();
-  const label  = document.getElementById('f-label').value.trim();
-  const ket    = document.getElementById('f-ket').value.trim();
-  if (!tahun || !label || !ket || !no_dus) return showToast('Semua field wajib diisi!', 'error');
-
-  if (editDusIdx === null) {
-    const newId = DATA.length ? Math.max(...DATA.map(d => d.id)) + 1 : 1;
-    DATA.push({ id: newId, no_dus, tahun, label, keterangan: ket, dokumen: [] });
-  } else {
-    DATA[editDusIdx] = { ...DATA[editDusIdx], no_dus, tahun, label, keterangan: ket };
-  }
-  const ok = await saveData(editDusIdx === null ? `Tambah dus: ${label}` : `Edit dus: ${label}`);
-  if (ok) { closeModal('modal-dus'); renderDus(); }
-}
-async function deleteDus(idx) {
-  const d = DATA[idx];
-  if (!confirm(`Hapus "${d.label}" beserta ${d.dokumen.length} dokumen di dalamnya?`)) return;
-  DATA.splice(idx, 1);
-  const ok = await saveData(`Hapus dus: ${d.label}`);
-  if (ok) renderDus();
-  else DATA.splice(idx, 0, d);
-}
-
-// ── DOKUMEN CRUD ──
-function openAddDok(dusIdx) {
-  editDokDusIdx = dusIdx;
-  editDokIdx = null;
-  document.getElementById('modal-dok-title').textContent = `Tambah Dokumen – ${DATA[dusIdx].label}`;
-  document.getElementById('f-dok-nama').value = '';
-  openModal('modal-dok');
-}
-function openEditDok(dusIdx, dokIdx) {
-  editDokDusIdx = dusIdx;
-  editDokIdx = dokIdx;
-  const dk = DATA[dusIdx].dokumen[dokIdx];
-  document.getElementById('modal-dok-title').textContent = 'Edit Dokumen';
-  document.getElementById('f-dok-nama').value = dk.nama;
-  openModal('modal-dok');
-}
-async function saveDok() {
-  const nama = document.getElementById('f-dok-nama').value.trim();
-  if (!nama) return showToast('Nama dokumen wajib diisi!', 'error');
-  const dus = DATA[editDokDusIdx];
-  if (editDokIdx === null) {
-    const newNo = dus.dokumen.length ? Math.max(...dus.dokumen.map(d => d.no)) + 1 : 1;
-    dus.dokumen.push({ no: newNo, nama });
-  } else {
-    dus.dokumen[editDokIdx].nama = nama;
-  }
-  const ok = await saveData(editDokIdx === null ? `Tambah dokumen: ${nama}` : `Edit dokumen: ${nama}`);
-  if (ok) { closeModal('modal-dok'); renderDus(); }
-}
-async function deleteDok(dusIdx, dokIdx) {
-  const dk = DATA[dusIdx].dokumen[dokIdx];
-  if (!confirm(`Hapus dokumen "${dk.nama}"?`)) return;
-  DATA[dusIdx].dokumen.splice(dokIdx, 1);
-  // Renumber
-  DATA[dusIdx].dokumen.forEach((d, i) => d.no = i + 1);
-  const ok = await saveData(`Hapus dokumen: ${dk.nama}`);
-  if (ok) renderDus();
-  else { DATA[dusIdx].dokumen.splice(dokIdx, 0, dk); renderDus(); }
-}
-
-// ── MODAL HELPERS ──
-function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
-function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
-document.querySelectorAll('.modal-bg').forEach(bg => {
-  bg.addEventListener('click', e => { if (e.target === bg) bg.classList.add('hidden'); });
-});
-
-// ── TOAST ──
-let toastTimer;
-function showToast(msg, type = 'success') {
-  const t = document.getElementById('toast');
-  t.textContent = msg;
-  t.className = `show ${type}`;
-  clearTimeout(toastTimer);
-  if (type !== 'loading') toastTimer = setTimeout(() => t.className = '', 3500);
-}
-
-// Auto-fill label when no_dus & tahun filled
-['f-no-dus','f-tahun'].forEach(id => {
-  document.getElementById(id).addEventListener('input', () => {
-    if (editDusIdx !== null) return;
-    const no = document.getElementById('f-no-dus').value;
-    const th = document.getElementById('f-tahun').value;
-    if (no && th) document.getElementById('f-label').value = `DUS ${no} – ${th}`;
-  });
-});
-</script>
+<script src="js/data.js"></script>
+<script src="js/dus.js"></script>
 </body>
 </html>
