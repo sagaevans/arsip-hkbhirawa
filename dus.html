@@ -322,22 +322,23 @@
 <script src="js/dus.js"></script>
 <script>
 // ── DYNAMIC PRINT FONT SIZE ──
-// Hitung font size optimal berdasarkan jumlah baris dokumen
-// supaya tabel selalu memenuhi halaman A4 secara proporsional
+// Font besar, padding kecil/rapat, selalu 1 halaman A4
 
 function adjustPrintFontSize() {
   const rows = document.querySelectorAll('#doc-body tr').length;
   if (rows === 0) return;
 
-  // Ruang tersedia di A4 setelah header + meta bar + table head
-  // (dikalibrasi: 13 baris pas mengisi ~183mm dengan font 17pt padding 11px)
+  // Ruang tabel tersedia setelah header+meta+table-head ≈ 183mm
+  // Konversi ke px untuk calc: 1mm ≈ 3.78px
   const availableMm = 183;
-  const perRowMm    = availableMm / rows;
 
-  // Font: kalibrasi dari 13 baris → 17pt = perRowMm 14.1mm
-  // ratio = 17 / 14.1 = 1.205
-  const fontPt   = Math.min(perRowMm * 1.205, 36); // max 36pt (jika cuma 1-2 baris)
-  const padPx    = Math.max(perRowMm * 2.3, 3);     // min 3px
+  // Tiap baris = availableMm / rows → dalam pt
+  // Baris terdiri dari: font (dominant) + padding atas+bawah kecil (4px total)
+  // 1pt ≈ 0.353mm, padding tetap 4px = ~1.5mm
+  const paddingMm = 1.5;
+  const fontMm    = (availableMm / rows) - paddingMm;
+  const fontPt    = Math.min(fontMm / 0.353, 28); // hard cap 28pt
+  const padPx     = 4; // selalu kecil supaya rapat
 
   let style = document.getElementById('dynamic-print-style');
   if (!style) {
@@ -351,29 +352,27 @@ function adjustPrintFontSize() {
       tbody tr td {
         font-size: ${fontPt.toFixed(1)}pt !important;
         font-weight: 700 !important;
-        padding: ${padPx.toFixed(1)}px 14px !important;
-        line-height: 1.1 !important;
+        padding: ${padPx}px 14px !important;
+        line-height: 1.05 !important;
         vertical-align: middle !important;
+        border-bottom: 1px solid #ddd !important;
+        color: #000 !important;
       }
       tbody tr td:first-child {
-        font-size: ${(fontPt * 0.72).toFixed(1)}pt !important;
+        font-size: ${(fontPt * 0.65).toFixed(1)}pt !important;
         font-weight: 600 !important;
         text-align: center !important;
         color: #444 !important;
         width: 46px !important;
+        padding: ${padPx}px 6px !important;
       }
     }
   `;
 }
 
-// Jalankan sebelum print dialog muncul
 window.addEventListener('beforeprint', adjustPrintFontSize);
-
-// Fallback: tombol print di halaman juga trigger adjust dulu
 const btnPrint = document.querySelector('.btn-outline[onclick="window.print()"]');
-if (btnPrint) {
-  btnPrint.addEventListener('click', adjustPrintFontSize, true);
-}
+if (btnPrint) btnPrint.addEventListener('click', adjustPrintFontSize, true);
 </script>
 </body>
 </html>
