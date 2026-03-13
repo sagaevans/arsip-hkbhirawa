@@ -693,6 +693,31 @@
     "tahun": "2012",
     "label": "DUS 15 – 2012",
     "keterangan": "BBK DAN FAKTUR PAJAK MASUKAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK 15- 2986 - 3029"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 15- 3031 - 3065"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 15- 3066 - 3090"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 15- 3091 - 3135"
+      },
+      {
+        "no": 5,
+        "nama": "FAKTUR PAJAK MASUKAN JAN - MARET"
+      },
+      {
+        "no": 6,
+        "nama": "FAKTUR PAJAK MASUKAN APRIL - JULI"
+      }
+    ]
   }
 ]
