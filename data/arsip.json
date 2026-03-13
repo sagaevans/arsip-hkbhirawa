@@ -575,5 +575,13 @@
         "nama": "BBK 15- 2263 - 2289"
       }
     ]
+  },
+  {
+    "id": 15,
+    "no_dus": 12,
+    "tahun": "2012",
+    "label": "DUS 12 – 2012",
+    "keterangan": "BBK 2290 - 2619",
+    "dokumen": []
   }
 ]
