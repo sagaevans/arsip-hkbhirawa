@@ -726,6 +726,39 @@
     "tahun": "2012",
     "label": "DUS 16 – 2012",
     "keterangan": "FAKTUR PAJAK MASUKAN DAN FP MASUKAN (KUNING)",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FAKTUR PAJAK MASUKAN AGS - SEPT"
+      },
+      {
+        "no": 2,
+        "nama": "FAKTUR PAJAK MASUKAN OKT - DES"
+      },
+      {
+        "no": 3,
+        "nama": "FAKTUR PAJAK JAN - MARET"
+      },
+      {
+        "no": 4,
+        "nama": "FAKTUR PAJAK APRIL - JUNI"
+      },
+      {
+        "no": 5,
+        "nama": "FAKTUR PAJAK JULI - SEPT"
+      },
+      {
+        "no": 6,
+        "nama": "FAKTUR PAJAK OKT - DES"
+      },
+      {
+        "no": 7,
+        "nama": "FAKTUR PAJAK KUNING JAN - APR"
+      },
+      {
+        "no": 8,
+        "nama": "FAKTUR PAJAK KUNING MEI - JULI"
+      }
+    ]
   }
 ]
