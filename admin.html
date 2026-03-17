@@ -175,6 +175,40 @@
   #toast.loading { background: var(--gold); color: var(--navy); }
 
   .empty-state { text-align: center; padding: 48px; color: var(--gray); font-size: 13px; }
+  /* ── CHECKBOX DIKIRIM C7 ── */
+  .c7-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    min-width: 54px;
+    padding: 0 4px;
+  }
+  .c7-label {
+    font-size: 8px;
+    font-weight: 700;
+    color: var(--gray);
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  .c7-check {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--gold);
+    cursor: pointer;
+  }
+  .dus-card.c7-done .dus-num {
+    background: var(--gold) !important;
+    color: var(--navy) !important;
+  }
+  .dus-card.c7-done .dus-label {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
   .btn-export { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: transparent; border: 1px solid #7c5cbf; color: #a07ee0; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; border-radius: 3px; cursor: pointer; transition: all .2s; }
   .btn-export:hover { background: #7c5cbf; color: #fff; }
 </style>
@@ -519,7 +553,7 @@ function renderDus() {
   if (!filtered.length) { grid.innerHTML = '<div class="empty-state">Tidak ada dus ditemukan.</div>'; return; }
   grid.innerHTML = filtered.map(d => {
     const idx = DATA.indexOf(d);
-    return `<div class="dus-card" id="dus-card-${idx}">
+    return `<div class="dus-card ${d.c7 ? 'c7-done' : ''}" id="dus-card-${idx}">
       <div class="dus-header" onclick="toggleDok(${idx})">
         <div class="dus-num">${d.no_dus}</div>
         <div class="dus-info">
@@ -533,6 +567,10 @@ function renderDus() {
         <div class="dus-actions" onclick="event.stopPropagation()">
           <button class="btn-icon btn-edit" onclick="openEditDus(${idx})" title="Edit Dus">✏️</button>
           <button class="btn-icon btn-delete" onclick="deleteDus(${idx})" title="Hapus Dus">🗑️</button>
+        </div>
+        <div class="c7-wrap" onclick="event.stopPropagation()">
+          <span class="c7-label">Dikirim<br>ke C7</span>
+          <input type="checkbox" class="c7-check" ${d.c7 ? 'checked' : ''} onchange="toggleC7(${idx}, this.checked)" title="Tandai sudah dikirim ke C7">
         </div>
         <span class="chevron" id="chev-${idx}">▼</span>
       </div>
@@ -1163,6 +1201,16 @@ function exportExcel() {
 
   XLSX.writeFile(wb, filename);
   showToast(`✓ Export berhasil: ${filename}`, 'success');
+}
+
+
+// ── TOGGLE C7 ──
+async function toggleC7(idx, checked) {
+  DATA[idx].c7 = checked;
+  const label = DATA[idx].label;
+  const ok = await saveData(checked ? `Tandai dikirim C7: ${label}` : `Batal dikirim C7: ${label}`);
+  if (ok) renderDus();
+  else { DATA[idx].c7 = !checked; renderDus(); } // rollback on fail
 }
 
 // ── MODAL HELPERS ──
