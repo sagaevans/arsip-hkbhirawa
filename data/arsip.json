@@ -85,7 +85,7 @@
         "nama": "BUKTI KAS MASUK 2010-2011"
       }
     ],
-    "c7": false
+    "c7": true
   },
   {
     "id": 3,
@@ -172,7 +172,8 @@
         "no": 8,
         "nama": "BBK (BUKTI BANK KELUAR) 15-0283-0340"
       }
-    ]
+    ],
+    "c7": false
   },
   {
     "id": 5,
