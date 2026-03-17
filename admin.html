@@ -204,10 +204,7 @@
     background: var(--gold) !important;
     color: var(--navy) !important;
   }
-  .dus-card.c7-done .dus-label {
-    text-decoration: line-through;
-    opacity: 0.6;
-  }
+
 
   .btn-export { display: flex; align-items: center; gap: 8px; padding: 10px 20px; background: transparent; border: 1px solid #7c5cbf; color: #a07ee0; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; border-radius: 3px; cursor: pointer; transition: all .2s; }
   .btn-export:hover { background: #7c5cbf; color: #fff; }
@@ -1146,34 +1143,34 @@ function exportExcel() {
 
   // ── SHEET 1: Ringkasan Dus ──
   const summaryRows = [
-    ['NO DUS', 'TAHUN', 'LABEL', 'KETERANGAN', 'JUMLAH DOKUMEN']
+    ['NO DUS', 'TAHUN', 'LABEL', 'KETERANGAN', 'JUMLAH DOKUMEN', 'DIKIRIM KE C7']
   ];
   DATA.forEach(d => {
-    summaryRows.push([d.no_dus, d.tahun, d.label, d.keterangan, d.dokumen.length]);
+    summaryRows.push([d.no_dus, d.tahun, d.label, d.keterangan, d.dokumen.length, d.c7 ? '✓ Sudah Dikirim' : '']);
   });
   const wsSummary = XLSX.utils.aoa_to_sheet(summaryRows);
   // Column widths
   wsSummary['!cols'] = [
-    { wch: 8 }, { wch: 8 }, { wch: 24 }, { wch: 36 }, { wch: 16 }
+    { wch: 8 }, { wch: 8 }, { wch: 24 }, { wch: 36 }, { wch: 16 }, { wch: 18 }
   ];
   XLSX.utils.book_append_sheet(wb, wsSummary, 'Ringkasan Dus');
 
   // ── SHEET 2: Semua Dokumen (flat) ──
   const allDocsRows = [
-    ['NO DUS', 'TAHUN', 'LABEL DUS', 'KETERANGAN DUS', 'NO DOK', 'NAMA DOKUMEN']
+    ['NO DUS', 'TAHUN', 'LABEL DUS', 'KETERANGAN DUS', 'DIKIRIM KE C7', 'NO DOK', 'NAMA DOKUMEN']
   ];
   DATA.forEach(d => {
     if (d.dokumen.length === 0) {
-      allDocsRows.push([d.no_dus, d.tahun, d.label, d.keterangan, '', '(belum ada dokumen)']);
+      allDocsRows.push([d.no_dus, d.tahun, d.label, d.keterangan, d.c7 ? '✓ Sudah Dikirim' : '', '', '(belum ada dokumen)']);
     } else {
       d.dokumen.forEach(dk => {
-        allDocsRows.push([d.no_dus, d.tahun, d.label, d.keterangan, dk.no, dk.nama]);
+        allDocsRows.push([d.no_dus, d.tahun, d.label, d.keterangan, d.c7 ? '✓ Sudah Dikirim' : '', dk.no, dk.nama]);
       });
     }
   });
   const wsAll = XLSX.utils.aoa_to_sheet(allDocsRows);
   wsAll['!cols'] = [
-    { wch: 8 }, { wch: 8 }, { wch: 22 }, { wch: 32 }, { wch: 8 }, { wch: 36 }
+    { wch: 8 }, { wch: 8 }, { wch: 22 }, { wch: 32 }, { wch: 18 }, { wch: 8 }, { wch: 36 }
   ];
   XLSX.utils.book_append_sheet(wb, wsAll, 'Semua Dokumen');
 
@@ -1185,6 +1182,7 @@ function exportExcel() {
       ['TAHUN', d.tahun],
       ['KETERANGAN', d.keterangan],
       ['JUMLAH DOKUMEN', d.dokumen.length],
+      ['DIKIRIM KE C7', d.c7 ? '✓ Sudah Dikirim' : 'Belum'],
       [],
       ['NO', 'NAMA DOKUMEN']
     ];
