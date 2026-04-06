@@ -1123,5 +1123,13 @@
         "nama": "SPT PPN (Januari - September)"
       }
     ]
+  },
+  {
+    "id": 26,
+    "no_dus": 23,
+    "tahun": "2012",
+    "label": "DUS 23 – 2012",
+    "keterangan": "SPT PPH, Rek koran",
+    "dokumen": []
   }
 ]
