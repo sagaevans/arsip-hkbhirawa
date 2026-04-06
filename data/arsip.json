@@ -983,6 +983,55 @@
     "tahun": "2012",
     "label": "DUS 20 – 2012",
     "keterangan": "Surat Jalan, BBM , dll",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Surat Jalan 12...3876 - 12...4125"
+      },
+      {
+        "no": 2,
+        "nama": "Surat Jalan 12...4126 - 12...4424"
+      },
+      {
+        "no": 3,
+        "nama": "Surat Jalan 12...4425 - 12...4720"
+      },
+      {
+        "no": 4,
+        "nama": "Surat Jalan 12...4721 - 12...4996"
+      },
+      {
+        "no": 5,
+        "nama": "Surat Jalan 12...4997 - 12...5353"
+      },
+      {
+        "no": 6,
+        "nama": "Bukti Bank Masuk.. 14...0000 - 14...0484"
+      },
+      {
+        "no": 7,
+        "nama": "Bukti Bank Masuk.. 14...0485 - 14...1061"
+      },
+      {
+        "no": 8,
+        "nama": "Bukti Bank Masuk.. 14...1062 - 14...1527"
+      },
+      {
+        "no": 9,
+        "nama": "Rekonsiliasi PPN Masukan"
+      },
+      {
+        "no": 10,
+        "nama": "Asuransi (Foto Copy)"
+      },
+      {
+        "no": 11,
+        "nama": "Surat Kantor Pelayanan Pajak"
+      },
+      {
+        "no": 12,
+        "nama": "Survei Produksi"
+      }
+    ]
   }
 ]
