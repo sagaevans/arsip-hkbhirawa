@@ -784,6 +784,67 @@
     "tahun": "2012",
     "label": "DUS 17 – 2012",
     "keterangan": "BPB-BON-NOTA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BPB BARANG JADI JAN-OKT"
+      },
+      {
+        "no": 2,
+        "nama": "BPB BARANG JADI NOV-DES"
+      },
+      {
+        "no": 3,
+        "nama": "BPB JANUARI"
+      },
+      {
+        "no": 4,
+        "nama": "BPB FEBRUARI"
+      },
+      {
+        "no": 5,
+        "nama": "BPB JULI"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM No. Dok  17.. / 18../ 19.."
+      },
+      {
+        "no": 7,
+        "nama": "BON BARANG JAN-FEB"
+      },
+      {
+        "no": 8,
+        "nama": "BON BARANG MAR-APR"
+      },
+      {
+        "no": 9,
+        "nama": "NOTA PENJUALAN JAN-FEB"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA PENJUALAN MAR-APR"
+      },
+      {
+        "no": 11,
+        "nama": "NOTA PENJUALAN MEI-JUNI"
+      },
+      {
+        "no": 12,
+        "nama": "NOTA PENJUALAN JULI-AGS"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA PENJUALAN SEPT-OKT"
+      },
+      {
+        "no": 14,
+        "nama": "NOTA PENJUALAN NOV-DES"
+      },
+      {
+        "no": 15,
+        "nama": "NOTA KREDIT"
+      }
+    ]
   }
 ]
