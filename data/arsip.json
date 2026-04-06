@@ -846,5 +846,13 @@
         "nama": "NOTA KREDIT"
       }
     ]
+  },
+  {
+    "id": 21,
+    "no_dus": 18,
+    "tahun": "2012",
+    "label": "DUS 18 – 2012",
+    "keterangan": "BON, SP, BKK",
+    "dokumen": []
   }
 ]
