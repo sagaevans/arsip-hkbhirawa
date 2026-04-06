@@ -1179,6 +1179,43 @@
     "tahun": "2012",
     "label": "DUS 24 – 2012",
     "keterangan": "LAPORAN PRODUKSI, GUDANG, DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LAP HARIAN COBLE & BREAKDOWN"
+      },
+      {
+        "no": 2,
+        "nama": "LAPORAN PRODUKSI (HARIAN)"
+      },
+      {
+        "no": 3,
+        "nama": "LAPORAN PRODUKSI (HARIAN)"
+      },
+      {
+        "no": 4,
+        "nama": "KREDIT PAJAK PPH PASAL 23"
+      },
+      {
+        "no": 5,
+        "nama": "PENGELUARAN BARANG GUDANG"
+      },
+      {
+        "no": 6,
+        "nama": "LAPORAN PRODUKSI AKTUAL"
+      },
+      {
+        "no": 7,
+        "nama": "PERPANJANGAN ASURANSI"
+      },
+      {
+        "no": 8,
+        "nama": "DOKUMEN SAP"
+      },
+      {
+        "no": 9,
+        "nama": "REK  KORAN (FC) BCA / DANAMON"
+      }
+    ]
   }
 ]
