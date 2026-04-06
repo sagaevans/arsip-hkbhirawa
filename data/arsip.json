@@ -1082,5 +1082,13 @@
         "nama": "Memo 2012"
       }
     ]
+  },
+  {
+    "id": 25,
+    "no_dus": 22,
+    "tahun": "2012",
+    "label": "DUS 22 – 2012",
+    "keterangan": "Konfirmasi Pesanan, SPT PPN, BPB Billet",
+    "dokumen": []
   }
 ]
