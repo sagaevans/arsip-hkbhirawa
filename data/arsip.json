@@ -1040,6 +1040,47 @@
     "tahun": "2012",
     "label": "DUS 21 – 2012",
     "keterangan": "Surat campur",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "L/C Billet 2012"
+      },
+      {
+        "no": 2,
+        "nama": "Bon Billet 2012"
+      },
+      {
+        "no": 3,
+        "nama": "Surat ASKEP 2012 (Bank Danamon)"
+      },
+      {
+        "no": 4,
+        "nama": "Rekening Koran (Fotocopy) 2012"
+      },
+      {
+        "no": 5,
+        "nama": "Berita Acara 2012"
+      },
+      {
+        "no": 6,
+        "nama": "Rekening Koran (Asli) 2012 - BCA, HSBC"
+      },
+      {
+        "no": 7,
+        "nama": "Rekening Koran (Asli) 2012 - ICBC, UOB"
+      },
+      {
+        "no": 8,
+        "nama": "FP kuning agustus-okt 2012"
+      },
+      {
+        "no": 9,
+        "nama": "FP kuning nov-des 2012"
+      },
+      {
+        "no": 10,
+        "nama": "Memo 2012"
+      }
+    ]
   }
 ]
