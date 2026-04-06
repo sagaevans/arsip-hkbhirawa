@@ -853,6 +853,67 @@
     "tahun": "2012",
     "label": "DUS 18 – 2012",
     "keterangan": "BON, SP, BKK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BON BARANG MEI - JUNI"
+      },
+      {
+        "no": 2,
+        "nama": "BON BARANG JULI - AGS"
+      },
+      {
+        "no": 3,
+        "nama": "BON BARANG SEPT - OKT"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT PESANAN JAN - MAR"
+      },
+      {
+        "no": 5,
+        "nama": "SURAT PESANAN APR - MEI"
+      },
+      {
+        "no": 6,
+        "nama": "SURAT PESANAN JUNI - JULI"
+      },
+      {
+        "no": 7,
+        "nama": "SURAT PESANAN AGS - SEPT"
+      },
+      {
+        "no": 8,
+        "nama": "SURAT PESANAN OKT - NOV"
+      },
+      {
+        "no": 9,
+        "nama": "SURAT PESANAN DESEMBER"
+      },
+      {
+        "no": 10,
+        "nama": "KAS KELUAR 2101...0000 - 2101...0139"
+      },
+      {
+        "no": 11,
+        "nama": "KAS KELUAR 2101...0223 - 2101...0324"
+      },
+      {
+        "no": 12,
+        "nama": "KAS KELUAR 2101...0325 - 2101...0388"
+      },
+      {
+        "no": 13,
+        "nama": "KAS KELUAR 2101...0140 - 2101...0222"
+      },
+      {
+        "no": 14,
+        "nama": "BBK WIREMESH 2111…."
+      },
+      {
+        "no": 15,
+        "nama": "SURAT JALAN 12...000 - 12...0272"
+      }
+    ]
   }
 ]
