@@ -1033,5 +1033,13 @@
         "nama": "Survei Produksi"
       }
     ]
+  },
+  {
+    "id": 24,
+    "no_dus": 21,
+    "tahun": "2012",
+    "label": "DUS 21 – 2012",
+    "keterangan": "Surat campur",
+    "dokumen": []
   }
 ]
