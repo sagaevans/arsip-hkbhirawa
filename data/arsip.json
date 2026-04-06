@@ -777,5 +777,13 @@
         "nama": "FAKTUR PAJAK KUNING MEI - JULI"
       }
     ]
+  },
+  {
+    "id": 20,
+    "no_dus": 17,
+    "tahun": "2012",
+    "label": "DUS 17 – 2012",
+    "keterangan": "BPB-BON-NOTA",
+    "dokumen": []
   }
 ]
