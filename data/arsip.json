@@ -1130,6 +1130,47 @@
     "tahun": "2012",
     "label": "DUS 23 – 2012",
     "keterangan": "SPT PPH, Rek koran",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPH Ps 21 2012"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPH Ps 23 2012"
+      },
+      {
+        "no": 3,
+        "nama": "SPT PPH Ps 4 Ayat 2 2012"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPH Ps 25 2012"
+      },
+      {
+        "no": 5,
+        "nama": "Faktur Pajak Batal 2012"
+      },
+      {
+        "no": 6,
+        "nama": "Kredit Pajak PPH Ps 22 2012"
+      },
+      {
+        "no": 7,
+        "nama": "Rekap Penerimaan Billet 2012"
+      },
+      {
+        "no": 8,
+        "nama": "Rek koran FC 1"
+      },
+      {
+        "no": 9,
+        "nama": "Rek koran FC 2"
+      },
+      {
+        "no": 10,
+        "nama": "Rekening koran 2012"
+      }
+    ]
   }
 ]
