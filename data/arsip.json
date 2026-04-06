@@ -922,6 +922,59 @@
     "tahun": "2012",
     "label": "DUS 19 – 2012",
     "keterangan": "SURAT JALAN 2012",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SURAT JALAN 12..0273 - 12..0571"
+      },
+      {
+        "no": 2,
+        "nama": "SURAT JALAN 12..0572 - 12..0860"
+      },
+      {
+        "no": 3,
+        "nama": "SURAT JALAN 12..0861 - 12..1100"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT JALAN 12..1101 - 12..1350"
+      },
+      {
+        "no": 5,
+        "nama": "SURAT JALAN 12..1351 - 12..1556"
+      },
+      {
+        "no": 6,
+        "nama": "SURAT JALAN 12..1557 - 12..1839"
+      },
+      {
+        "no": 7,
+        "nama": "SURAT JALAN 12..1840 - 12..2219"
+      },
+      {
+        "no": 8,
+        "nama": "SURAT JALAN 12..2120 - 12..2419"
+      },
+      {
+        "no": 9,
+        "nama": "SURAT JALAN 12..2420 - 12..2720"
+      },
+      {
+        "no": 10,
+        "nama": "SURAT JALAN 12..2721 - 12..2983"
+      },
+      {
+        "no": 11,
+        "nama": "SURAT JALAN 12..2984 - 12..3325"
+      },
+      {
+        "no": 12,
+        "nama": "SURAT JALAN 12..3326 - 12..3628"
+      },
+      {
+        "no": 13,
+        "nama": "SURAT JALAN 12..3629 - 12..3875"
+      }
+    ]
   }
 ]
