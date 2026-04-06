@@ -1172,5 +1172,13 @@
         "nama": "Rekening koran 2012"
       }
     ]
+  },
+  {
+    "id": 27,
+    "no_dus": 24,
+    "tahun": "2012",
+    "label": "DUS 24 – 2012",
+    "keterangan": "LAPORAN PRODUKSI, GUDANG, DLL",
+    "dokumen": []
   }
 ]
