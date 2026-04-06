@@ -915,5 +915,13 @@
         "nama": "SURAT JALAN 12...000 - 12...0272"
       }
     ]
+  },
+  {
+    "id": 22,
+    "no_dus": 19,
+    "tahun": "2012",
+    "label": "DUS 19 – 2012",
+    "keterangan": "SURAT JALAN 2012",
+    "dokumen": []
   }
 ]
