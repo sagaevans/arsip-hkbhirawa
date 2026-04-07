@@ -1308,5 +1308,13 @@
         "nama": "Bukti Bank Keluar (BBK) 15..0571 - 15..0608"
       }
     ]
+  },
+  {
+    "id": 30,
+    "no_dus": 3,
+    "tahun": "2013",
+    "label": "DUS 3 – 2013",
+    "keterangan": "Bukti Bank Keluar (BBK)",
+    "dokumen": []
   }
 ]
