@@ -1393,6 +1393,35 @@
     "tahun": "2013",
     "label": "DUS 5 – 2013",
     "keterangan": "Bukti Bank Keluar (BBK)",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Bukti Bank Keluar (BBK) 15..1111 - 15..1165"
+      },
+      {
+        "no": 2,
+        "nama": "Bukti Bank Keluar (BBK) 15..1166 - 15..1219"
+      },
+      {
+        "no": 3,
+        "nama": "Bukti Bank Keluar (BBK) 15..1220 - 15..1238"
+      },
+      {
+        "no": 4,
+        "nama": "Bukti Bank Keluar (BBK) 15..1239 - 15..1283"
+      },
+      {
+        "no": 5,
+        "nama": "Bukti Bank Keluar (BBK) 15..1284 - 15..1319"
+      },
+      {
+        "no": 6,
+        "nama": "Bukti Bank Keluar (BBK) 15..1320 - 15..1360"
+      },
+      {
+        "no": 7,
+        "nama": "Bukti Bank Keluar (BBK) 15..1361 - 15..1400"
+      }
+    ]
   }
 ]
