@@ -1597,6 +1597,59 @@
     "tahun": "2013",
     "label": "DUS 10 – 2013",
     "keterangan": "SURAT JALAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Surat Jalan 13..0000 - 13..0236"
+      },
+      {
+        "no": 2,
+        "nama": "Surat Jalan 13..0237 - 13..0495"
+      },
+      {
+        "no": 3,
+        "nama": "Surat Jalan 13..0496 - 13..0755"
+      },
+      {
+        "no": 4,
+        "nama": "Surat Jalan 13..0756 - 13..0967"
+      },
+      {
+        "no": 5,
+        "nama": "Surat Jalan 13..0968 - 13..1178"
+      },
+      {
+        "no": 6,
+        "nama": "Surat Jalan 13..1179 - 13..1397"
+      },
+      {
+        "no": 7,
+        "nama": "Surat Jalan 13..1398 - 13..1633"
+      },
+      {
+        "no": 8,
+        "nama": "Surat Jalan 13..1634 - 13..1879"
+      },
+      {
+        "no": 9,
+        "nama": "Surat Jalan 13..1880 - 13..2107"
+      },
+      {
+        "no": 10,
+        "nama": "Surat Jalan 13..2108 - 13..2343"
+      },
+      {
+        "no": 11,
+        "nama": "Surat Jalan 13..2344 - 13..2560"
+      },
+      {
+        "no": 12,
+        "nama": "Surat Jalan 13..2561 - 13..2783"
+      },
+      {
+        "no": 13,
+        "nama": "Surat Jalan 13..2784 - 13..3002"
+      }
+    ]
   }
 ]
