@@ -1590,5 +1590,13 @@
         "nama": "Bukti Kas Keluar (BKK) 2101..2731 - 2101..2830"
       }
     ]
+  },
+  {
+    "id": 36,
+    "no_dus": 10,
+    "tahun": "2013",
+    "label": "DUS 10 – 2013",
+    "keterangan": "SURAT JALAN",
+    "dokumen": []
   }
 ]
