@@ -1532,6 +1532,63 @@
     "tahun": "2013",
     "label": "DUS 9 – 2013",
     "keterangan": "Bukti Kas Keluar (BKK)",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1407 - 2101..1536"
+      },
+      {
+        "no": 2,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1537 - 2101..1591"
+      },
+      {
+        "no": 3,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1592 - 2101..1698"
+      },
+      {
+        "no": 4,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1699 - 2101..1802"
+      },
+      {
+        "no": 5,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1803 - 2101..1911"
+      },
+      {
+        "no": 6,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1912 - 2101..1995"
+      },
+      {
+        "no": 7,
+        "nama": "Bukti Kas Keluar (BKK) 2101..1996 - 2101..2085"
+      },
+      {
+        "no": 8,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2086 - 2101..2178"
+      },
+      {
+        "no": 9,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2179 - 2101..2312"
+      },
+      {
+        "no": 10,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2313 - 2101..2425"
+      },
+      {
+        "no": 11,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2426 - 2101..2533"
+      },
+      {
+        "no": 12,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2534 - 2101..2635"
+      },
+      {
+        "no": 13,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2636 - 2101..2730"
+      },
+      {
+        "no": 14,
+        "nama": "Bukti Kas Keluar (BKK) 2101..2731 - 2101..2830"
+      }
+    ]
   }
 ]
