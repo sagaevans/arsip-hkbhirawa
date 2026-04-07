@@ -1386,5 +1386,13 @@
         "nama": "Bukti Bank Keluar (BBK) 15..1086 - 15..1110"
       }
     ]
+  },
+  {
+    "id": 32,
+    "no_dus": 5,
+    "tahun": "2013",
+    "label": "DUS 5 – 2013",
+    "keterangan": "Bukti Bank Keluar (BBK)",
+    "dokumen": []
   }
 ]
