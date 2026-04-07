@@ -1467,6 +1467,63 @@
     "tahun": "2013",
     "label": "DUS 7 – 2013",
     "keterangan": "Bukti Kas Keluar (BKK)",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Bukti Kas Keluar (BKK) 21010000 - 21010104"
+      },
+      {
+        "no": 2,
+        "nama": "Bukti Kas Keluar (BKK) 21010105 - 21010186"
+      },
+      {
+        "no": 3,
+        "nama": "Bukti Kas Keluar (BKK) 21010187 - 21010308"
+      },
+      {
+        "no": 4,
+        "nama": "Bukti Kas Keluar (BKK) 21010309 - 21010410"
+      },
+      {
+        "no": 5,
+        "nama": "Bukti Kas Keluar (BKK) 21010411 - 21010506"
+      },
+      {
+        "no": 6,
+        "nama": "Bukti Kas Keluar (BKK) 21010507 - 21010623"
+      },
+      {
+        "no": 7,
+        "nama": "Bukti Kas Keluar (BKK) 21010624 - 21010746"
+      },
+      {
+        "no": 8,
+        "nama": "Bukti Kas Keluar (BKK) 21010747 - 21010868"
+      },
+      {
+        "no": 9,
+        "nama": "Bukti Kas Keluar (BKK) 21010869 - 21010958"
+      },
+      {
+        "no": 10,
+        "nama": "Bukti Kas Keluar (BKK) 21010959 - 21011098"
+      },
+      {
+        "no": 11,
+        "nama": "Bukti Kas Keluar (BKK) 21011099 - 21011150"
+      },
+      {
+        "no": 12,
+        "nama": "Bukti Kas Keluar (BKK) 21011151 - 21011260"
+      },
+      {
+        "no": 13,
+        "nama": "Bukti Kas Keluar (BKK) 21011261 - 21011299"
+      },
+      {
+        "no": 14,
+        "nama": "Bukti Kas Keluar (BKK) 21011300 - 21011406"
+      }
+    ]
   }
 ]
