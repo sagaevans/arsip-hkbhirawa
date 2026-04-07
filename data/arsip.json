@@ -1525,5 +1525,13 @@
         "nama": "Bukti Kas Keluar (BKK) 21011300 - 21011406"
       }
     ]
+  },
+  {
+    "id": 35,
+    "no_dus": 9,
+    "tahun": "2013",
+    "label": "DUS 9 – 2013",
+    "keterangan": "Bukti Kas Keluar (BKK)",
+    "dokumen": []
   }
 ]
