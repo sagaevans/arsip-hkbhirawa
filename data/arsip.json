@@ -1460,5 +1460,13 @@
         "nama": "Bukti Bank Keluar (BBK)  15..1651 - 15..1694"
       }
     ]
+  },
+  {
+    "id": 34,
+    "no_dus": 7,
+    "tahun": "2013",
+    "label": "DUS 7 – 2013",
+    "keterangan": "Bukti Kas Keluar (BKK)",
+    "dokumen": []
   }
 ]
