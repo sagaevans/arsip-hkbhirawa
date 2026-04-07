@@ -1226,5 +1226,13 @@
       }
     ],
     "c7": true
+  },
+  {
+    "id": 28,
+    "no_dus": 1,
+    "tahun": "2013",
+    "label": "DUS 1 – 2013",
+    "keterangan": "Bukti Bank Keluar (BBK)",
+    "dokumen": []
   }
 ]
