@@ -1766,6 +1766,39 @@
     "tahun": "2013",
     "label": "DUS 12 – 2013",
     "keterangan": "Rek Koran \nPPH\nCosting \nMemo \nFaktur pajak batal",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Rek Koran FC (Jan - Des)"
+      },
+      {
+        "no": 2,
+        "nama": "Rek Koran FC (Jan - Des)"
+      },
+      {
+        "no": 3,
+        "nama": "Rek Koran (Asli)"
+      },
+      {
+        "no": 4,
+        "nama": "PPH Pasal 23/26"
+      },
+      {
+        "no": 5,
+        "nama": "PPH Pasal 21/26"
+      },
+      {
+        "no": 6,
+        "nama": "Costing"
+      },
+      {
+        "no": 7,
+        "nama": "Memo"
+      },
+      {
+        "no": 8,
+        "nama": "Faktur pajak batal"
+      }
+    ]
   }
 ]
