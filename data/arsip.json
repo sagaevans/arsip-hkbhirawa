@@ -1960,5 +1960,13 @@
         "nama": "BBK  15...1944 - 15...2001"
       }
     ]
+  },
+  {
+    "id": 44,
+    "no_dus": 17,
+    "tahun": "2013",
+    "label": "DUS 17 – 2013",
+    "keterangan": "Bukti Bank Keluar BBK",
+    "dokumen": []
   }
 ]
