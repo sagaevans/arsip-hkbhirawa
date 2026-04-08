@@ -1725,6 +1725,39 @@
     "tahun": "2013",
     "label": "DUS 11 – 2013",
     "keterangan": "FAKTUR PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP Masukan  (Januari)"
+      },
+      {
+        "no": 2,
+        "nama": "FP Masukan  (Februari - Maret)"
+      },
+      {
+        "no": 3,
+        "nama": "FP Masukan  (April - Mei)"
+      },
+      {
+        "no": 4,
+        "nama": "FP Masukan  (Juni - Agustus)"
+      },
+      {
+        "no": 5,
+        "nama": "FP Masukan  (September)"
+      },
+      {
+        "no": 6,
+        "nama": "PPH Pasal 4 Ayat 2"
+      },
+      {
+        "no": 7,
+        "nama": "PPH Pasal 25"
+      },
+      {
+        "no": 8,
+        "nama": "PPH Pasal 22"
+      }
+    ]
   }
 ]
