@@ -2004,6 +2004,39 @@
     "tahun": "2013",
     "label": "DUS 18 – 2013",
     "keterangan": "Bukti Bank Keluar (BBK)",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Siap, ini dipisah (tidak digabung sebelumnya) dan sudah pakai format yang kamu mau:"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 15...2275 - 15...2326"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 15...2327 - 15...2363"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 15...2364 - 15...2426"
+      },
+      {
+        "no": 5,
+        "nama": "BBK 15...2427 - 15...2475"
+      },
+      {
+        "no": 6,
+        "nama": "BBK 15...2476 - 15...2494"
+      },
+      {
+        "no": 7,
+        "nama": "BBK 15...2495 - 15...2532"
+      },
+      {
+        "no": 8,
+        "nama": "BBK 15...2533 - 15...2590"
+      }
+    ]
   }
 ]
