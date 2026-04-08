@@ -1882,5 +1882,13 @@
         "nama": "Laporan LLD BI 2002-2013"
       }
     ]
+  },
+  {
+    "id": 42,
+    "no_dus": 15,
+    "tahun": "2013",
+    "label": "DUS 15 – 2013",
+    "keterangan": "Dokumen pajak",
+    "dokumen": []
   }
 ]
