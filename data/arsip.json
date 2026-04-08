@@ -1997,5 +1997,13 @@
         "nama": "BBK 15...2242 - 15...2274"
       }
     ]
+  },
+  {
+    "id": 45,
+    "no_dus": 18,
+    "tahun": "2013",
+    "label": "DUS 18 – 2013",
+    "keterangan": "Bukti Bank Keluar (BBK)",
+    "dokumen": []
   }
 ]
