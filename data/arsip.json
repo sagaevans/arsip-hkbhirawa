@@ -1807,6 +1807,39 @@
     "tahun": "2013",
     "label": "DUS 13 – 2013",
     "keterangan": "Dokumen Pajak",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP  Kuning  Januari"
+      },
+      {
+        "no": 2,
+        "nama": "FP  Kuning  Februari - Maret"
+      },
+      {
+        "no": 3,
+        "nama": "FP  Kuning  April - Mei"
+      },
+      {
+        "no": 4,
+        "nama": "FP  Kuning  Juni - Juli"
+      },
+      {
+        "no": 5,
+        "nama": "FP  Kuning  Agustus - September"
+      },
+      {
+        "no": 6,
+        "nama": "FP  Kuning  Oktober - Desember"
+      },
+      {
+        "no": 7,
+        "nama": "SPT PPN  Januari - April"
+      },
+      {
+        "no": 8,
+        "nama": "SPT PPN  Mei - Juni"
+      }
+    ]
   }
 ]
