@@ -1889,6 +1889,39 @@
     "tahun": "2013",
     "label": "DUS 15 – 2013",
     "keterangan": "Dokumen pajak",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Fc SPT Masa PPH & PPN"
+      },
+      {
+        "no": 2,
+        "nama": "FPK Merah Jan - feb"
+      },
+      {
+        "no": 3,
+        "nama": "FPK Merah Mar - Apr"
+      },
+      {
+        "no": 4,
+        "nama": "FPK Merah  Mei - Juni"
+      },
+      {
+        "no": 5,
+        "nama": "FPK Merah  Juli - Ags"
+      },
+      {
+        "no": 6,
+        "nama": "FPK Merah Sept - Okt"
+      },
+      {
+        "no": 7,
+        "nama": "FPK Merah Nov - Des"
+      },
+      {
+        "no": 8,
+        "nama": "Berita Acara"
+      }
+    ]
   }
 ]
