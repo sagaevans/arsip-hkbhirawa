@@ -1759,5 +1759,13 @@
         "nama": "PPH Pasal 22"
       }
     ]
+  },
+  {
+    "id": 39,
+    "no_dus": 12,
+    "tahun": "2013",
+    "label": "DUS 12 – 2013",
+    "keterangan": "Rek Koran \nPPH\nCosting \nMemo \nFaktur pajak batal",
+    "dokumen": []
   }
 ]
