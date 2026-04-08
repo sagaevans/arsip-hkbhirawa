@@ -1923,5 +1923,13 @@
         "nama": "Berita Acara"
       }
     ]
+  },
+  {
+    "id": 43,
+    "no_dus": 16,
+    "tahun": "2013",
+    "label": "DUS 16 – 2013",
+    "keterangan": "Bukti Bank Keluar (BBK)",
+    "dokumen": []
   }
 ]
