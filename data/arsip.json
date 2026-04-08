@@ -1848,6 +1848,39 @@
     "tahun": "2013",
     "label": "DUS 14 – 2013",
     "keterangan": "dokumen pajak dll",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPN  Ags - Okt"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPN  Nov- Des"
+      },
+      {
+        "no": 3,
+        "nama": "Laporan Produksi"
+      },
+      {
+        "no": 4,
+        "nama": "Ekspor Barang"
+      },
+      {
+        "no": 5,
+        "nama": "Kontrak dan Perjanjian"
+      },
+      {
+        "no": 6,
+        "nama": "Asuransi (Fc)"
+      },
+      {
+        "no": 7,
+        "nama": "(Fc) SPT  PPH & PPN"
+      },
+      {
+        "no": 8,
+        "nama": "Laporan LLD BI 2002-2013"
+      }
+    ]
   }
 ]
