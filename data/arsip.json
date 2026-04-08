@@ -1841,5 +1841,13 @@
         "nama": "SPT PPN  Mei - Juni"
       }
     ]
+  },
+  {
+    "id": 41,
+    "no_dus": 14,
+    "tahun": "2013",
+    "label": "DUS 14 – 2013",
+    "keterangan": "dokumen pajak dll",
+    "dokumen": []
   }
 ]
