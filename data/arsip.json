@@ -1800,5 +1800,13 @@
         "nama": "Faktur pajak batal"
       }
     ]
+  },
+  {
+    "id": 40,
+    "no_dus": 13,
+    "tahun": "2013",
+    "label": "DUS 13 – 2013",
+    "keterangan": "Dokumen Pajak",
+    "dokumen": []
   }
 ]
