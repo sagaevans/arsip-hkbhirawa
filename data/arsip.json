@@ -1464,7 +1464,8 @@
         "no": 7,
         "nama": "Bukti Bank Keluar (BBK)  15..1651 - 15..1694"
       }
-    ]
+    ],
+    "c7": true
   },
   {
     "id": 34,
@@ -1529,7 +1530,8 @@
         "no": 14,
         "nama": "Bukti Kas Keluar (BKK) 21011300 - 21011406"
       }
-    ]
+    ],
+    "c7": false
   },
   {
     "id": 35,
