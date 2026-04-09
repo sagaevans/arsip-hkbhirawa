@@ -2457,5 +2457,13 @@
         "nama": "Amplop coklat"
       }
     ]
+  },
+  {
+    "id": 53,
+    "no_dus": 26,
+    "tahun": "2013",
+    "label": "DUS 26 – 2013",
+    "keterangan": "Dokumen Pajak dan Customer",
+    "dokumen": []
   }
 ]
