@@ -2518,5 +2518,13 @@
         "nama": "Bpb billet"
       }
     ]
+  },
+  {
+    "id": 54,
+    "no_dus": 27,
+    "tahun": "2013",
+    "label": "DUS 27 – 2013",
+    "keterangan": "PAJAK",
+    "dokumen": []
   }
 ]
