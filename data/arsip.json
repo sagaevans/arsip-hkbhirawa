@@ -2079,5 +2079,13 @@
         "nama": "KP 80...1392 - 80...1573"
       }
     ]
+  },
+  {
+    "id": 47,
+    "no_dus": 20,
+    "tahun": "2013",
+    "label": "DUS 20 – 2013",
+    "keterangan": "Konfirmasi Pesanan",
+    "dokumen": []
   }
 ]
