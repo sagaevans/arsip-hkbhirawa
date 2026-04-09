@@ -2042,5 +2042,13 @@
       }
     ],
     "c7": true
+  },
+  {
+    "id": 46,
+    "no_dus": 19,
+    "tahun": "2013",
+    "label": "DUS 19 – 2013",
+    "keterangan": "BBK, KP, Bon Billet, Rekon PPN",
+    "dokumen": []
   }
 ]
