@@ -2535,5 +2535,13 @@
         "nama": "PPN masukan Januari - april"
       }
     ]
+  },
+  {
+    "id": 55,
+    "no_dus": 28,
+    "tahun": "2013",
+    "label": "DUS 28 – 2013",
+    "keterangan": "PAJAK DLL",
+    "dokumen": []
   }
 ]
