@@ -2258,5 +2258,13 @@
         "nama": "BBM WRG 146..000-005"
       }
     ]
+  },
+  {
+    "id": 50,
+    "no_dus": 23,
+    "tahun": "2013",
+    "label": "DUS 23 – 2013",
+    "keterangan": "BKK, BBK/BBM",
+    "dokumen": []
   }
 ]
