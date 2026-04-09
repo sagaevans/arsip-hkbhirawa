@@ -2464,6 +2464,59 @@
     "tahun": "2013",
     "label": "DUS 26 – 2013",
     "keterangan": "Dokumen Pajak dan Customer",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Audit 2013-2014"
+      },
+      {
+        "no": 2,
+        "nama": "Supporting document LK"
+      },
+      {
+        "no": 3,
+        "nama": "File detail customer"
+      },
+      {
+        "no": 4,
+        "nama": "File detail customer"
+      },
+      {
+        "no": 5,
+        "nama": "File detail customer"
+      },
+      {
+        "no": 6,
+        "nama": "Bukpot pph23 & 4"
+      },
+      {
+        "no": 7,
+        "nama": "FP okt"
+      },
+      {
+        "no": 8,
+        "nama": "FP NOV"
+      },
+      {
+        "no": 9,
+        "nama": "FP Des"
+      },
+      {
+        "no": 10,
+        "nama": "FP juli"
+      },
+      {
+        "no": 11,
+        "nama": "Ags"
+      },
+      {
+        "no": 12,
+        "nama": "Sept"
+      },
+      {
+        "no": 13,
+        "nama": "Bpb billet"
+      }
+    ]
   }
 ]
