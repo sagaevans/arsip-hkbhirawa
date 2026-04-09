@@ -2334,6 +2334,67 @@
     "tahun": "2013",
     "label": "DUS 24 – 2013",
     "keterangan": "BBK/BBM, SJ",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10...2336 - 2525"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10...2526 - 4298"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10...4299 - 4445"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10...4446 - 4660"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10...4661 - 4870"
+      },
+      {
+        "no": 6,
+        "nama": "SURAT JALAN 13...5709 - 5941"
+      },
+      {
+        "no": 7,
+        "nama": "SURAT JALAN 13...5942 - 6103"
+      },
+      {
+        "no": 8,
+        "nama": "TANDA TERIMA BUKTI POTONG 2013"
+      },
+      {
+        "no": 9,
+        "nama": "BKK WIREMESH 2111...0000 - 0110"
+      },
+      {
+        "no": 10,
+        "nama": "BKK WIREMESH 2111...0111 - 0165"
+      },
+      {
+        "no": 11,
+        "nama": "BBM 14...0000 - 0509"
+      },
+      {
+        "no": 12,
+        "nama": "BBM 14...0510 - 0950"
+      },
+      {
+        "no": 13,
+        "nama": "BBM 14...0951 - 1600"
+      },
+      {
+        "no": 14,
+        "nama": "BBM 14...1601 - 1850"
+      },
+      {
+        "no": 15,
+        "nama": "SURAT JALAN WIREMESH"
+      }
+    ]
   }
 ]
