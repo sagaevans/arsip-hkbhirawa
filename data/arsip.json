@@ -2196,6 +2196,67 @@
     "tahun": "2013",
     "label": "DUS 22 – 2013",
     "keterangan": "NOTA, PO, DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Nota Penjualan APR-MEI"
+      },
+      {
+        "no": 2,
+        "nama": "Nota Penjualan AGS-SEPT"
+      },
+      {
+        "no": 3,
+        "nama": "Nota Penjualan OKT-DES"
+      },
+      {
+        "no": 4,
+        "nama": "PO 22..3069 - 3537"
+      },
+      {
+        "no": 5,
+        "nama": "PO 22..3538 - 4020"
+      },
+      {
+        "no": 6,
+        "nama": "PO 22..4021 - 4505"
+      },
+      {
+        "no": 7,
+        "nama": "BPB JAN-FEB"
+      },
+      {
+        "no": 8,
+        "nama": "BPB MAR-APR"
+      },
+      {
+        "no": 9,
+        "nama": "BPB MEI-JUNI"
+      },
+      {
+        "no": 10,
+        "nama": "BPB JULI-AGS"
+      },
+      {
+        "no": 11,
+        "nama": "BPB SEP-OKT"
+      },
+      {
+        "no": 12,
+        "nama": "BPB NOV-DES"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA KREDIT"
+      },
+      {
+        "no": 14,
+        "nama": "ONGKOS ANGKUT"
+      },
+      {
+        "no": 15,
+        "nama": "BBM WRG 146..000-005"
+      }
+    ]
   }
 ]
