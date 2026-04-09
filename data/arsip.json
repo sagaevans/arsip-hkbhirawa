@@ -1800,7 +1800,8 @@
         "no": 8,
         "nama": "Faktur pajak batal"
       }
-    ]
+    ],
+    "c7": false
   },
   {
     "id": 40,
@@ -1841,7 +1842,8 @@
         "no": 8,
         "nama": "SPT PPN  Mei - Juni"
       }
-    ]
+    ],
+    "c7": true
   },
   {
     "id": 41,
