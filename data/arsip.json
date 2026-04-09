@@ -2396,5 +2396,13 @@
         "nama": "SURAT JALAN WIREMESH"
       }
     ]
+  },
+  {
+    "id": 52,
+    "no_dus": 25,
+    "tahun": "2013",
+    "label": "DUS 25 – 2013",
+    "keterangan": "SURAT PESANAN, PO",
+    "dokumen": []
   }
 ]
