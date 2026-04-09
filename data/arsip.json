@@ -2327,5 +2327,13 @@
         "nama": "BBK/BBM 10...2133 - 2335"
       }
     ]
+  },
+  {
+    "id": 51,
+    "no_dus": 24,
+    "tahun": "2013",
+    "label": "DUS 24 – 2013",
+    "keterangan": "BBK/BBM, SJ",
+    "dokumen": []
   }
 ]
