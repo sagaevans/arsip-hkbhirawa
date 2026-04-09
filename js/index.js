@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const grid     = document.getElementById("cards-grid");
   const sInput   = document.getElementById("s-input");
   const fTahun   = document.getElementById("f-tahun");
+  const fC7      = document.getElementById("f-c7"); // [BARU] Inisialisasi elemen C7
   const statDus  = document.getElementById("stat-dus");
   const statDok  = document.getElementById("stat-dok");
   const resLbl   = document.getElementById("result-lbl");
@@ -48,13 +49,25 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   function filter() {
-    const q   = sInput.value.trim().toLowerCase();
-    const thn = fTahun.value;
+    const q     = sInput.value.trim().toLowerCase();
+    const thn   = fTahun.value;
+    const c7Val = fC7.value; // [BARU] Ambil nilai dropdown C7
+
     const out = data.filter(d => {
       const thnOk = !thn || d.tahun === thn;
       const qOk   = !q   || [d.label, d.keterangan, d.tahun].join(" ").toLowerCase().includes(q);
-      return thnOk && qOk;
+      
+      // [BARU] Logika Pengecekan C7
+      let c7Ok = true;
+      if (c7Val === "sudah") {
+        c7Ok = d.c7 === true; // Tampilkan yang d.c7 bernilai true
+      } else if (c7Val === "belum") {
+        c7Ok = !d.c7;         // Tampilkan yang d.c7 bernilai false/undefined
+      }
+
+      return thnOk && qOk && c7Ok; // Gabungkan syarat C7 ke dalam return
     });
+    
     resLbl.textContent = `${out.length} dari ${data.length} dus`;
     render(out, q);
   }
@@ -86,4 +99,5 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   sInput.addEventListener("input", filter);
   fTahun.addEventListener("change", filter);
+  fC7.addEventListener("change", filter); // [BARU] Memicu filter saat C7 diganti
 });
