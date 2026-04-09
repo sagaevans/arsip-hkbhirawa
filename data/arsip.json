@@ -2189,5 +2189,13 @@
         "nama": "Nota Penjualan JUNI - JULI"
       }
     ]
+  },
+  {
+    "id": 49,
+    "no_dus": 22,
+    "tahun": "2013",
+    "label": "DUS 22 – 2013",
+    "keterangan": "NOTA, PO, DLL",
+    "dokumen": []
   }
 ]
