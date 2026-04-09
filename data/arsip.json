@@ -2525,6 +2525,15 @@
     "tahun": "2013",
     "label": "DUS 27 – 2013",
     "keterangan": "PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Faktur pajak Januari - Juni"
+      },
+      {
+        "no": 2,
+        "nama": "PPN masukan Januari - april"
+      }
+    ]
   }
 ]
