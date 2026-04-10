@@ -3392,5 +3392,13 @@
         "nama": "PPH4 AYAT 2"
       }
     ]
+  },
+  {
+    "id": 70,
+    "no_dus": 14,
+    "tahun": "2011",
+    "label": "DUS 14 – 2011",
+    "keterangan": "DOKUMEN PAJAK",
+    "dokumen": []
   }
 ]
