@@ -3350,6 +3350,47 @@
     "tahun": "2011",
     "label": "DUS 14 – 2011",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP MERAH JAN-OKT"
+      },
+      {
+        "no": 2,
+        "nama": "FP MERAH NOV-DES"
+      },
+      {
+        "no": 3,
+        "nama": "ASURANSI ADIRA-LIPPO"
+      },
+      {
+        "no": 4,
+        "nama": "PAJAK MASUKAN"
+      },
+      {
+        "no": 5,
+        "nama": "PAJAK MASUKAN"
+      },
+      {
+        "no": 6,
+        "nama": "PAJAK MASUKAN"
+      },
+      {
+        "no": 7,
+        "nama": "PAJAK MASUKAN"
+      },
+      {
+        "no": 8,
+        "nama": "DOKUMEN SAP"
+      },
+      {
+        "no": 9,
+        "nama": "SPT PPN"
+      },
+      {
+        "no": 10,
+        "nama": "PPH4 AYAT 2"
+      }
+    ]
   }
 ]
