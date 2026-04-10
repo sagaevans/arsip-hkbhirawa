@@ -2643,5 +2643,13 @@
         "nama": "BBK/BBM 10 2087-2180"
       }
     ]
+  },
+  {
+    "id": 57,
+    "no_dus": 2,
+    "tahun": "2011",
+    "label": "DUS 2 – 2011",
+    "keterangan": "BBK/BBM",
+    "dokumen": []
   }
 ]
