@@ -3432,6 +3432,55 @@
     "tahun": "2010-2014",
     "label": "DUS 1 – 2010-2014",
     "keterangan": "DOKUMEN CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKU BESAR 2011"
+      },
+      {
+        "no": 2,
+        "nama": "FP 2011"
+      },
+      {
+        "no": 3,
+        "nama": "BBK MEI-DES 2012"
+      },
+      {
+        "no": 4,
+        "nama": "LAP KEU JAN-FEB 2011"
+      },
+      {
+        "no": 5,
+        "nama": "BBK JAN-MEI 2014"
+      },
+      {
+        "no": 6,
+        "nama": "PEND. LAP. KEU 2010"
+      },
+      {
+        "no": 7,
+        "nama": "NERACA JAN-FEB 2011"
+      },
+      {
+        "no": 8,
+        "nama": "B. BESAR JAN 2011"
+      },
+      {
+        "no": 9,
+        "nama": "UPAH KARYAWAN 2011"
+      },
+      {
+        "no": 10,
+        "nama": "BBK 2013"
+      },
+      {
+        "no": 11,
+        "nama": "BBK JAN-MEI 2012"
+      },
+      {
+        "no": 12,
+        "nama": "UPAH KARYAWAN 2013"
+      }
+    ]
   }
 ]
