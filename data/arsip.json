@@ -2850,6 +2850,47 @@
     "tahun": "2011",
     "label": "DUS 6 – 2011",
     "keterangan": "BBK DAN DOKUMEN LAINNYA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK 15 967 - 1007"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 15 1008 - 1031"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 15 1032 - 1083"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 15 1084 - 1105"
+      },
+      {
+        "no": 5,
+        "nama": "BBK 15 1106 - 1132"
+      },
+      {
+        "no": 6,
+        "nama": "BBK 15 1133 - 1181"
+      },
+      {
+        "no": 7,
+        "nama": "BBK 15 1183 - 1210"
+      },
+      {
+        "no": 8,
+        "nama": "MIRO TAHUN 2011"
+      },
+      {
+        "no": 9,
+        "nama": "BPB BILEET 2011"
+      },
+      {
+        "no": 10,
+        "nama": "BUKU PIUTANG JANUARI 2011"
+      }
+    ]
   }
 ]
