@@ -2569,6 +2569,79 @@
     "tahun": "2011",
     "label": "DUS 1 – 2011",
     "keterangan": "BBK/BBM",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10 000-239"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10 240-345"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10 346-498"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10 499-602"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10 603-681"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 10 682-777"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 10 778-818"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 10 819-934"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10 935-1065"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10 1066-1212"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10 1213-1317"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10 1318-1412"
+      },
+      {
+        "no": 13,
+        "nama": "BBK/BBM 10 1413-1546"
+      },
+      {
+        "no": 14,
+        "nama": "BBK/BBM 10 1547-1692"
+      },
+      {
+        "no": 15,
+        "nama": "BBK/BBM 10 1693-1766"
+      },
+      {
+        "no": 16,
+        "nama": "BBK/BBM 10 1767-1932"
+      },
+      {
+        "no": 17,
+        "nama": "BBK/BBM 10 1933-2086"
+      },
+      {
+        "no": 18,
+        "nama": "BBK/BBM 10 2087-2180"
+      }
+    ]
   }
 ]
