@@ -3499,5 +3499,13 @@
         "nama": "BUKU HARIAN JAN-DES 2014"
       }
     ]
+  },
+  {
+    "id": 73,
+    "no_dus": 1,
+    "tahun": "1997-2010",
+    "label": "DUS 1 – 1997-2010",
+    "keterangan": "DOKUMEN CAMPURAN",
+    "dokumen": []
   }
 ]
