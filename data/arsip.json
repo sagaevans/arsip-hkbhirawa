@@ -2745,5 +2745,13 @@
         "nama": "BBK/BBM 15 223-246"
       }
     ]
+  },
+  {
+    "id": 59,
+    "no_dus": 4,
+    "tahun": "2011",
+    "label": "DUS 4 – 2011",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
