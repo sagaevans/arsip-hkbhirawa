@@ -3245,5 +3245,13 @@
         "nama": "BBK 15 1520 - 1534"
       }
     ]
+  },
+  {
+    "id": 67,
+    "no_dus": 12,
+    "tahun": "2011",
+    "label": "DUS 12 – 2011",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
