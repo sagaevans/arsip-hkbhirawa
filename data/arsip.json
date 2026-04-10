@@ -3608,6 +3608,15 @@
     "tahun": "2014-2015",
     "label": "DUS 1 – 2014-2015",
     "keterangan": "B HARIAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKU HARIAN OKT-DES 2014"
+      },
+      {
+        "no": 2,
+        "nama": "BUKU HARIAN JAN-DES 2015"
+      }
+    ]
   }
 ]
