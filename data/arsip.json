@@ -2190,7 +2190,8 @@
         "no": 15,
         "nama": "Nota Penjualan JUNI - JULI"
       }
-    ]
+    ],
+    "c7": false
   },
   {
     "id": 49,
@@ -2259,7 +2260,8 @@
         "no": 15,
         "nama": "BBM WRG 146..000-005"
       }
-    ]
+    ],
+    "c7": true
   },
   {
     "id": 50,
