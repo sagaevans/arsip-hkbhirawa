@@ -2696,5 +2696,13 @@
         "nama": "BBK/BBM L000 320-386"
       }
     ]
+  },
+  {
+    "id": 58,
+    "no_dus": 3,
+    "tahun": "2011",
+    "label": "DUS 3 – 2011",
+    "keterangan": "BBK/BBM",
+    "dokumen": []
   }
 ]
