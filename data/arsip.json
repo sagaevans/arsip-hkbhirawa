@@ -3294,5 +3294,13 @@
         "nama": "BBK 15 1936 - 1980"
       }
     ]
+  },
+  {
+    "id": 68,
+    "no_dus": 13,
+    "tahun": "2011",
+    "label": "DUS 13 – 2011",
+    "keterangan": "BBK DAN DOKUMEN LAINNYA",
+    "dokumen": []
   }
 ]
