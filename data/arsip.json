@@ -3489,6 +3489,15 @@
     "tahun": "2013-2014",
     "label": "DUS 1 – 2013-2014",
     "keterangan": "BUKU HARIAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKU HARIAN JULI-DES 2013"
+      },
+      {
+        "no": 2,
+        "nama": "BUKU HARIAN JAN-DES 2014"
+      }
+    ]
   }
 ]
