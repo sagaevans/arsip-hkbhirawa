@@ -3482,5 +3482,13 @@
         "nama": "UPAH KARYAWAN 2013"
       }
     ]
+  },
+  {
+    "id": 72,
+    "no_dus": 1,
+    "tahun": "2013-2014",
+    "label": "DUS 1 – 2013-2014",
+    "keterangan": "BUKU HARIAN",
+    "dokumen": []
   }
 ]
