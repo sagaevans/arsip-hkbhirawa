@@ -2892,5 +2892,13 @@
         "nama": "BUKU PIUTANG JANUARI 2011"
       }
     ]
+  },
+  {
+    "id": 62,
+    "no_dus": 7,
+    "tahun": "2011",
+    "label": "DUS 7 – 2011",
+    "keterangan": "BPB",
+    "dokumen": []
   }
 ]
