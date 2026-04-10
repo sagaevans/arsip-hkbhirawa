@@ -2980,6 +2980,63 @@
     "tahun": "2011",
     "label": "DUS 8 – 2011",
     "keterangan": "BANK DAN DOKUMEN LAINNYA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBM 14000-379"
+      },
+      {
+        "no": 2,
+        "nama": "KAS 2101309-422"
+      },
+      {
+        "no": 3,
+        "nama": "KAS 2101423-481"
+      },
+      {
+        "no": 4,
+        "nama": "KAS 2101482-536"
+      },
+      {
+        "no": 5,
+        "nama": "KONTRAK & PENJUALAN LAIN"
+      },
+      {
+        "no": 6,
+        "nama": "PERJANJIAN KONTRAK"
+      },
+      {
+        "no": 7,
+        "nama": "BON BILLET"
+      },
+      {
+        "no": 8,
+        "nama": "L/C BILLET"
+      },
+      {
+        "no": 9,
+        "nama": "BUKTI POTONG PPH22 & 23"
+      },
+      {
+        "no": 10,
+        "nama": "PIB"
+      },
+      {
+        "no": 11,
+        "nama": "KONFIRMASI AUDIT"
+      },
+      {
+        "no": 12,
+        "nama": "NOTA KREDIT"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA 18000000"
+      },
+      {
+        "no": 14,
+        "nama": "TT BUKTI POTONG PPH"
+      }
+    ]
   }
 ]
