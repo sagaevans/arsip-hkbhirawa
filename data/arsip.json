@@ -3555,6 +3555,51 @@
     "tahun": "2009-2011",
     "label": "DUS 1 – 2009-2011",
     "keterangan": "FILE KOPERASI",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BKM 2009-2010"
+      },
+      {
+        "no": 2,
+        "nama": "TAGIHAN"
+      },
+      {
+        "no": 3,
+        "nama": "DATA PEMINJAM 2013"
+      },
+      {
+        "no": 4,
+        "nama": "DAFTAR ANGGOTA BARU"
+      },
+      {
+        "no": 5,
+        "nama": "BKK 2010 NO6"
+      },
+      {
+        "no": 6,
+        "nama": "bkk 2009-2010"
+      },
+      {
+        "no": 7,
+        "nama": "BKK 2010 NO 7-10"
+      },
+      {
+        "no": 8,
+        "nama": "BKK 2011NO 11-14"
+      },
+      {
+        "no": 9,
+        "nama": "DATA EMERGENCY"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA DAN SJ"
+      },
+      {
+        "no": 11,
+        "nama": "DATA KOPERASI 2012-2014"
+      }
+    ]
   }
 ]
