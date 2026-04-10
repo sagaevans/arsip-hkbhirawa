@@ -3548,5 +3548,13 @@
         "nama": "SK-BPB 2008-2012"
       }
     ]
+  },
+  {
+    "id": 74,
+    "no_dus": 1,
+    "tahun": "2009-2011",
+    "label": "DUS 1 – 2009-2011",
+    "keterangan": "FILE KOPERASI",
+    "dokumen": []
   }
 ]
