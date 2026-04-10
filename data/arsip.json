@@ -2191,7 +2191,7 @@
         "nama": "Nota Penjualan JUNI - JULI"
       }
     ],
-    "c7": false
+    "c7": true
   },
   {
     "id": 49,
@@ -2330,7 +2330,8 @@
         "no": 15,
         "nama": "BBK/BBM 10...2133 - 2335"
       }
-    ]
+    ],
+    "c7": true
   },
   {
     "id": 51,
