@@ -2703,6 +2703,47 @@
     "tahun": "2011",
     "label": "DUS 3 – 2011",
     "keterangan": "BBK/BBM",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK/BBM L000 387-430"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM L000 431-499"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM L000 500-501"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM L000 502-558"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 15 000-66"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 15 67-121"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 15 122-161"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 15 162-189"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 15 190-222"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 15 223-246"
+      }
+    ]
   }
 ]
