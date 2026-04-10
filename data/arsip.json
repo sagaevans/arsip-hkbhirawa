@@ -3038,5 +3038,13 @@
         "nama": "TT BUKTI POTONG PPH"
       }
     ]
+  },
+  {
+    "id": 64,
+    "no_dus": 9,
+    "tahun": "2011",
+    "label": "DUS 9 – 2011",
+    "keterangan": "BBK DAN BON BARANG",
+    "dokumen": []
   }
 ]
