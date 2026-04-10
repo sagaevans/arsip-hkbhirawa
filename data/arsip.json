@@ -2899,6 +2899,79 @@
     "tahun": "2011",
     "label": "DUS 7 – 2011",
     "keterangan": "BPB",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BPB JANUARI"
+      },
+      {
+        "no": 2,
+        "nama": "BPB FEBRUARI"
+      },
+      {
+        "no": 3,
+        "nama": "BPB MARET"
+      },
+      {
+        "no": 4,
+        "nama": "BPB APRIL"
+      },
+      {
+        "no": 5,
+        "nama": "BPB MEI"
+      },
+      {
+        "no": 6,
+        "nama": "BPB JUNI"
+      },
+      {
+        "no": 7,
+        "nama": "BPB JULI"
+      },
+      {
+        "no": 8,
+        "nama": "BPB AGUSTUS"
+      },
+      {
+        "no": 9,
+        "nama": "BPB dan Roll September"
+      },
+      {
+        "no": 10,
+        "nama": "BPB PR & Aset September"
+      },
+      {
+        "no": 11,
+        "nama": "BPB Lain-lain September"
+      },
+      {
+        "no": 12,
+        "nama": "BPB Oktober"
+      },
+      {
+        "no": 13,
+        "nama": "BPB November"
+      },
+      {
+        "no": 14,
+        "nama": "BPB Desember"
+      },
+      {
+        "no": 15,
+        "nama": "BPB barang jadi JUNI-DESEMBER"
+      },
+      {
+        "no": 16,
+        "nama": "2101 001"
+      },
+      {
+        "no": 17,
+        "nama": "2101 109"
+      },
+      {
+        "no": 18,
+        "nama": "2101 217"
+      }
+    ]
   }
 ]
