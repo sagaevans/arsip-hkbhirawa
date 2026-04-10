@@ -3196,5 +3196,13 @@
         "nama": "NOTA PENJUALAN JULI - DES"
       }
     ]
+  },
+  {
+    "id": 66,
+    "no_dus": 11,
+    "tahun": "2011",
+    "label": "DUS 11 – 2011",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
