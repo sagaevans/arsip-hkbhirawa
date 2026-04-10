@@ -2794,5 +2794,13 @@
         "nama": "BBK 15 525-562"
       }
     ]
+  },
+  {
+    "id": 60,
+    "no_dus": 5,
+    "tahun": "2011",
+    "label": "DUS 5 – 2011",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
