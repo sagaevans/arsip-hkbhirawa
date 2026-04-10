@@ -3045,6 +3045,79 @@
     "tahun": "2011",
     "label": "DUS 9 – 2011",
     "keterangan": "BBK DAN BON BARANG",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10 2760-2940"
+      },
+      {
+        "no": 2,
+        "nama": "BBK/BBM 10 2941-3310"
+      },
+      {
+        "no": 3,
+        "nama": "BBK/BBM 10 3126-3310"
+      },
+      {
+        "no": 4,
+        "nama": "BBK/BBM 10 3311-3399"
+      },
+      {
+        "no": 5,
+        "nama": "BBK/BBM 10 3400-3543"
+      },
+      {
+        "no": 6,
+        "nama": "BBK/BBM 10 3544-3694"
+      },
+      {
+        "no": 7,
+        "nama": "BBK/BBM 10 3695-3805"
+      },
+      {
+        "no": 8,
+        "nama": "BBK/BBM 10 3806-3923"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10 3924-4078"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10 4079-4240"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10 4241-4400"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10 4401-4505"
+      },
+      {
+        "no": 13,
+        "nama": "BBK/BBM 10 4506-4737"
+      },
+      {
+        "no": 14,
+        "nama": "BON  JANUARI-FEBRUARI"
+      },
+      {
+        "no": 15,
+        "nama": "BON  MARET - APRIL"
+      },
+      {
+        "no": 16,
+        "nama": "BON  MJEI-JUNI"
+      },
+      {
+        "no": 17,
+        "nama": "BON  JULI - AGUSTUS"
+      },
+      {
+        "no": 18,
+        "nama": "BON   SEPTEMBER"
+      }
+    ]
   }
 ]
