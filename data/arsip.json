@@ -2973,5 +2973,13 @@
         "nama": "KAS 2101 217-308"
       }
     ]
+  },
+  {
+    "id": 63,
+    "no_dus": 8,
+    "tahun": "2011",
+    "label": "DUS 8 – 2011",
+    "keterangan": "BANK DAN DOKUMEN LAINNYA",
+    "dokumen": []
   }
 ]
