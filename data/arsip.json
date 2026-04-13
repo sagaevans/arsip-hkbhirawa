@@ -4276,6 +4276,39 @@
     "tahun": "2014",
     "label": "DUS 15 – 2014",
     "keterangan": "DOK PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FPM SEPT"
+      },
+      {
+        "no": 2,
+        "nama": "FPM OKT-DES"
+      },
+      {
+        "no": 3,
+        "nama": "DOKMEN BU RIA"
+      },
+      {
+        "no": 4,
+        "nama": "KONTRAK PENJUALAN"
+      },
+      {
+        "no": 5,
+        "nama": "DOKUMEN PAJAK"
+      },
+      {
+        "no": 6,
+        "nama": "PERUNDANG UNDANGAN PAJAK"
+      },
+      {
+        "no": 7,
+        "nama": "NPWP SUPPLIER"
+      },
+      {
+        "no": 8,
+        "nama": "SPT"
+      }
+    ]
   }
 ]
