@@ -4656,5 +4656,13 @@
         "nama": "BKK 2101.1081 - 2101.1170"
       }
     ]
+  },
+  {
+    "id": 102,
+    "no_dus": 22,
+    "tahun": "2014",
+    "label": "DUS 22 – 2014",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
