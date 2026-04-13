@@ -4067,6 +4067,35 @@
     "tahun": "2014",
     "label": "DUS 10 – 2014",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP MERAH (JAN-MAR)"
+      },
+      {
+        "no": 2,
+        "nama": "FP MERAH (APR-MEI)"
+      },
+      {
+        "no": 3,
+        "nama": "FP MERAH (JUN-JUL)"
+      },
+      {
+        "no": 4,
+        "nama": "FP MERAH (AGS-SEPT)"
+      },
+      {
+        "no": 5,
+        "nama": "FP MERAH (OKT)"
+      },
+      {
+        "no": 6,
+        "nama": "FP MERAH (NOV-DES)"
+      },
+      {
+        "no": 7,
+        "nama": "FP MERAH (DES)"
+      }
+    ]
   }
 ]
