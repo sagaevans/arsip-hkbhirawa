@@ -4097,5 +4097,13 @@
         "nama": "FP KUNING (DES)"
       }
     ]
+  },
+  {
+    "id": 91,
+    "no_dus": 11,
+    "tahun": "2014",
+    "label": "DUS 11 – 2014",
+    "keterangan": "DOKUMEN PAJAK",
+    "dokumen": []
   }
 ]
