@@ -4977,5 +4977,13 @@
         "nama": "BKK (2101.4091 - 2101.4170)"
       }
     ]
+  },
+  {
+    "id": 107,
+    "no_dus": 1,
+    "tahun": "2015",
+    "label": "DUS 1 – 2015",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
