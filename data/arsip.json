@@ -4721,5 +4721,13 @@
         "nama": "SURAT JALAN (APR)"
       }
     ]
+  },
+  {
+    "id": 103,
+    "no_dus": 23,
+    "tahun": "2014",
+    "label": "DUS 23 – 2014",
+    "keterangan": "SURAT JALAN",
+    "dokumen": []
   }
 ]
