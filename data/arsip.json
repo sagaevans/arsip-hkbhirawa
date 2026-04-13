@@ -4388,5 +4388,13 @@
         "nama": "LAP HARIAN B. BNI BRI"
       }
     ]
+  },
+  {
+    "id": 98,
+    "no_dus": 18,
+    "tahun": "2014",
+    "label": "DUS 18 – 2014",
+    "keterangan": "BBK/BBM",
+    "dokumen": []
   }
 ]
