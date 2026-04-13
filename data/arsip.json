@@ -3671,6 +3671,11 @@
     "tahun": "1",
     "label": "DUS 1 – 1",
     "keterangan": "KONTRAK MARKETING",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KONTRAK MARKETING CAMPUR"
+      }
+    ]
   }
 ]
