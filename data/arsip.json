@@ -5018,5 +5018,13 @@
         "nama": "BBK (15.0205 - 15.0221)"
       }
     ]
+  },
+  {
+    "id": 108,
+    "no_dus": 2,
+    "tahun": "2015",
+    "label": "DUS 2 – 2015",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
