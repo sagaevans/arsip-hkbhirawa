@@ -4526,5 +4526,13 @@
         "nama": "Bon Billet"
       }
     ]
+  },
+  {
+    "id": 100,
+    "no_dus": 20,
+    "tahun": "2014",
+    "label": "DUS 20 – 2014",
+    "keterangan": "NOTA PENJUALAN",
+    "dokumen": []
   }
 ]
