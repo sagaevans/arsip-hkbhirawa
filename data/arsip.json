@@ -4104,6 +4104,43 @@
     "tahun": "2014",
     "label": "DUS 11 – 2014",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP KUNING (OKT)"
+      },
+      {
+        "no": 2,
+        "nama": "Faktur Pajak Batal"
+      },
+      {
+        "no": 3,
+        "nama": "FP KUNING (JAN-FEB)"
+      },
+      {
+        "no": 4,
+        "nama": "FP KUNING (MAR-APR)"
+      },
+      {
+        "no": 5,
+        "nama": "FP KUNING (MEI-JUN)"
+      },
+      {
+        "no": 6,
+        "nama": "FP KUNING (JUL-AGS)"
+      },
+      {
+        "no": 7,
+        "nama": "FP KUNING (SEPT)"
+      },
+      {
+        "no": 8,
+        "nama": "MEMORIAL HUTANG"
+      },
+      {
+        "no": 9,
+        "nama": "LAPORAN PRODUKSI"
+      }
+    ]
   }
 ]
