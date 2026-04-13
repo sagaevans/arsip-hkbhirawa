@@ -4231,6 +4231,43 @@
     "tahun": "2014",
     "label": "DUS 14 – 2014",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "REK KORAN 2014"
+      },
+      {
+        "no": 2,
+        "nama": "DOK BEBAS PAJAK"
+      },
+      {
+        "no": 3,
+        "nama": "FPM JAN"
+      },
+      {
+        "no": 4,
+        "nama": "FPM FEB"
+      },
+      {
+        "no": 5,
+        "nama": "FPM APRIL-MEI"
+      },
+      {
+        "no": 6,
+        "nama": "PPNM 2014"
+      },
+      {
+        "no": 7,
+        "nama": "FPM JUNI"
+      },
+      {
+        "no": 8,
+        "nama": "FPM JULI"
+      },
+      {
+        "no": 9,
+        "nama": "PPNM 2014"
+      }
+    ]
   }
 ]
