@@ -4843,5 +4843,13 @@
         "nama": "SURAT JALAN WIREMESH"
       }
     ]
+  },
+  {
+    "id": 105,
+    "no_dus": 25,
+    "tahun": "2014",
+    "label": "DUS 25 – 2014",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
