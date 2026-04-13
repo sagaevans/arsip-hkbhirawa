@@ -5100,5 +5100,13 @@
         "nama": "BBK (15.0717 - 15.0761)"
       }
     ]
+  },
+  {
+    "id": 110,
+    "no_dus": 4,
+    "tahun": "2015",
+    "label": "DUS 4 – 2015",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
