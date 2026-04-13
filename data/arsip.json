@@ -4591,5 +4591,13 @@
         "nama": "Kwitansi Iklan Jawa Post"
       }
     ]
+  },
+  {
+    "id": 101,
+    "no_dus": 21,
+    "tahun": "2014",
+    "label": "DUS 21 – 2014",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
