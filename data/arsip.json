@@ -4022,6 +4022,43 @@
     "tahun": "2014",
     "label": "DUS 9 – 2014",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPN (JAN-APR)"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPN (MEI-JUL)"
+      },
+      {
+        "no": 3,
+        "nama": "SPT PPN (AGS-SEPT)"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPN (OKT-DES)"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPH Psl 4(2)"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPH Psl 25"
+      },
+      {
+        "no": 7,
+        "nama": "SPT PPH Psl 21/26"
+      },
+      {
+        "no": 8,
+        "nama": "SPT PPH Psl 23/26"
+      },
+      {
+        "no": 9,
+        "nama": "Bukti Potong PPH 22/23"
+      }
+    ]
   }
 ]
