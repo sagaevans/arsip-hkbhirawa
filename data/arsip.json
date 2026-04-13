@@ -4186,6 +4186,43 @@
     "tahun": "2014",
     "label": "DUS 13 – 2014",
     "keterangan": "DOKUMEN AKUNTANSI CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LAPORAN LLD BANK 2014-16"
+      },
+      {
+        "no": 2,
+        "nama": "Laporan Keuangan"
+      },
+      {
+        "no": 3,
+        "nama": "Memo"
+      },
+      {
+        "no": 4,
+        "nama": "Berita Acara"
+      },
+      {
+        "no": 5,
+        "nama": "BPB Billet"
+      },
+      {
+        "no": 6,
+        "nama": "Costing"
+      },
+      {
+        "no": 7,
+        "nama": "Imortisasi Deposit"
+      },
+      {
+        "no": 8,
+        "nama": "Rekening Koran (FC)"
+      },
+      {
+        "no": 9,
+        "nama": "Memorial"
+      }
+    ]
   }
 ]
