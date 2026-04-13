@@ -4663,6 +4663,63 @@
     "tahun": "2014",
     "label": "DUS 22 – 2014",
     "keterangan": "BKK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BKK (2101.0000 - 2101.0119)"
+      },
+      {
+        "no": 2,
+        "nama": "BKK (2101.0120 - 2101.0230)"
+      },
+      {
+        "no": 3,
+        "nama": "BKK (2101.0231 - 2101.0332)"
+      },
+      {
+        "no": 4,
+        "nama": "BKK (2101.0333 - 2101.0436)"
+      },
+      {
+        "no": 5,
+        "nama": "BKK (2101.0437 - 2101.0541)"
+      },
+      {
+        "no": 6,
+        "nama": "BKK (2101.0542 - 2101.0655)"
+      },
+      {
+        "no": 7,
+        "nama": "BKK (2101.0656 - 2101.0760)"
+      },
+      {
+        "no": 8,
+        "nama": "BKK (2101.0761 - 2101.0871)"
+      },
+      {
+        "no": 9,
+        "nama": "SURAT JALAN (JAN)"
+      },
+      {
+        "no": 10,
+        "nama": "SURAT JALAN (JAN-FEB)"
+      },
+      {
+        "no": 11,
+        "nama": "SURAT JALAN (FEB-MAR)"
+      },
+      {
+        "no": 12,
+        "nama": "SURAT JALAN (MAR)"
+      },
+      {
+        "no": 13,
+        "nama": "SURAT JALAN (MAR-APR)"
+      },
+      {
+        "no": 14,
+        "nama": "SURAT JALAN (APR)"
+      }
+    ]
   }
 ]
