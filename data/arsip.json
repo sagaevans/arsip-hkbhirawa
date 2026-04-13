@@ -4789,6 +4789,59 @@
     "tahun": "2014",
     "label": "DUS 24 – 2014",
     "keterangan": "SJ, PO,",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SURAT JALAN (OKT)"
+      },
+      {
+        "no": 2,
+        "nama": "SURAT JALAN (OKT-NOV)"
+      },
+      {
+        "no": 3,
+        "nama": "SURAT JALAN (NOV)"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT JALAN (NOV-DES)"
+      },
+      {
+        "no": 5,
+        "nama": "SURAT JALAN (DES)"
+      },
+      {
+        "no": 6,
+        "nama": "SURAT JALAN (DES)"
+      },
+      {
+        "no": 7,
+        "nama": "PO (22...0001 - 22...5684)"
+      },
+      {
+        "no": 8,
+        "nama": "PO (22...5685 - 22...6353)"
+      },
+      {
+        "no": 9,
+        "nama": "PO (22...6354 - 22...6631)"
+      },
+      {
+        "no": 10,
+        "nama": "PO (23...0001 - ...)"
+      },
+      {
+        "no": 11,
+        "nama": "PO WIREMESH (46...0001 - ...)"
+      },
+      {
+        "no": 12,
+        "nama": "BKK (2101...2290 - 2101...2368)"
+      },
+      {
+        "no": 13,
+        "nama": "SURAT JALAN WIREMESH"
+      }
+    ]
   }
 ]
