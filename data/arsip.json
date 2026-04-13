@@ -4347,5 +4347,13 @@
         "nama": "PPNM 2014"
       }
     ]
+  },
+  {
+    "id": 97,
+    "no_dus": 17,
+    "tahun": "2014",
+    "label": "DUS 17 – 2014",
+    "keterangan": "DATA KARYAWAN-LAP HARIAN",
+    "dokumen": []
   }
 ]
