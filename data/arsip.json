@@ -3859,5 +3859,13 @@
         "nama": "(BBK) (15...0997 - 15...1047)"
       }
     ]
+  },
+  {
+    "id": 85,
+    "no_dus": 5,
+    "tahun": "2014",
+    "label": "DUS 5 – 2014",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
