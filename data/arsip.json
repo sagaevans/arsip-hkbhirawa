@@ -3645,6 +3645,11 @@
     "tahun": "2010",
     "label": "DUS 3 – 2010",
     "keterangan": "BUKU BESAR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKU BESAR JUNI-DES"
+      }
+    ]
   }
 ]
