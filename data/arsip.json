@@ -4533,6 +4533,63 @@
     "tahun": "2014",
     "label": "DUS 20 – 2014",
     "keterangan": "NOTA PENJUALAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "NOTA PENJUALAN DES"
+      },
+      {
+        "no": 2,
+        "nama": "LAMPIRAN BBK"
+      },
+      {
+        "no": 3,
+        "nama": "GAJI NON STAFF 2014"
+      },
+      {
+        "no": 4,
+        "nama": "NOTA PENJUALAN (JAN-MAR)"
+      },
+      {
+        "no": 5,
+        "nama": "NOTA PENJUALAN (APR-MEI)"
+      },
+      {
+        "no": 6,
+        "nama": "NOTA PENJUALAN (JUN-JUL)"
+      },
+      {
+        "no": 7,
+        "nama": "NOTA PENJUALAN (AGS)"
+      },
+      {
+        "no": 8,
+        "nama": "NOTA PENJUALAN (SEPT)"
+      },
+      {
+        "no": 9,
+        "nama": "NOTA PENJUALAN (OKT)"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA PENJUALAN (NOV)"
+      },
+      {
+        "no": 11,
+        "nama": "NOTA KREDIT"
+      },
+      {
+        "no": 12,
+        "nama": "KWITANSI & BBM UM Penjualan"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA ONGKOS ANGKUT"
+      },
+      {
+        "no": 14,
+        "nama": "Kwitansi Iklan Jawa Post"
+      }
+    ]
   }
 ]
