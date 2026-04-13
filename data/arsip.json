@@ -4354,6 +4354,39 @@
     "tahun": "2014",
     "label": "DUS 17 – 2014",
     "keterangan": "DATA KARYAWAN-LAP HARIAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KARYAWAN PACKING"
+      },
+      {
+        "no": 2,
+        "nama": "LAP HARIAN B. MANDIRI"
+      },
+      {
+        "no": 3,
+        "nama": "LAP HARIAN B. DANAMON"
+      },
+      {
+        "no": 4,
+        "nama": "LAP HARIAN B. BCA"
+      },
+      {
+        "no": 5,
+        "nama": "LAP HARIAN B. EKONOMI"
+      },
+      {
+        "no": 6,
+        "nama": "LAP HARIAN B. PERMATA"
+      },
+      {
+        "no": 7,
+        "nama": "REK KORAN HARIAN"
+      },
+      {
+        "no": 8,
+        "nama": "LAP HARIAN B. BNI BRI"
+      }
+    ]
   }
 ]
