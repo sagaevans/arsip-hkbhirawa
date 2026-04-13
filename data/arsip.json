@@ -4179,5 +4179,13 @@
         "nama": "DOKUMEN PAK DIDIK"
       }
     ]
+  },
+  {
+    "id": 93,
+    "no_dus": 13,
+    "tahun": "2014",
+    "label": "DUS 13 – 2014",
+    "keterangan": "DOKUMEN AKUNTANSI CAMPUR",
+    "dokumen": []
   }
 ]
