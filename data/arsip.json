@@ -6200,6 +6200,35 @@
     "tahun": "2015",
     "label": "DUS 24 – 2015",
     "keterangan": "SUPPORTING DOCUMENT AUDIT\nSUPPORTING DOCUMENT LK JUL - DES\nSUPPORTING DOCUMENT LK JAN - JUN\n\nKONTRAK KONTRAK SURAT SANGGUP PROMES BANK BERITA ACARA\n\nSURAT BEBAS PEMOTONGAN PPH 23\n\nMEMO BERITA ACARA BARANG JADI\n\nBPB BON BILLET\n\nFILE SURAT MENYURAT MEMO",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SUPPORTING DOCUMENT LK JUL - DES"
+      },
+      {
+        "no": 2,
+        "nama": "SUPPORTING DOCUMENT LK JAN - JUN"
+      },
+      {
+        "no": 3,
+        "nama": "KONTRAK KONTRAK SURAT SANGGUP PROMES BANK BERITA ACARA"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT BEBAS PEMOTONGAN PPH 23"
+      },
+      {
+        "no": 5,
+        "nama": "MEMO BERITA ACARA BARANG JADI"
+      },
+      {
+        "no": 6,
+        "nama": "BPB BON BILLET"
+      },
+      {
+        "no": 7,
+        "nama": "FILE SURAT MENYURAT MEMO"
+      }
+    ]
   }
 ]
