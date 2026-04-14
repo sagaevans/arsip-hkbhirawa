@@ -6144,5 +6144,13 @@
         "nama": "KP WIREMESH"
       }
     ]
+  },
+  {
+    "id": 129,
+    "no_dus": 23,
+    "tahun": "2015",
+    "label": "DUS 23 – 2015",
+    "keterangan": "E-FAKTUR, KONFIRMASI PESANAN, BUKU SATPAM",
+    "dokumen": []
   }
 ]
