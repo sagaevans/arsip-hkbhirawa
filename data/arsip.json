@@ -5277,6 +5277,39 @@
     "tahun": "2015",
     "label": "DUS 8 – 2015",
     "keterangan": "BBK-PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK (15.1531 - 15.1575)"
+      },
+      {
+        "no": 2,
+        "nama": "BBK (15.1576 - 15.1629)"
+      },
+      {
+        "no": 3,
+        "nama": "BBK (15.1630 - 15.1659)"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPN (OKT-DES)"
+      },
+      {
+        "no": 5,
+        "nama": "SURAT TAGIHAN PAJAK"
+      },
+      {
+        "no": 6,
+        "nama": "STOCK OPNAME & BA SPR 1"
+      },
+      {
+        "no": 7,
+        "nama": "STOCK OPNAME & BA SPR 2"
+      },
+      {
+        "no": 8,
+        "nama": "BUKTI POTONG PAJAK"
+      }
+    ]
   }
 ]
