@@ -6233,6 +6233,31 @@
     "tahun": "2015",
     "label": "DUS 25 – 2015",
     "keterangan": "DOK. SAP,  PAJAK, COSTING",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MUTASI BANK"
+      },
+      {
+        "no": 2,
+        "nama": "KREDIT PAJAK SPT MASA PPN FROM PB TAXAND"
+      },
+      {
+        "no": 3,
+        "nama": "COSTING SAP"
+      },
+      {
+        "no": 4,
+        "nama": "REKENING KORAN"
+      },
+      {
+        "no": 5,
+        "nama": "KWITANSI DAN BBM UM"
+      },
+      {
+        "no": 6,
+        "nama": "DOK. PEMERIKSAAN PAJAK"
+      }
+    ]
   }
 ]
