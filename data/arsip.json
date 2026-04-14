@@ -5862,6 +5862,63 @@
     "tahun": "2015",
     "label": "DUS 18 – 2015",
     "keterangan": "PO SPAREPART, BANK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK BBM 10...0496 - 0711"
+      },
+      {
+        "no": 2,
+        "nama": "BBK BBM 10...0712 - 0847"
+      },
+      {
+        "no": 3,
+        "nama": "BBK BBM 10...0848 - 1064"
+      },
+      {
+        "no": 4,
+        "nama": "BBK BBM 10...1065 - 1190"
+      },
+      {
+        "no": 5,
+        "nama": "BBK BBM 10...1191 - 1350"
+      },
+      {
+        "no": 6,
+        "nama": "BBK BBM 10...1351 - 1510"
+      },
+      {
+        "no": 7,
+        "nama": "BBK BBM 10...1511 - 1685"
+      },
+      {
+        "no": 8,
+        "nama": "PO SPR 22...6632 - 7361"
+      },
+      {
+        "no": 9,
+        "nama": "PO SPR 22...7362 - 7967"
+      },
+      {
+        "no": 10,
+        "nama": "PO WIREMESH"
+      },
+      {
+        "no": 11,
+        "nama": "SP 10...12431 - 12980"
+      },
+      {
+        "no": 12,
+        "nama": "SP 10...12981 - 1327"
+      },
+      {
+        "no": 13,
+        "nama": "BBK BBM 10...0000 - 0200"
+      },
+      {
+        "no": 14,
+        "nama": "BBK BBM 10...0201 - 0495"
+      }
+    ]
   }
 ]
