@@ -5359,6 +5359,39 @@
     "tahun": "2015",
     "label": "DUS 10 – 2015",
     "keterangan": "LAPORAN BANK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LAP BANK BCA 1088 01 JAN-OKT"
+      },
+      {
+        "no": 2,
+        "nama": "LAP BANK BCA 9339-1088 02 NOV-DES"
+      },
+      {
+        "no": 3,
+        "nama": "LAP BANK BNI BRI 03"
+      },
+      {
+        "no": 4,
+        "nama": "LAP BANK DANAMON 04"
+      },
+      {
+        "no": 5,
+        "nama": "LAP BANK EKONOMI ICBC 05"
+      },
+      {
+        "no": 6,
+        "nama": "LAP BANK MANDIRI 06"
+      },
+      {
+        "no": 7,
+        "nama": "LAP BANK PERMATA QNB UOB 07"
+      },
+      {
+        "no": 8,
+        "nama": "REKENING KORAN 01"
+      }
+    ]
   }
 ]
