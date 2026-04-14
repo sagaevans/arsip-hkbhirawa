@@ -5736,6 +5736,63 @@
     "tahun": "2015",
     "label": "DUS 16 – 2015",
     "keterangan": "BANK DAN KAS",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBM -  14...0000 - 0470"
+      },
+      {
+        "no": 2,
+        "nama": "BBM -  14...0471 - 0750"
+      },
+      {
+        "no": 3,
+        "nama": "BBM -  14...0751 - 1080"
+      },
+      {
+        "no": 4,
+        "nama": "BBM -  14...1081 - 1461"
+      },
+      {
+        "no": 5,
+        "nama": "BBM -  14...1462 - 1905"
+      },
+      {
+        "no": 6,
+        "nama": "BBM -  14...1906 - 2189"
+      },
+      {
+        "no": 7,
+        "nama": "BBM -  14...2190 - 2640"
+      },
+      {
+        "no": 8,
+        "nama": "BBM -  14...2641 - 2775"
+      },
+      {
+        "no": 9,
+        "nama": "BBM -  14...2776 - 2847"
+      },
+      {
+        "no": 10,
+        "nama": "BKK - 2101...4056 - 4147"
+      },
+      {
+        "no": 11,
+        "nama": "BKK - 2101...4148 - 4185"
+      },
+      {
+        "no": 12,
+        "nama": "SURAT PESANAN WIREMESH"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA PENJUALAN IDR USD JAN-FEB"
+      },
+      {
+        "no": 14,
+        "nama": "NOTA PENJUALAN"
+      }
+    ]
   }
 ]
