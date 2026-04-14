@@ -6607,5 +6607,13 @@
         "nama": "REKENING KORAN ICBC-UOB"
       }
     ]
+  },
+  {
+    "id": 141,
+    "no_dus": 10,
+    "tahun": "2016",
+    "label": "DUS 10 – 2016",
+    "keterangan": "LAPORAN HARIAN BANK",
+    "dokumen": []
   }
 ]
