@@ -5352,5 +5352,13 @@
         "nama": "FP MASUKAN OKT-DES"
       }
     ]
+  },
+  {
+    "id": 116,
+    "no_dus": 10,
+    "tahun": "2015",
+    "label": "DUS 10 – 2015",
+    "keterangan": "LAP BANK BCA 1088 01 JAN-OKT\nLAP BANK BCA 9339-1088 02 NOV-DES\nLAP BANK BNI BRI 03\nLAP BANK DANAMON 04\nLAP BANK EKONOMI ICBC 05\nLAP BANK MANDIRI 06\nLAP BANK PERMATA QNB UOB 07\n\nREKENING KORAN 01",
+    "dokumen": []
   }
 ]
