@@ -6193,5 +6193,13 @@
     "label": "DUS 24 – 2015",
     "keterangan": "PAJAK, SUPPORTING DOKUMEN LK",
     "dokumen": []
+  },
+  {
+    "id": 131,
+    "no_dus": 24,
+    "tahun": "2015",
+    "label": "DUS 24 – 2015",
+    "keterangan": "SUPPORTING DOCUMENT AUDIT\nSUPPORTING DOCUMENT LK JUL - DES\nSUPPORTING DOCUMENT LK JAN - JUN\n\nKONTRAK KONTRAK SURAT SANGGUP PROMES BANK BERITA ACARA\n\nSURAT BEBAS PEMOTONGAN PPH 23\n\nMEMO BERITA ACARA BARANG JADI\n\nBPB BON BILLET\n\nFILE SURAT MENYURAT MEMO",
+    "dokumen": []
   }
 ]
