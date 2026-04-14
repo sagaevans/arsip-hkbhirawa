@@ -5431,6 +5431,43 @@
     "tahun": "2015",
     "label": "DUS 11 – 2015",
     "keterangan": "FAKTUR PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FPMJAN-MAR"
+      },
+      {
+        "no": 2,
+        "nama": "FPMJUL-SEP"
+      },
+      {
+        "no": 3,
+        "nama": "FPMAPR-JUN"
+      },
+      {
+        "no": 4,
+        "nama": "PERJANJIAN BANK"
+      },
+      {
+        "no": 5,
+        "nama": "REKENING KORAN 01"
+      },
+      {
+        "no": 6,
+        "nama": "FAKTUR PAJAK CANCEL 01"
+      },
+      {
+        "no": 7,
+        "nama": "INVENTORY OPNAME 01"
+      },
+      {
+        "no": 8,
+        "nama": "COSTING 01"
+      },
+      {
+        "no": 9,
+        "nama": "MIRO IMPOR"
+      }
+    ]
   }
 ]
