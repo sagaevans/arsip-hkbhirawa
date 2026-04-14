@@ -6151,6 +6151,39 @@
     "tahun": "2015",
     "label": "DUS 23 – 2015",
     "keterangan": "E-FAKTUR, KONFIRMASI PESANAN, BUKU SATPAM",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KONFIRMASI PESANAN 4250 - 4454"
+      },
+      {
+        "no": 2,
+        "nama": "E FAKTUR ACC CONFIRM"
+      },
+      {
+        "no": 3,
+        "nama": "E FAKTUR JUL - AGS"
+      },
+      {
+        "no": 4,
+        "nama": "E FAKTUR AGS - SEPT 1190"
+      },
+      {
+        "no": 5,
+        "nama": "E FAKTUR SEPT - OKT"
+      },
+      {
+        "no": 6,
+        "nama": "E FAKTUR OKT - NOV 1539 - 1899"
+      },
+      {
+        "no": 7,
+        "nama": "MEMORIAL HUTANG"
+      },
+      {
+        "no": 8,
+        "nama": "COPY BUKU SATPAM"
+      }
+    ]
   }
 ]
