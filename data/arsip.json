@@ -6103,5 +6103,13 @@
         "nama": "KONF. PESANAN 3641 - 3783"
       }
     ]
+  },
+  {
+    "id": 128,
+    "no_dus": 22,
+    "tahun": "2015",
+    "label": "DUS 22 – 2015",
+    "keterangan": "e-faktur, konfirmasi pesanan, dll",
+    "dokumen": []
   }
 ]
