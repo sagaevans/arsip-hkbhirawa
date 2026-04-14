@@ -6185,5 +6185,13 @@
         "nama": "COPY BUKU SATPAM"
       }
     ]
+  },
+  {
+    "id": 130,
+    "no_dus": 24,
+    "tahun": "2015",
+    "label": "DUS 24 – 2015",
+    "keterangan": "PAJAK, SUPPORTING DOKUMEN LK",
+    "dokumen": []
   }
 ]
