@@ -5664,5 +5664,13 @@
         "nama": "BKK - 2101...3804 - 3880"
       }
     ]
+  },
+  {
+    "id": 121,
+    "no_dus": 15,
+    "tahun": "2015",
+    "label": "DUS 15 – 2015",
+    "keterangan": "BANK MASUK DAN KELUAR",
+    "dokumen": []
   }
 ]
