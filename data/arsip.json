@@ -6185,38 +6185,5 @@
         "nama": "COPY BUKU SATPAM"
       }
     ]
-  },
-  {
-    "id": 131,
-    "no_dus": 24,
-    "tahun": "2015",
-    "label": "DUS 24 – 2015",
-    "keterangan": "SUPPORTING DOCUMENT AUDIT\nSURAT MEMO",
-    "dokumen": [
-      {
-        "no": 1,
-        "nama": "SUPPORTING DOCUMENT LK JAN - JUN"
-      },
-      {
-        "no": 2,
-        "nama": "KONTRAK KONTRAK SURAT SANGGUP PROMES BANK BERITA ACARA"
-      },
-      {
-        "no": 3,
-        "nama": "SURAT BEBAS PEMOTONGAN PPH 23"
-      },
-      {
-        "no": 4,
-        "nama": "MEMO BERITA ACARA BARANG JADI"
-      },
-      {
-        "no": 5,
-        "nama": "BPB BON BILLET"
-      },
-      {
-        "no": 6,
-        "nama": "FILE SURAT MENYURAT MEMO"
-      }
-    ]
   }
 ]
