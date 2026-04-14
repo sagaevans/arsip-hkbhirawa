@@ -5671,6 +5671,63 @@
     "tahun": "2015",
     "label": "DUS 15 – 2015",
     "keterangan": "BANK MASUK DAN KELUAR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BKK - 2111...0001 - 0105"
+      },
+      {
+        "no": 2,
+        "nama": "BKK - 2111...0106 - 0210"
+      },
+      {
+        "no": 3,
+        "nama": "BKK - 2111...0211 - 0295"
+      },
+      {
+        "no": 4,
+        "nama": "BKK - 2111...0296 - 0400"
+      },
+      {
+        "no": 5,
+        "nama": "BKK - 2111...0401 - 0511"
+      },
+      {
+        "no": 6,
+        "nama": "BKK - 2101...3881 - 3977"
+      },
+      {
+        "no": 7,
+        "nama": "BKK - 2101...3978 - 4055"
+      },
+      {
+        "no": 8,
+        "nama": "BUKTI BANK WIREMESH"
+      },
+      {
+        "no": 9,
+        "nama": "BKK WIREMESH"
+      },
+      {
+        "no": 10,
+        "nama": "SURAT JALAN WIREMESH 01"
+      },
+      {
+        "no": 11,
+        "nama": "SURAT JALAN WIREMESH 02"
+      },
+      {
+        "no": 12,
+        "nama": "TANDA TERIMA BUKTI POTONG JAN-DES"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA ONGKOS ANGKUT"
+      },
+      {
+        "no": 14,
+        "nama": "LAMPIRAN BBK"
+      }
+    ]
   }
 ]
