@@ -6337,5 +6337,13 @@
         "nama": "BUKU KAS KELUAR-MASUK"
       }
     ]
+  },
+  {
+    "id": 134,
+    "no_dus": 3,
+    "tahun": "2016",
+    "label": "DUS 3 – 2016",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
