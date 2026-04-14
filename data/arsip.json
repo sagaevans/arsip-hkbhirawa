@@ -5270,5 +5270,13 @@
         "nama": "SPT PPH PASAL 21"
       }
     ]
+  },
+  {
+    "id": 114,
+    "no_dus": 8,
+    "tahun": "2015",
+    "label": "DUS 8 – 2015",
+    "keterangan": "BBK-PAJAK",
+    "dokumen": []
   }
 ]
