@@ -5794,5 +5794,13 @@
         "nama": "NOTA PENJUALAN"
       }
     ]
+  },
+  {
+    "id": 123,
+    "no_dus": 17,
+    "tahun": "2015",
+    "label": "DUS 17 – 2015",
+    "keterangan": "NOTA, SP, SJ",
+    "dokumen": []
   }
 ]
