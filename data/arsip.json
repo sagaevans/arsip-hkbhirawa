@@ -6563,5 +6563,13 @@
         "nama": "SUPPORTING DOKUMENT JANUARI - JULI"
       }
     ]
+  },
+  {
+    "id": 140,
+    "no_dus": 9,
+    "tahun": "2016",
+    "label": "DUS 9 – 2016",
+    "keterangan": "DOKUMEN PAJAK",
+    "dokumen": []
   }
 ]
