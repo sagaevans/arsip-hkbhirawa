@@ -5318,6 +5318,39 @@
     "tahun": "2015",
     "label": "DUS 9 – 2015",
     "keterangan": "FAKTUR PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FP KUNING 01 JAN-FEB"
+      },
+      {
+        "no": 2,
+        "nama": "FP KUNING 03 MEI-JUN"
+      },
+      {
+        "no": 3,
+        "nama": "FP KUNING 02 MAR-APR"
+      },
+      {
+        "no": 4,
+        "nama": "FP MERAH 01 JAN-FEB"
+      },
+      {
+        "no": 5,
+        "nama": "FP MERAH 03 MEI-JUN"
+      },
+      {
+        "no": 6,
+        "nama": "FP MERAH 02 MAR-APR"
+      },
+      {
+        "no": 7,
+        "nama": "BANTEX GAJI NON STAFF"
+      },
+      {
+        "no": 8,
+        "nama": "FP MASUKAN OKT-DES"
+      }
+    ]
   }
 ]
