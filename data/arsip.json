@@ -5424,5 +5424,13 @@
         "nama": "REKENING KORAN 01"
       }
     ]
+  },
+  {
+    "id": 117,
+    "no_dus": 11,
+    "tahun": "2015",
+    "label": "DUS 11 – 2015",
+    "keterangan": "FAKTUR PAJAK",
+    "dokumen": []
   }
 ]
