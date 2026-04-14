@@ -5534,5 +5534,13 @@
         "nama": "BKK - 2101...1204 - 1287"
       }
     ]
+  },
+  {
+    "id": 119,
+    "no_dus": 13,
+    "tahun": "2015",
+    "label": "DUS 13 – 2015",
+    "keterangan": "BUKTI KAS",
+    "dokumen": []
   }
 ]
