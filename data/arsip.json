@@ -5729,5 +5729,13 @@
         "nama": "LAMPIRAN BBK"
       }
     ]
+  },
+  {
+    "id": 122,
+    "no_dus": 16,
+    "tahun": "2015",
+    "label": "DUS 16 – 2015",
+    "keterangan": "BANK DAN KAS",
+    "dokumen": []
   }
 ]
