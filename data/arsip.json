@@ -5311,5 +5311,13 @@
         "nama": "BUKTI POTONG PAJAK"
       }
     ]
+  },
+  {
+    "id": 115,
+    "no_dus": 9,
+    "tahun": "2015",
+    "label": "DUS 9 – 2015",
+    "keterangan": "FAKTUR PAJAK",
+    "dokumen": []
   }
 ]
