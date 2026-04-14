@@ -5223,5 +5223,13 @@
         "nama": "BBK (15.1514 - 15.1530)"
       }
     ]
+  },
+  {
+    "id": 113,
+    "no_dus": 7,
+    "tahun": "2015",
+    "label": "DUS 7 – 2015",
+    "keterangan": "PAJAK",
+    "dokumen": []
   }
 ]
