@@ -5230,6 +5230,39 @@
     "tahun": "2015",
     "label": "DUS 7 – 2015",
     "keterangan": "PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPN (JAN-APR)"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPN (MEI-JUL)"
+      },
+      {
+        "no": 3,
+        "nama": "SPT PPN (AGS)"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPN (SEPT)"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPH PASAL 25"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPH PASAL 23"
+      },
+      {
+        "no": 7,
+        "nama": "SPT PPH PASAL 4 AYAT 2"
+      },
+      {
+        "no": 8,
+        "nama": "SPT PPH PASAL 21"
+      }
+    ]
   }
 ]
