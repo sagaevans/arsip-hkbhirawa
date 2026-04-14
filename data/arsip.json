@@ -6570,6 +6570,35 @@
     "tahun": "2016",
     "label": "DUS 9 – 2016",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPN JANUARI - MARET"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPH 23 JAN - MEI"
+      },
+      {
+        "no": 3,
+        "nama": "SPT PPH 23 JUNI - DESEMBER"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPH 21 JAN - DESEMBER"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPH PSL 4 AYAT 2 JAN - DESEMBER"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPH 25 JAN - DESEMBER"
+      },
+      {
+        "no": 7,
+        "nama": "REKENING KORAN ICBC-UOB"
+      }
+    ]
   }
 ]
