@@ -5469,5 +5469,13 @@
         "nama": "MIRO IMPOR"
       }
     ]
+  },
+  {
+    "id": 118,
+    "no_dus": 12,
+    "tahun": "2011",
+    "label": "DUS 12 – 2011",
+    "keterangan": "BUKTI KAS",
+    "dokumen": []
   }
 ]
