@@ -6533,6 +6533,31 @@
     "tahun": "2016",
     "label": "DUS 8 – 2016",
     "keterangan": "BBK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SUPPORTING DOKUMENT AGUSTUS - DESEMBER"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 15...1739 - 1762"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 15...1763 - 1820"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 15...1821 - 1843"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPN OKTOBER - DESEMBER"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPN APRIL - SEPTEMBER"
+      }
+    ]
   }
 ]
