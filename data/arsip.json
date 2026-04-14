@@ -6651,6 +6651,39 @@
     "tahun": "2016",
     "label": "DUS 11 – 2016",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MIRO BARANG BHIRAWA 2015"
+      },
+      {
+        "no": 2,
+        "nama": "PERJANJIAN BANK"
+      },
+      {
+        "no": 3,
+        "nama": "LAPORAN HARIAN BANK MANDIRI"
+      },
+      {
+        "no": 4,
+        "nama": "LAPORAN HARIAN BANK PERMATA, QNB, UOB"
+      },
+      {
+        "no": 5,
+        "nama": "MIRO IMPOR"
+      },
+      {
+        "no": 6,
+        "nama": "MEMORIAL AP"
+      },
+      {
+        "no": 7,
+        "nama": "GAJI NON STAFF"
+      },
+      {
+        "no": 8,
+        "nama": "BILLET PBD & HANSINDO"
+      }
+    ]
   }
 ]
