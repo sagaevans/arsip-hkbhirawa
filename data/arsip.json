@@ -6110,6 +6110,39 @@
     "tahun": "2015",
     "label": "DUS 22 – 2015",
     "keterangan": "e-faktur, konfirmasi pesanan, dll",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "E FAKTUR NOV - DES"
+      },
+      {
+        "no": 2,
+        "nama": "E FAKTUR KEL.  DES - DES"
+      },
+      {
+        "no": 3,
+        "nama": "E FAKTUR DES 2601 - 2777"
+      },
+      {
+        "no": 4,
+        "nama": "KONF. PESANAN 4455 - 4700"
+      },
+      {
+        "no": 5,
+        "nama": "KONF. PESANAN 4701 - 4897"
+      },
+      {
+        "no": 6,
+        "nama": "KONF. PESANAN 4898 - 5130"
+      },
+      {
+        "no": 7,
+        "nama": "KP 5131 - 5263"
+      },
+      {
+        "no": 8,
+        "nama": "KP WIREMESH"
+      }
+    ]
   }
 ]
