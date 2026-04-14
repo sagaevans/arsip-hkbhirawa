@@ -5920,5 +5920,13 @@
         "nama": "BBK BBM 10...0201 - 0495"
       }
     ]
+  },
+  {
+    "id": 125,
+    "no_dus": 19,
+    "tahun": "2015",
+    "label": "DUS 19 – 2015",
+    "keterangan": "BBK/BBM",
+    "dokumen": []
   }
 ]
