@@ -6614,6 +6614,35 @@
     "tahun": "2016",
     "label": "DUS 10 – 2016",
     "keterangan": "LAPORAN HARIAN BANK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "REKENING KORAN BCA-EKONOMI"
+      },
+      {
+        "no": 2,
+        "nama": "LAP HARIAN BANK BCA 1088"
+      },
+      {
+        "no": 3,
+        "nama": "LAP HARIAN BANK BCA 9339 & BNI"
+      },
+      {
+        "no": 4,
+        "nama": "BERITA ACARA STOK OPNAME"
+      },
+      {
+        "no": 5,
+        "nama": "LAP HARIAN BANK EKONOMI ICBC"
+      },
+      {
+        "no": 6,
+        "nama": "LAP HARIAN BANK DANAMON 7388 & 7288"
+      },
+      {
+        "no": 7,
+        "nama": "LAP HARIAN BANK BRI DANAMON 7368 & 0559"
+      }
+    ]
   }
 ]
