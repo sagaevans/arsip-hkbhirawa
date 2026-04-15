@@ -7413,5 +7413,13 @@
         "nama": "NOTA  6.78828-79066"
       }
     ]
+  },
+  {
+    "id": 155,
+    "no_dus": 24,
+    "tahun": "2016",
+    "label": "DUS 24 – 2016",
+    "keterangan": "DOKUMEN CAMPUR",
+    "dokumen": []
   }
 ]
