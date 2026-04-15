@@ -7635,5 +7635,13 @@
         "nama": "MIRO 2-17"
       }
     ]
+  },
+  {
+    "id": 161,
+    "no_dus": 5,
+    "tahun": "2017",
+    "label": "DUS 5 – 2017",
+    "keterangan": "DOKUMEN AKUNTANSI",
+    "dokumen": []
   }
 ]
