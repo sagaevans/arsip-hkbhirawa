@@ -7867,6 +7867,43 @@
     "tahun": "2012-2023",
     "label": "DUS 10 – 2017",
     "keterangan": "CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "PLN,PDAM,PBB 2013-2023"
+      },
+      {
+        "no": 2,
+        "nama": "PLN PBB 2013-2023"
+      },
+      {
+        "no": 3,
+        "nama": "FC BBK PLN,PGN 2012-2014"
+      },
+      {
+        "no": 4,
+        "nama": "PERATURAN PAJAK"
+      },
+      {
+        "no": 5,
+        "nama": "BA PTP 2020"
+      },
+      {
+        "no": 6,
+        "nama": "DOKUMEN REK KORAN"
+      },
+      {
+        "no": 7,
+        "nama": "SKPKB 2013-2015"
+      },
+      {
+        "no": 8,
+        "nama": "DOK STNK MOBIL"
+      },
+      {
+        "no": 9,
+        "nama": "DATA CUSTOMER"
+      }
+    ]
   }
 ]
