@@ -6895,6 +6895,63 @@
     "tahun": "2016",
     "label": "DUS 15 – 2016",
     "keterangan": "BBK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BKK 2111...000 - 098"
+      },
+      {
+        "no": 2,
+        "nama": "BKK 2111...099 - 204"
+      },
+      {
+        "no": 3,
+        "nama": "BKK 2111...211 - 305"
+      },
+      {
+        "no": 4,
+        "nama": "BKK 2111...306 - 405"
+      },
+      {
+        "no": 5,
+        "nama": "BKK 2111...406 - 432"
+      },
+      {
+        "no": 6,
+        "nama": "PO SP 23..."
+      },
+      {
+        "no": 7,
+        "nama": "PO SP 22..."
+      },
+      {
+        "no": 8,
+        "nama": "PO SP 22..."
+      },
+      {
+        "no": 9,
+        "nama": "PO WIREMESH"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA PENJUALAN UM JUNI - DES"
+      },
+      {
+        "no": 11,
+        "nama": "NOTA PENJUALAN NOV-DES"
+      },
+      {
+        "no": 12,
+        "nama": "SP 10...13271 - 13768"
+      },
+      {
+        "no": 13,
+        "nama": "SP 10...13769 - 14318"
+      },
+      {
+        "no": 14,
+        "nama": "SP 10...14319 - 14852"
+      }
+    ]
   }
 ]
