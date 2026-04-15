@@ -7330,6 +7330,39 @@
     "tahun": "2016",
     "label": "DUS 22 – 2016",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BERITA ACARA STO"
+      },
+      {
+        "no": 2,
+        "nama": "CATATAN STO"
+      },
+      {
+        "no": 3,
+        "nama": "FP KELUARAN NOV-DES"
+      },
+      {
+        "no": 4,
+        "nama": "PPN OKT-DES"
+      },
+      {
+        "no": 5,
+        "nama": "KP 80...5264 - 5498"
+      },
+      {
+        "no": 6,
+        "nama": "KP 80...5499 - 5690"
+      },
+      {
+        "no": 7,
+        "nama": "KP 80...5691 - 5850"
+      },
+      {
+        "no": 8,
+        "nama": "KP 80...5851 - 6020"
+      }
+    ]
   }
 ]
