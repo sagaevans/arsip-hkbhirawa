@@ -7420,6 +7420,23 @@
     "tahun": "2016",
     "label": "DUS 24 – 2016",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KP WIREMESH 201-332"
+      },
+      {
+        "no": 2,
+        "nama": "FILE SYSTEM HTM"
+      },
+      {
+        "no": 3,
+        "nama": "BUKPOT PPH22"
+      },
+      {
+        "no": 4,
+        "nama": "BON BPB BILLET"
+      }
+    ]
   }
 ]
