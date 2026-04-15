@@ -7527,6 +7527,39 @@
     "tahun": "2017",
     "label": "DUS 2 – 2017",
     "keterangan": "BBK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK 15...0000 - 0042"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 15...0043 - 0058"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 15...0059 - 0092"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 15...0093 - 0135"
+      },
+      {
+        "no": 5,
+        "nama": "WORKSHEET APPREISE"
+      },
+      {
+        "no": 6,
+        "nama": "DOK 15...471 - 492"
+      },
+      {
+        "no": 7,
+        "nama": "DOK 15...493 - 538"
+      },
+      {
+        "no": 8,
+        "nama": "Bukti potong pph"
+      }
+    ]
   }
 ]
