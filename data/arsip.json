@@ -7479,5 +7479,13 @@
         "nama": "NOTA PENJUALAN UM"
       }
     ]
+  },
+  {
+    "id": 157,
+    "no_dus": 1,
+    "tahun": "2017",
+    "label": "DUS 1 – 2017",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
