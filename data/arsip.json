@@ -7371,6 +7371,35 @@
     "tahun": "2016",
     "label": "DUS 23 – 2016",
     "keterangan": "DOKUMEN PAJAK, DOKUMEN PERSEDIAAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FAKTUR PAJAK MASUKAN JAN-MAR"
+      },
+      {
+        "no": 2,
+        "nama": "FAKTUR PAJAK MASUKAN APR-JUNI"
+      },
+      {
+        "no": 3,
+        "nama": "FAKTUR PAJAK MASUKAN JULI-SEPT"
+      },
+      {
+        "no": 4,
+        "nama": "MIRO"
+      },
+      {
+        "no": 5,
+        "nama": "TANDA TERIMA HUTANG"
+      },
+      {
+        "no": 6,
+        "nama": "ARTIKEL PSAK DAN PAJAK"
+      },
+      {
+        "no": 7,
+        "nama": "MEMORIAL"
+      }
+    ]
   }
 ]
