@@ -6888,5 +6888,13 @@
         "nama": "BPB SPARE PART JAN - JUN"
       }
     ]
+  },
+  {
+    "id": 146,
+    "no_dus": 15,
+    "tahun": "2016",
+    "label": "DUS 15 – 2016",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
