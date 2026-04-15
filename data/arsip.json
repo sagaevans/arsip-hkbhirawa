@@ -7323,5 +7323,13 @@
         "nama": "FP KELUARAN OKT-NOP"
       }
     ]
+  },
+  {
+    "id": 153,
+    "no_dus": 22,
+    "tahun": "2016",
+    "label": "DUS 22 – 2016",
+    "keterangan": "DOKUMEN PAJAK",
+    "dokumen": []
   }
 ]
