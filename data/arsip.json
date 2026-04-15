@@ -7773,6 +7773,43 @@
     "tahun": "2017",
     "label": "DUS 8 – 2017",
     "keterangan": "LAPORAN HARIAN BANK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BA BJ 2016-2017"
+      },
+      {
+        "no": 2,
+        "nama": "REK KORAN BCA"
+      },
+      {
+        "no": 3,
+        "nama": "LAP HARIAN B.UOB"
+      },
+      {
+        "no": 4,
+        "nama": "LAP HARIAN B.DANAMON"
+      },
+      {
+        "no": 5,
+        "nama": "LAP HARIAN B.ICBC"
+      },
+      {
+        "no": 6,
+        "nama": "LAP HARIAN B.BCA"
+      },
+      {
+        "no": 7,
+        "nama": "LAP HARIAN B.BNI"
+      },
+      {
+        "no": 8,
+        "nama": "SUPPORTING LK"
+      },
+      {
+        "no": 9,
+        "nama": "BON BARANG APR-JULI"
+      }
+    ]
   }
 ]
