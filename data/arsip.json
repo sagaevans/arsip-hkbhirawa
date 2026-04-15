@@ -8058,6 +8058,59 @@
     "tahun": "2017",
     "label": "DUS 13 – 2017",
     "keterangan": "BBK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBM 14.1511-1660"
+      },
+      {
+        "no": 2,
+        "nama": "BBM 14.1371-1510"
+      },
+      {
+        "no": 3,
+        "nama": "BBK 10.1086-1270"
+      },
+      {
+        "no": 4,
+        "nama": "BBK 10.881-1085"
+      },
+      {
+        "no": 5,
+        "nama": "BBK 10.759-880"
+      },
+      {
+        "no": 6,
+        "nama": "BBK 10.594-758"
+      },
+      {
+        "no": 7,
+        "nama": "BBK 10.481-593"
+      },
+      {
+        "no": 8,
+        "nama": "BBK 10.331-480"
+      },
+      {
+        "no": 9,
+        "nama": "BBK 10.172-330"
+      },
+      {
+        "no": 10,
+        "nama": "BBK 10.000-171"
+      },
+      {
+        "no": 11,
+        "nama": "SURAT PESANAN PENJ. LAIN\""
+      },
+      {
+        "no": 12,
+        "nama": "SURAT PESANAN"
+      },
+      {
+        "no": 13,
+        "nama": "SURAT PESANAN WRG"
+      }
+    ]
   }
 ]
