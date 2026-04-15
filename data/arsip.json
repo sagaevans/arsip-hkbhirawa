@@ -7438,5 +7438,13 @@
         "nama": "BON BPB BILLET"
       }
     ]
+  },
+  {
+    "id": 156,
+    "no_dus": 25,
+    "tahun": "2016",
+    "label": "DUS 25 – 2016",
+    "keterangan": "KP WIREMESH",
+    "dokumen": []
   }
 ]
