@@ -7905,5 +7905,13 @@
         "nama": "DATA CUSTOMER"
       }
     ]
+  },
+  {
+    "id": 167,
+    "no_dus": 11,
+    "tahun": "2017",
+    "label": "DUS 11 – 2017",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
