@@ -7728,6 +7728,43 @@
     "tahun": "2017",
     "label": "DUS 7 – 2017",
     "keterangan": "DOKUMEN PAJAK, DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "GAJI NON STAFF"
+      },
+      {
+        "no": 2,
+        "nama": "E FAKTUR 1"
+      },
+      {
+        "no": 3,
+        "nama": "E FAKTUR 2"
+      },
+      {
+        "no": 4,
+        "nama": "E FAKTUR 3"
+      },
+      {
+        "no": 5,
+        "nama": "E FAKTUR 4"
+      },
+      {
+        "no": 6,
+        "nama": "E FAKTUR 5"
+      },
+      {
+        "no": 7,
+        "nama": "NOTA RETUR"
+      },
+      {
+        "no": 8,
+        "nama": "FPM JAN-JUN"
+      },
+      {
+        "no": 9,
+        "nama": "FPM JUL-DES"
+      }
+    ]
   }
 ]
