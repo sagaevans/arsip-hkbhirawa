@@ -8112,5 +8112,13 @@
         "nama": "SURAT PESANAN WRG"
       }
     ]
+  },
+  {
+    "id": 170,
+    "no_dus": 14,
+    "tahun": "2017",
+    "label": "DUS 14 – 2017",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
