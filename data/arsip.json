@@ -6750,5 +6750,13 @@
         "nama": "BBM 14...1701 - 17xx"
       }
     ]
+  },
+  {
+    "id": 144,
+    "no_dus": 13,
+    "tahun": "2016",
+    "label": "DUS 13 – 2016",
+    "keterangan": "BBM",
+    "dokumen": []
   }
 ]
