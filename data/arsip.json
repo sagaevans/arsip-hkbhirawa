@@ -8253,6 +8253,63 @@
     "tahun": "2017",
     "label": "DUS 16 – 2017",
     "keterangan": "BKK DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BKK 2101.2488-2570"
+      },
+      {
+        "no": 2,
+        "nama": "BKK 2101.2571-2650"
+      },
+      {
+        "no": 3,
+        "nama": "SJ 17.00-0150"
+      },
+      {
+        "no": 4,
+        "nama": "SJ 17.151-330"
+      },
+      {
+        "no": 5,
+        "nama": "SJ 17.331-515"
+      },
+      {
+        "no": 6,
+        "nama": "SJ 17.516-706"
+      },
+      {
+        "no": 7,
+        "nama": "SJ 17.707-894"
+      },
+      {
+        "no": 8,
+        "nama": "SJ 17.895-1085"
+      },
+      {
+        "no": 9,
+        "nama": "SJ 17.1019-1184"
+      },
+      {
+        "no": 10,
+        "nama": "SJ 17......"
+      },
+      {
+        "no": 11,
+        "nama": "NOTA OA"
+      },
+      {
+        "no": 12,
+        "nama": "NOTA PENJUALAN JAN"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA PENJUALAN WRG"
+      },
+      {
+        "no": 14,
+        "nama": "BPB C7"
+      }
+    ]
   }
 ]
