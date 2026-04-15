@@ -8181,5 +8181,13 @@
         "nama": "BKK 2101.2230"
       }
     ]
+  },
+  {
+    "id": 171,
+    "no_dus": 15,
+    "tahun": "2017",
+    "label": "DUS 15 – 2017",
+    "keterangan": "NOTA PENJUALAN",
+    "dokumen": []
   }
 ]
