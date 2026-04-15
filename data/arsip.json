@@ -7683,6 +7683,43 @@
     "tahun": "2017",
     "label": "DUS 6 – 2017",
     "keterangan": "DOKUMEN PAJAK",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT PPH 25"
+      },
+      {
+        "no": 2,
+        "nama": "SPT PPH 4/2"
+      },
+      {
+        "no": 3,
+        "nama": "SPT PPH 23"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPH 21"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPN JUL-DES"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPN JAN-JUN"
+      },
+      {
+        "no": 7,
+        "nama": "KWITANSI UM"
+      },
+      {
+        "no": 8,
+        "nama": "REK KORAN ICBC"
+      },
+      {
+        "no": 9,
+        "nama": "LAP HARIAN B.MANDIRI"
+      }
+    ]
   }
 ]
