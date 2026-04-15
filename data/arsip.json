@@ -7642,6 +7642,35 @@
     "tahun": "2017",
     "label": "DUS 5 – 2017",
     "keterangan": "DOKUMEN AKUNTANSI",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BA 2017-2018"
+      },
+      {
+        "no": 2,
+        "nama": "MEMORIAL AP"
+      },
+      {
+        "no": 3,
+        "nama": "PERJANJIAN BANK"
+      },
+      {
+        "no": 4,
+        "nama": "PEMAKAIAN SENDIRI"
+      },
+      {
+        "no": 5,
+        "nama": "MIRO BS"
+      },
+      {
+        "no": 6,
+        "nama": "NOTA RETUR & BATAL"
+      },
+      {
+        "no": 7,
+        "nama": "BERITA ACARA STOCK OPNAME"
+      }
+    ]
   }
 ]
