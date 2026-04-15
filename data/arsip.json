@@ -7029,6 +7029,63 @@
     "tahun": "2016",
     "label": "DUS 17 – 2016",
     "keterangan": "SURAT JALAN, NOTA PENJUALAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SJ 16.2223-2432"
+      },
+      {
+        "no": 2,
+        "nama": "SJ 16.2433-2580"
+      },
+      {
+        "no": 3,
+        "nama": "SJ 16.2581-2727"
+      },
+      {
+        "no": 4,
+        "nama": "SJ WIREMESH"
+      },
+      {
+        "no": 5,
+        "nama": "SJ WIREMESH COPY"
+      },
+      {
+        "no": 6,
+        "nama": "SJ WIREMESH COPY 2"
+      },
+      {
+        "no": 7,
+        "nama": "SJ WIREMESH COPY 3"
+      },
+      {
+        "no": 8,
+        "nama": "SJ WIREMESH COPY 4"
+      },
+      {
+        "no": 9,
+        "nama": "SJ WIREMESH COPY 5"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA WIREMESH"
+      },
+      {
+        "no": 11,
+        "nama": "NOTA WIREMESH 2"
+      },
+      {
+        "no": 12,
+        "nama": "NOTA WIREMESH 3"
+      },
+      {
+        "no": 13,
+        "nama": "NOTA OA 2016"
+      },
+      {
+        "no": 14,
+        "nama": "BPB SPAREPART"
+      }
+    ]
   }
 ]
