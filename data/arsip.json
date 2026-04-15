@@ -7860,5 +7860,13 @@
         "nama": "NOTA 16.1271-1601"
       }
     ]
+  },
+  {
+    "id": 166,
+    "no_dus": 10,
+    "tahun": "2017",
+    "label": "DUS 10 – 2017",
+    "keterangan": "DOKUMEN LAIN-LAIN",
+    "dokumen": []
   }
 ]
