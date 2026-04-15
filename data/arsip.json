@@ -7520,5 +7520,13 @@
         "nama": "BPB M6"
       }
     ]
+  },
+  {
+    "id": 158,
+    "no_dus": 2,
+    "tahun": "2017",
+    "label": "DUS 2 – 2017",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
