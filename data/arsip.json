@@ -7811,5 +7811,13 @@
         "nama": "BON BARANG APR-JULI"
       }
     ]
+  },
+  {
+    "id": 165,
+    "no_dus": 9,
+    "tahun": "2017",
+    "label": "DUS 9 – 2017",
+    "keterangan": "KONTRAK PESANAN",
+    "dokumen": []
   }
 ]
