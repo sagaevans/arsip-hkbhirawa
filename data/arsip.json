@@ -6822,6 +6822,71 @@
     "tahun": "2016",
     "label": "DUS 14 – 2016",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BBK/BBM 10...2746 - 2877"
+      },
+      {
+        "no": 2,
+        "nama": "BPB MANUAL BB C7"
+      },
+      {
+        "no": 3,
+        "nama": "BPB 2014 - 2015"
+      },
+      {
+        "no": 4,
+        "nama": "BPB 2016"
+      },
+      {
+        "no": 5,
+        "nama": "BPB ATK 2016"
+      },
+      {
+        "no": 6,
+        "nama": "BPB ATK"
+      },
+      {
+        "no": 7,
+        "nama": "BPB SPARE PART JULI - DES"
+      },
+      {
+        "no": 8,
+        "nama": "TANDA TERIMA BUK POT"
+      },
+      {
+        "no": 9,
+        "nama": "BBK/BBM 10...1876 - 1997"
+      },
+      {
+        "no": 10,
+        "nama": "BBK/BBM 10...1998 - 2105"
+      },
+      {
+        "no": 11,
+        "nama": "BBK/BBM 10...2106 - 2230"
+      },
+      {
+        "no": 12,
+        "nama": "BBK/BBM 10...2231 - 2375"
+      },
+      {
+        "no": 13,
+        "nama": "BBK/BBM 10...2376 - 2500"
+      },
+      {
+        "no": 14,
+        "nama": "BBK/BBM 10...2501 - 2602"
+      },
+      {
+        "no": 15,
+        "nama": "BBK/BBM 10...2603 - 2745"
+      },
+      {
+        "no": 16,
+        "nama": "BPB SPARE PART JAN - JUN"
+      }
+    ]
   }
 ]
