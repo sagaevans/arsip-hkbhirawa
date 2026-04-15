@@ -7721,5 +7721,13 @@
         "nama": "LAP HARIAN B.MANDIRI"
       }
     ]
+  },
+  {
+    "id": 163,
+    "no_dus": 7,
+    "tahun": "2017",
+    "label": "DUS 7 – 2017",
+    "keterangan": "DOKUMEN PAJAK, DLL",
+    "dokumen": []
   }
 ]
