@@ -8318,6 +8318,43 @@
     "tahun": "2017",
     "label": "DUS 17 – 2017",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SJ 17.551-790"
+      },
+      {
+        "no": 2,
+        "nama": "SJ 17.791-1017"
+      },
+      {
+        "no": 3,
+        "nama": "SJ 17.151-340"
+      },
+      {
+        "no": 4,
+        "nama": "SJ 17.341-550"
+      },
+      {
+        "no": 5,
+        "nama": "SJ WRG"
+      },
+      {
+        "no": 6,
+        "nama": "NOTA KREDIT"
+      },
+      {
+        "no": 7,
+        "nama": "SJ C7"
+      },
+      {
+        "no": 8,
+        "nama": "PO WRG"
+      },
+      {
+        "no": 9,
+        "nama": "PO M6"
+      }
+    ]
   }
 ]
