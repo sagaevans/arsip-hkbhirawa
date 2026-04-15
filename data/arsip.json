@@ -7818,6 +7818,47 @@
     "tahun": "2017",
     "label": "DUS 9 – 2017",
     "keterangan": "KONFIRMASI PESANAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KP 6301-6480"
+      },
+      {
+        "no": 2,
+        "nama": "KP 6651"
+      },
+      {
+        "no": 3,
+        "nama": "KP 500-680"
+      },
+      {
+        "no": 4,
+        "nama": "KP 681"
+      },
+      {
+        "no": 5,
+        "nama": "KP 6171-6300"
+      },
+      {
+        "no": 6,
+        "nama": "KP 6481-6650"
+      },
+      {
+        "no": 7,
+        "nama": "BON BARANG FEB-APR"
+      },
+      {
+        "no": 8,
+        "nama": "PERJ. KREDIT BANK"
+      },
+      {
+        "no": 9,
+        "nama": "NPWP & KTP"
+      },
+      {
+        "no": 10,
+        "nama": "NOTA 16.1271-1601"
+      }
+    ]
   }
 ]
