@@ -7561,5 +7561,13 @@
         "nama": "Bukti potong pph"
       }
     ]
+  },
+  {
+    "id": 159,
+    "no_dus": 3,
+    "tahun": "2017",
+    "label": "DUS 3 – 2017",
+    "keterangan": "BBK",
+    "dokumen": []
   }
 ]
