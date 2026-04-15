@@ -7217,5 +7217,13 @@
         "nama": "BKK 2101...2448 - 2560"
       }
     ]
+  },
+  {
+    "id": 151,
+    "no_dus": 20,
+    "tahun": "2016",
+    "label": "DUS 20 – 2016",
+    "keterangan": "BKK",
+    "dokumen": []
   }
 ]
