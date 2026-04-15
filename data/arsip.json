@@ -7087,5 +7087,13 @@
         "nama": "BPB SPAREPART"
       }
     ]
+  },
+  {
+    "id": 149,
+    "no_dus": 18,
+    "tahun": "2016",
+    "label": "DUS 18 – 2016",
+    "keterangan": "BUKTI KAS KELUAR",
+    "dokumen": []
   }
 ]
