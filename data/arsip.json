@@ -7445,6 +7445,31 @@
     "tahun": "2016",
     "label": "DUS 25 – 2016",
     "keterangan": "KP WIREMESH",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MEMORIAL"
+      },
+      {
+        "no": 2,
+        "nama": "PENYESUAIAN STOCK"
+      },
+      {
+        "no": 3,
+        "nama": "KP 80.6021-6170"
+      },
+      {
+        "no": 4,
+        "nama": "KP WIREMESH W333-499"
+      },
+      {
+        "no": 5,
+        "nama": "WIREROD C7"
+      },
+      {
+        "no": 6,
+        "nama": "BUKU SATPAM"
+      }
+    ]
   }
 ]
