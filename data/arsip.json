@@ -6685,5 +6685,13 @@
         "nama": "BILLET PBD & HANSINDO"
       }
     ]
+  },
+  {
+    "id": 143,
+    "no_dus": 12,
+    "tahun": "2016",
+    "label": "DUS 12 – 2016",
+    "keterangan": "BBM",
+    "dokumen": []
   }
 ]
