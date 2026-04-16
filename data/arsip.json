@@ -8675,6 +8675,35 @@
     "tahun": "06-17",
     "label": "DUS 1 – 06-17",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MILL 4-6 2016"
+      },
+      {
+        "no": 2,
+        "nama": "MILL 6-10 2016"
+      },
+      {
+        "no": 3,
+        "nama": "PO 2016-17"
+      },
+      {
+        "no": 4,
+        "nama": "PEMBELIAN ASET 2006"
+      },
+      {
+        "no": 5,
+        "nama": "PO 2015"
+      },
+      {
+        "no": 6,
+        "nama": "PO MARKETING"
+      },
+      {
+        "no": 7,
+        "nama": "ASURANSI 2016"
+      }
+    ]
   }
 ]
