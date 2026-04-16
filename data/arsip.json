@@ -8556,6 +8556,39 @@
     "tahun": "2011-16",
     "label": "DUS 1 – 2011-16",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "REVAL ASET 2014"
+      },
+      {
+        "no": 2,
+        "nama": "INVOICE 2011-2012"
+      },
+      {
+        "no": 3,
+        "nama": "APREISEL 2014-2016"
+      },
+      {
+        "no": 4,
+        "nama": "AKTIVA TETAP 2008"
+      },
+      {
+        "no": 5,
+        "nama": "FILE IMPOR"
+      },
+      {
+        "no": 6,
+        "nama": "AKTIVA TETAP 2008"
+      },
+      {
+        "no": 7,
+        "nama": "KP 2009"
+      },
+      {
+        "no": 8,
+        "nama": "ASURANSI 2015"
+      }
+    ]
   }
 ]
