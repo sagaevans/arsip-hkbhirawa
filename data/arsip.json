@@ -8405,5 +8405,13 @@
         "nama": "DOK TANAH 2002"
       }
     ]
+  },
+  {
+    "id": 175,
+    "no_dus": 1,
+    "tahun": "2011-15",
+    "label": "DUS 1 – 2011-15",
+    "keterangan": "DOKUMEN ASET  DAN LAINNYA",
+    "dokumen": []
   }
 ]
