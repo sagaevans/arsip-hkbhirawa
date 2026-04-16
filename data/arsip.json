@@ -8597,6 +8597,35 @@
     "tahun": "94-2012",
     "label": "DUS 1 – 94-2012",
     "keterangan": "DOK IMPOR DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOK IMPOR 12/95-3/96"
+      },
+      {
+        "no": 2,
+        "nama": "DOK IMPOR 4-6 96"
+      },
+      {
+        "no": 3,
+        "nama": "DOK IMPOR 94-95"
+      },
+      {
+        "no": 4,
+        "nama": "PEMBELIAN ASET 2007"
+      },
+      {
+        "no": 5,
+        "nama": "PERATURAN PAJAK"
+      },
+      {
+        "no": 6,
+        "nama": "DATA INVENTARIS"
+      },
+      {
+        "no": 7,
+        "nama": "BBK MEI 2012"
+      }
+    ]
   }
 ]
