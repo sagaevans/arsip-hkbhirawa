@@ -8668,5 +8668,13 @@
         "nama": "PO 2016"
       }
     ]
+  },
+  {
+    "id": 180,
+    "no_dus": 1,
+    "tahun": "06-17",
+    "label": "DUS 1 – 06-17",
+    "keterangan": "DOKUMEN CAMPUR",
+    "dokumen": []
   }
 ]
