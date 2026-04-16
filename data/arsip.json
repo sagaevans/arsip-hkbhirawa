@@ -8634,6 +8634,39 @@
     "tahun": "2016-17",
     "label": "DUS 1 – 2016-17",
     "keterangan": "DOKUMEN MARKETING",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "PENAWARAN 2016-17"
+      },
+      {
+        "no": 2,
+        "nama": "DOK PENAWARAN"
+      },
+      {
+        "no": 3,
+        "nama": "PO 2016-18"
+      },
+      {
+        "no": 4,
+        "nama": "MILL 2017"
+      },
+      {
+        "no": 5,
+        "nama": "PO 2017"
+      },
+      {
+        "no": 6,
+        "nama": "PO 2017"
+      },
+      {
+        "no": 7,
+        "nama": "MILL 2016-17"
+      },
+      {
+        "no": 8,
+        "nama": "PO 2016"
+      }
+    ]
   }
 ]
