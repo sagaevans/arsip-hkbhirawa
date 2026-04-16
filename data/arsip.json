@@ -8590,5 +8590,13 @@
         "nama": "ASURANSI 2015"
       }
     ]
+  },
+  {
+    "id": 178,
+    "no_dus": 1,
+    "tahun": "94-2012",
+    "label": "DUS 1 – 94-2012",
+    "keterangan": "DOK IMPOR DLL",
+    "dokumen": []
   }
 ]
