@@ -8515,6 +8515,39 @@
     "tahun": "97-05",
     "label": "DUS 1 – 97-05",
     "keterangan": "DOKUMEN CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOK CAMPUR 97 JUNI-DES"
+      },
+      {
+        "no": 2,
+        "nama": "BUKTI IMPOR B.BAKU"
+      },
+      {
+        "no": 3,
+        "nama": "DOK IMPOR 97 JAN-MEI"
+      },
+      {
+        "no": 4,
+        "nama": "SPT PPH 25 2011"
+      },
+      {
+        "no": 5,
+        "nama": "SPT PPH 23 2011"
+      },
+      {
+        "no": 6,
+        "nama": "SPT PPH 21 2011"
+      },
+      {
+        "no": 7,
+        "nama": "UM IMPOR LOKAL 2002"
+      },
+      {
+        "no": 8,
+        "nama": "TAMBAH ASET 2003-2005"
+      }
+    ]
   }
 ]
