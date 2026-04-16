@@ -8363,6 +8363,47 @@
     "tahun": "96-03",
     "label": "DUS 1 – 96-03",
     "keterangan": "DOKUMEN MIX",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOK IMPOR 1996"
+      },
+      {
+        "no": 2,
+        "nama": "IMPOR & LOKAL 2003"
+      },
+      {
+        "no": 3,
+        "nama": "DOK CAMPUR 1998"
+      },
+      {
+        "no": 4,
+        "nama": "UM IMPOR 2002"
+      },
+      {
+        "no": 5,
+        "nama": "MESIN & PERALATAN 2002"
+      },
+      {
+        "no": 6,
+        "nama": "PERATURAN PAJAK"
+      },
+      {
+        "no": 7,
+        "nama": "DOK PROYEK 2003"
+      },
+      {
+        "no": 8,
+        "nama": "INV. KANTOR 2002"
+      },
+      {
+        "no": 9,
+        "nama": "INV. PABRIK 2002"
+      },
+      {
+        "no": 10,
+        "nama": "DOK TANAH 2002"
+      }
+    ]
   }
 ]
