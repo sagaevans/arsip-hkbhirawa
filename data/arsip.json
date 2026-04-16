@@ -8466,6 +8466,47 @@
     "tahun": "2011-15",
     "label": "DUS 1 – 2011-15",
     "keterangan": "DOKUMEN ASET  DAN LAINNYA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "TAMBAH ASET 2015"
+      },
+      {
+        "no": 2,
+        "nama": "AKTIVA TETAP MESIN 2014"
+      },
+      {
+        "no": 3,
+        "nama": "DOK ASET 2011-2012"
+      },
+      {
+        "no": 4,
+        "nama": "AKTIVA TETAP INV 2014"
+      },
+      {
+        "no": 5,
+        "nama": "AKTIVA TETAP BANGUNAN 2014"
+      },
+      {
+        "no": 6,
+        "nama": "AKTIVA TETAP AUC INV 2014"
+      },
+      {
+        "no": 7,
+        "nama": "AKTIVA TETAP AUC ROLL 2014"
+      },
+      {
+        "no": 8,
+        "nama": "AKTIVA TETAP INV 2014"
+      },
+      {
+        "no": 9,
+        "nama": "AKTIVA TETAP INV C7 2012"
+      },
+      {
+        "no": 10,
+        "nama": "INVOICE 2011-2012"
+      }
+    ]
   }
 ]
