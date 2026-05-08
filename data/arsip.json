@@ -8705,5 +8705,13 @@
         "nama": "ASURANSI 2016"
       }
     ]
+  },
+  {
+    "id": 181,
+    "no_dus": 1,
+    "tahun": "2012",
+    "label": "DUS 1 – 2012",
+    "keterangan": "BBK CAMPUR 2012",
+    "dokumen": []
   }
 ]
