@@ -8770,7 +8770,12 @@
     "tahun": "2011-15",
     "label": "DUS 1 – 2011-15",
     "keterangan": "MEMORIAL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOK MEMORIAL CAMPUR"
+      }
+    ]
   },
   {
     "id": 185,
