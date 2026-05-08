@@ -8734,6 +8734,11 @@
     "tahun": "2012 B",
     "label": "DUS 1 – 2012 B",
     "keterangan": "FORM ASET CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOK  ASET CAMPUR"
+      }
+    ]
   }
 ]
