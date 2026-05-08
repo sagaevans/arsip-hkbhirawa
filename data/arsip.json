@@ -8740,5 +8740,13 @@
         "nama": "DOK  ASET CAMPUR"
       }
     ]
+  },
+  {
+    "id": 183,
+    "no_dus": 1,
+    "tahun": "00",
+    "label": "DUS 1 – 00",
+    "keterangan": "LIST NAMA CUSTOMER",
+    "dokumen": []
   }
 ]
