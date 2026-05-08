@@ -8747,6 +8747,11 @@
     "tahun": "00",
     "label": "DUS 1 – 00",
     "keterangan": "LIST NAMA CUSTOMER",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LIST CUSTOMER CAMPUR"
+      }
+    ]
   }
 ]
