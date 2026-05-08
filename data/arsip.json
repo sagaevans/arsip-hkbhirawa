@@ -8765,5 +8765,13 @@
     "label": "DUS 1 – 2011-15",
     "keterangan": "MEMORIAL",
     "dokumen": []
+  },
+  {
+    "id": 185,
+    "no_dus": 1,
+    "tahun": "00",
+    "label": "DUS 1 – 00",
+    "keterangan": "INVOICE IMPORT",
+    "dokumen": []
   }
 ]
