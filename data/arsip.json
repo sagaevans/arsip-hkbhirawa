@@ -8772,6 +8772,11 @@
     "tahun": "00",
     "label": "DUS 1 – 00",
     "keterangan": "INVOICE IMPORT",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "INVOICE IMPORT CAMPUR"
+      }
+    ]
   }
 ]
