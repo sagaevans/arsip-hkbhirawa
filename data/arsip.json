@@ -8753,5 +8753,13 @@
         "nama": "LIST CUSTOMER CAMPUR"
       }
     ]
+  },
+  {
+    "id": 184,
+    "no_dus": 1,
+    "tahun": "2011-15",
+    "label": "DUS 1 – 2011-15",
+    "keterangan": "MEMORIAL",
+    "dokumen": []
   }
 ]
