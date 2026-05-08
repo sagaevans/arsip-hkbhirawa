@@ -8785,6 +8785,15 @@
     "tahun": "00",
     "label": "DUS 1 – 00",
     "keterangan": "MONTHLY REPORT DEPT",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FAX IN"
+      },
+      {
+        "no": 2,
+        "nama": "MONTHLY REPORT DEPT"
+      }
+    ]
   }
 ]
