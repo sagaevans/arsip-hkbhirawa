@@ -8778,5 +8778,13 @@
         "nama": "INVOICE IMPORT CAMPUR"
       }
     ]
+  },
+  {
+    "id": 186,
+    "no_dus": 1,
+    "tahun": "00",
+    "label": "DUS 1 – 00",
+    "keterangan": "MONTHLY REPORT DEPT",
+    "dokumen": []
   }
 ]
