@@ -8833,7 +8833,20 @@
     "tahun": "2012",
     "label": "DUS 25 – 2012",
     "keterangan": "BBK APRIL MEI JUNI",
-    "dokumen": [],
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "APRIL 20212 - 3 BDL"
+      },
+      {
+        "no": 2,
+        "nama": "MEI 2012 - 3 BDL"
+      },
+      {
+        "no": 3,
+        "nama": "JUNI 2012 - 3 BDL"
+      }
+    ],
     "c7": true
   }
 ]
