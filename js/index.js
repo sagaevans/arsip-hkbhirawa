@@ -30,15 +30,22 @@ document.addEventListener("DOMContentLoaded", async () => {
       </div>`;
       return;
     }
-    grid.innerHTML = list.map(d => `
-      <a class="dus-card" href="dus.html?id=${d.id}">
+    
+    // [BARU] Tambahan parameter "index" untuk memunculkan nomor urut otomatis
+    grid.innerHTML = list.map((d, index) => `
+      <a class="dus-card" href="dus.html?id=${d.id}" style="position: relative; overflow: hidden;">
         <div class="card-head">
           <span class="card-label">${hl(d.label, q)}</span>
           <span class="card-badge">${d.tahun}</span>
         </div>
-        <div class="card-body">
+        <div class="card-body" style="padding-right: 50px;">
           <div class="card-title">${hl(d.keterangan, q)}</div>
           <div class="card-meta-r">📄 ${d.dokumen.length} dokumen</div>
+          
+          <div style="position: absolute; right: 18px; top: 40%; font-size: 4rem; font-weight: 800; color: rgba(15, 31, 61, 0.08); pointer-events: none; line-height: 1;">
+            ${index + 1}
+          </div>
+          
         </div>
         <div class="card-foot">
           <div class="dok-count"><strong>${d.dokumen.length}</strong> dok</div>
