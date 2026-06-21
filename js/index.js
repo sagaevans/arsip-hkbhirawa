@@ -84,20 +84,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     data = await loadArsip();
-    statDus.textContent = data.length;
-    statDok.textContent = data.reduce((s, d) => s + d.dokumen.length, 0);
-    const years = [...new Set(data.map(d => d.tahun))].sort().reverse();
-    fTahun.innerHTML = `<option value="">Semua Tahun</option>`
-      + years.map(y => `<option value="${y}">${y}</option>`).join("");
-    filter();
-  } catch {
-    grid.innerHTML = `<div class="empty">
-      <div class="empty-ico">⚠️</div>
-      <div class="empty-ttl">Gagal memuat data</div>
-    </div>`;
-  }
 
-  sInput.addEventListener("input", filter);
-  fTahun.addEventListener("change", filter);
-  fC7.addEventListener("change", filter); // [BARU] Memicu filter saat C7 diganti
-});
+    // --- FUNGSI CUSTOM SORTING DITAMBAHKAN DI SINI ---
+    function sortTahunKhusus(a, b) {
+      let tA = String(a || "").trim().toLowerCase();
+      let tB = String(b || "").trim().toLowerCase();
+
+      // Deteksi jika format tahun kurang dari 4
