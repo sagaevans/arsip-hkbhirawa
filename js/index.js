@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const grid     = document.getElementById("cards-grid");
   const sInput   = document.getElementById("s-input");
   const fTahun   = document.getElementById("f-tahun");
-  const fC7      = document.getElementById("f-c7"); // [BARU] Inisialisasi elemen C7
+  const fC7      = document.getElementById("f-c7");
   const statDus  = document.getElementById("stat-dus");
   const statDok  = document.getElementById("stat-dok");
   const resLbl   = document.getElementById("result-lbl");
@@ -51,21 +51,20 @@ document.addEventListener("DOMContentLoaded", async () => {
   function filter() {
     const q     = sInput.value.trim().toLowerCase();
     const thn   = fTahun.value;
-    const c7Val = fC7.value; // [BARU] Ambil nilai dropdown C7
+    const c7Val = fC7.value;
 
     const out = data.filter(d => {
       const thnOk = !thn || d.tahun === thn;
       const qOk   = !q   || [d.label, d.keterangan, d.tahun].join(" ").toLowerCase().includes(q);
       
-      // [BARU] Logika Pengecekan C7
       let c7Ok = true;
       if (c7Val === "sudah") {
-        c7Ok = d.c7 === true; // Tampilkan yang d.c7 bernilai true
+        c7Ok = d.c7 === true;
       } else if (c7Val === "belum") {
-        c7Ok = !d.c7;         // Tampilkan yang d.c7 bernilai false/undefined
+        c7Ok = !d.c7;
       }
 
-      return thnOk && qOk && c7Ok; // Gabungkan syarat C7 ke dalam return
+      return thnOk && qOk && c7Ok;
     });
     
     resLbl.textContent = `${out.length} dari ${data.length} dus`;
@@ -84,10 +83,47 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     data = await loadArsip();
+    
+    // --- LOGIKA SORTING TAHUN (Terlama -> Terbaru) ---
+    function sortTahun(a, b) {
+      let strA = String(a || "").trim().toLowerCase();
+      let strB = String(b || "").trim().toLowerCase();
+      
+      // Jika tahun kurang dari 4 digit (misal "1" atau "00"), lempar ke paling bawah
+      let isInvalidA = strA.length < 4;
+      let isInvalidB = strB.length < 4;
+      
+      if (isInvalidA && !isInvalidB) return 1;
+      if (!isInvalidA && isInvalidB) return -1;
+      
+      // Sorting Ascending (dari yang terkecil/terlama ke terbesar/terbaru)
+      if (strA < strB) return -1;
+      if (strA > strB) return 1;
+      return 0;
+    }
 
-    // --- FUNGSI CUSTOM SORTING DITAMBAHKAN DI SINI ---
-    function sortTahunKhusus(a, b) {
-      let tA = String(a || "").trim().toLowerCase();
-      let tB = String(b || "").trim().toLowerCase();
+    // Terapkan ke kartu arsip
+    data.sort((a, b) => sortTahun(a.tahun, b.tahun));
+    // ------------------------------------------------
 
-      // Deteksi jika format tahun kurang dari 4
+    statDus.textContent = data.length;
+    statDok.textContent = data.reduce((s, d) => s + d.dokumen.length, 0);
+    
+    // Terapkan ke dropdown menu
+    const years = [...new Set(data.map(d => d.tahun))].sort(sortTahun);
+    
+    fTahun.innerHTML = `<option value="">Semua Tahun</option>`
+      + years.map(y => `<option value="${y}">${y}</option>`).join("");
+      
+    filter();
+  } catch {
+    grid.innerHTML = `<div class="empty">
+      <div class="empty-ico">⚠️</div>
+      <div class="empty-ttl">Gagal memuat data</div>
+    </div>`;
+  }
+
+  sInput.addEventListener("input", filter);
+  fTahun.addEventListener("change", filter);
+  fC7.addEventListener("change", filter);
+});
