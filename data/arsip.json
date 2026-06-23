@@ -3359,9 +3359,9 @@
   },
   {
     "id": 69,
-    "no_dus": 14,
-    "tahun": "2011",
-    "label": "DUS 14 – 2011",
+    "no_dus": 1,
+    "tahun": "000",
+    "label": "PAJAK",
     "keterangan": "DOKUMEN PAJAK",
     "dokumen": [
       {
