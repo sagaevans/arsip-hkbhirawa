@@ -3360,8 +3360,8 @@
   {
     "id": 69,
     "no_dus": 1,
-    "tahun": "000",
-    "label": "PAJAK",
+    "tahun": "0",
+    "label": "Dus 1  - 0",
     "keterangan": "DOKUMEN PAJAK",
     "dokumen": [
       {
