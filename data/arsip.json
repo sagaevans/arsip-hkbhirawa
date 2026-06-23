@@ -8714,28 +8714,6 @@
     "c7": true
   },
   {
-    "id": 181,
-    "no_dus": 1,
-    "tahun": "2012",
-    "label": "DUS 1 – 2012 A",
-    "keterangan": "BBK CAMPUR 2012",
-    "dokumen": [
-      {
-        "no": 1,
-        "nama": "APRIL 3 BDL"
-      },
-      {
-        "no": 2,
-        "nama": "MEI 3 BDL"
-      },
-      {
-        "no": 3,
-        "nama": "JUNI 2 BDL"
-      }
-    ],
-    "c7": true
-  },
-  {
     "id": 182,
     "no_dus": 1,
     "tahun": "2012 B",
