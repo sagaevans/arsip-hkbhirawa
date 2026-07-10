@@ -8866,6 +8866,19 @@
     "tahun": "000",
     "label": "DUS 2 – 000",
     "keterangan": "DOKUMEN LAMA PAJAK-AKUNTANSI",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SPT WP INDIA"
+      },
+      {
+        "no": 2,
+        "nama": "NOTULEN DAN DAFTAR HADIR"
+      },
+      {
+        "no": 3,
+        "nama": "DOKUMEN LAMA CAMPUR"
+      }
+    ]
   }
 ]
