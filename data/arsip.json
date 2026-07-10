@@ -8833,6 +8833,31 @@
     "tahun": "000",
     "label": "DUS 1 – 000",
     "keterangan": "ARSIP PAJAK MIX",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "PAYROL JAN-DES 2017"
+      },
+      {
+        "no": 2,
+        "nama": "DOK PENSIUN DINI-PESANGON"
+      },
+      {
+        "no": 3,
+        "nama": "PAYROL 2016-2017"
+      },
+      {
+        "no": 4,
+        "nama": "DOKUMEN PAYROL"
+      },
+      {
+        "no": 5,
+        "nama": "SUPPORTING TAX"
+      },
+      {
+        "no": 6,
+        "nama": "PAYROL 2015"
+      }
+    ]
   }
 ]
