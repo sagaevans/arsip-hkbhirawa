@@ -8859,5 +8859,13 @@
         "nama": "PAYROL 2015"
       }
     ]
+  },
+  {
+    "id": 190,
+    "no_dus": 2,
+    "tahun": "000",
+    "label": "DUS 2 – 000",
+    "keterangan": "DOKUMEN LAMA PAJAK-AKUNTANSI",
+    "dokumen": []
   }
 ]
