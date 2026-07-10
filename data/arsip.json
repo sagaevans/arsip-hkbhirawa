@@ -8900,6 +8900,11 @@
     "tahun": "000",
     "label": "DUS 4 – 000",
     "keterangan": "KONTRAK CUST LAMA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KONTRAK CUST LAMA"
+      }
+    ]
   }
 ]
