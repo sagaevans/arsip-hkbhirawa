@@ -8887,6 +8887,11 @@
     "tahun": "000",
     "label": "DUS 3 – 000",
     "keterangan": "DOKUMEN PAJAK MIX",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKTI POTONG PAJAK CAMPUR"
+      }
+    ]
   }
 ]
