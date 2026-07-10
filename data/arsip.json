@@ -8893,5 +8893,13 @@
         "nama": "BUKTI POTONG PAJAK CAMPUR"
       }
     ]
+  },
+  {
+    "id": 192,
+    "no_dus": 4,
+    "tahun": "000",
+    "label": "DUS 4 – 000",
+    "keterangan": "KONTRAK CUST LAMA",
+    "dokumen": []
   }
 ]
