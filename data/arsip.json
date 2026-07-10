@@ -8906,5 +8906,13 @@
         "nama": "KONTRAK CUST LAMA"
       }
     ]
+  },
+  {
+    "id": 193,
+    "no_dus": 5,
+    "tahun": "000",
+    "label": "DUS 5 – 000",
+    "keterangan": "KONTRAK CUST LAMA",
+    "dokumen": []
   }
 ]
