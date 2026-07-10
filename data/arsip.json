@@ -8919,5 +8919,13 @@
         "nama": "KONTRAK CUST LAMA"
       }
     ]
+  },
+  {
+    "id": 194,
+    "no_dus": 6,
+    "tahun": "000",
+    "label": "DUS 6 – 000",
+    "keterangan": "DOKUMAN PAJAK LAMA",
+    "dokumen": []
   }
 ]
