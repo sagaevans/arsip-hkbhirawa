@@ -8926,7 +8926,12 @@
     "tahun": "000",
     "label": "DUS 6 – 000",
     "keterangan": "DOKUMAN PAJAK LAMA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "DOKUMEN PAJAK LAMA"
+      }
+    ]
   },
   {
     "id": 195,
