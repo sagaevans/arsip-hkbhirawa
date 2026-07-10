@@ -8826,5 +8826,13 @@
       }
     ],
     "c7": true
+  },
+  {
+    "id": 189,
+    "no_dus": 1,
+    "tahun": "000",
+    "label": "DUS 1 – 000",
+    "keterangan": "ARSIP PAJAK MIX",
+    "dokumen": []
   }
 ]
