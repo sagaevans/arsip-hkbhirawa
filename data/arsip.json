@@ -8959,6 +8959,39 @@
     "tahun": "2005-2014",
     "label": "DUS 1 – 2005-2014",
     "keterangan": "DOKUMEN CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Dok pajak 2005 1"
+      },
+      {
+        "no": 2,
+        "nama": "Dok pajak 2005 2"
+      },
+      {
+        "no": 3,
+        "nama": "Dok pajak 2005 3"
+      },
+      {
+        "no": 4,
+        "nama": "Dok Mix 2011"
+      },
+      {
+        "no": 5,
+        "nama": "Dok Mix 2012"
+      },
+      {
+        "no": 6,
+        "nama": "Dok Mix 2014"
+      },
+      {
+        "no": 7,
+        "nama": "KP 1100 2015"
+      },
+      {
+        "no": 8,
+        "nama": "Dana Sosial 2006"
+      }
+    ]
   }
 ]
