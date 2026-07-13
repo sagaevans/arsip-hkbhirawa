@@ -9000,6 +9000,43 @@
     "tahun": "1999-2013",
     "label": "DUS M2 – 1999-2013",
     "keterangan": "Dokumen Campur",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Neraca 1999"
+      },
+      {
+        "no": 2,
+        "nama": "BBK 2011 MIX"
+      },
+      {
+        "no": 3,
+        "nama": "Kasbon 2008"
+      },
+      {
+        "no": 4,
+        "nama": "Lap keu sementara 2013"
+      },
+      {
+        "no": 5,
+        "nama": "Roll used 2005"
+      },
+      {
+        "no": 6,
+        "nama": "Roll cost 2010"
+      },
+      {
+        "no": 7,
+        "nama": "Kas & bank 2010 & 2011"
+      },
+      {
+        "no": 8,
+        "nama": "List aktiva tetap 2010"
+      },
+      {
+        "no": 9,
+        "nama": "Bukpot pph23 2009 & 2010"
+      }
+    ]
   }
 ]
