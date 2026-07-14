@@ -9045,6 +9045,43 @@
     "tahun": "M3 1994-2017",
     "label": "DUS M3 1994-2017",
     "keterangan": "DOKUMEN MIX LAMA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Lap Sparepart 1994"
+      },
+      {
+        "no": 2,
+        "nama": "Audit Report 2003"
+      },
+      {
+        "no": 3,
+        "nama": "BBK campur 2011-2012"
+      },
+      {
+        "no": 4,
+        "nama": "Kas Koperasi 2011 & 2015"
+      },
+      {
+        "no": 5,
+        "nama": "Kas campur 2011 & 2015"
+      },
+      {
+        "no": 6,
+        "nama": "Lap Produksi 2016"
+      },
+      {
+        "no": 7,
+        "nama": "Dok Campur 2010-2015"
+      },
+      {
+        "no": 8,
+        "nama": "Manajemen Review 2016"
+      },
+      {
+        "no": 9,
+        "nama": "LK In House 2017"
+      }
+    ]
   }
 ]
