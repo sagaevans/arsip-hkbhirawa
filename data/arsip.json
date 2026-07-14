@@ -9124,6 +9124,27 @@
     "tahun": "M6 2010-2015",
     "label": "DUS 6 – M6 2010-2015",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "Audit Rep 2011-2015"
+      },
+      {
+        "no": 2,
+        "nama": "UnS tahun 2015"
+      },
+      {
+        "no": 3,
+        "nama": "Proposal 2012"
+      },
+      {
+        "no": 4,
+        "nama": "Aktuaria"
+      },
+      {
+        "no": 5,
+        "nama": "Appraisal 2010"
+      }
+    ]
   }
 ]
