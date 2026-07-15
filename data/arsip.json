@@ -9172,6 +9172,11 @@
     "tahun": "M8 2000",
     "label": "DUS M8 2000",
     "keterangan": "dok billet fc 2000",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "dok billet fc 2000"
+      }
+    ]
   }
 ]
