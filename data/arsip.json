@@ -9146,5 +9146,13 @@
         "nama": "Appraisal 2010"
       }
     ]
+  },
+  {
+    "id": 202,
+    "no_dus": 7,
+    "tahun": "M7 2000",
+    "label": "DUS M7 2000",
+    "keterangan": "FOTOCOPY",
+    "dokumen": []
   }
 ]
