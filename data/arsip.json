@@ -9198,6 +9198,15 @@
     "tahun": "M10 1997",
     "label": "DUS M10 1997",
     "keterangan": "LC BILLET 1997",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LC BILLET 1997"
+      },
+      {
+        "no": 2,
+        "nama": "DOK IMPOR"
+      }
+    ]
   }
 ]
