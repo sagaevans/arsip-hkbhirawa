@@ -9241,6 +9241,19 @@
     "tahun": "M13 2000",
     "label": "DUS M13 2000",
     "keterangan": "DOKUMEN MIX",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "FC BPM 2000"
+      },
+      {
+        "no": 2,
+        "nama": "FC DOK BILLET 2000"
+      },
+      {
+        "no": 3,
+        "nama": "DOK MIX"
+      }
+    ]
   }
 ]
