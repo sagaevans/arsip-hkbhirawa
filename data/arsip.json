@@ -9296,6 +9296,23 @@
     "tahun": "M16 1994-2012",
     "label": "DUS 16 – M16 1994-2012",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "AUDIT REP 91-2012"
+      },
+      {
+        "no": 2,
+        "nama": "NERACA 2002"
+      },
+      {
+        "no": 3,
+        "nama": "AKTUARIS  2011-2012"
+      },
+      {
+        "no": 4,
+        "nama": "MANAJEMEN REV 2009"
+      }
+    ]
   }
 ]
