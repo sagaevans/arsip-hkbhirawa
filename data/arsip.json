@@ -9427,5 +9427,13 @@
         "nama": "BUKU CAMPUR"
       }
     ]
+  },
+  {
+    "id": 215,
+    "no_dus": 20,
+    "tahun": "0",
+    "label": "DUS M20",
+    "keterangan": "CAMPURAN",
+    "dokumen": []
   }
 ]
