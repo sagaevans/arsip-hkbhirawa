@@ -9355,5 +9355,13 @@
         "nama": "DOKUMEN CAMPURAN"
       }
     ]
+  },
+  {
+    "id": 213,
+    "no_dus": 18,
+    "tahun": "00",
+    "label": "DUS M18",
+    "keterangan": "CAMPURAN",
+    "dokumen": []
   }
 ]
