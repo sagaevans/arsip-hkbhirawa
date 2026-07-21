@@ -9413,6 +9413,19 @@
     "tahun": "0",
     "label": "DUS M19",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MANAGEMEN REV 2008"
+      },
+      {
+        "no": 2,
+        "nama": "KOREKSI FISKAL"
+      },
+      {
+        "no": 3,
+        "nama": "BUKU CAMPUR"
+      }
+    ]
   }
 ]
