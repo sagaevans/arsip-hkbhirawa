@@ -9434,6 +9434,19 @@
     "tahun": "0",
     "label": "DUS M20",
     "keterangan": "CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "LAPORAN PENILAIAN PROPERTI 2015"
+      },
+      {
+        "no": 2,
+        "nama": "LAPORAN PENILAIAN PROPERTI 2013"
+      },
+      {
+        "no": 3,
+        "nama": "DOKUMEN CAMPURAN"
+      }
+    ]
   }
 ]
