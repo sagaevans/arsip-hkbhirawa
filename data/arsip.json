@@ -9321,6 +9321,39 @@
     "tahun": "00",
     "label": "DUS M17",
     "keterangan": "CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "ASURANSI"
+      },
+      {
+        "no": 2,
+        "nama": "REVALUASI"
+      },
+      {
+        "no": 3,
+        "nama": "AFL KONTRAK"
+      },
+      {
+        "no": 4,
+        "nama": "PT.MANYAR BHAKTI"
+      },
+      {
+        "no": 5,
+        "nama": "NOTARIS"
+      },
+      {
+        "no": 6,
+        "nama": "LALU LINTAS DEVISA"
+      },
+      {
+        "no": 7,
+        "nama": "DAFTAR CUSTOMER"
+      },
+      {
+        "no": 8,
+        "nama": "DOKUMEN CAMPURAN"
+      }
+    ]
   }
 ]
