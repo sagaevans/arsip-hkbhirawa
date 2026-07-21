@@ -9362,6 +9362,39 @@
     "tahun": "00",
     "label": "DUS M18",
     "keterangan": "CAMPURAN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "BUKU SEMINAR PAJAK"
+      },
+      {
+        "no": 2,
+        "nama": "KEP PRES PAJAK"
+      },
+      {
+        "no": 3,
+        "nama": "KEP MEN PAJAK"
+      },
+      {
+        "no": 4,
+        "nama": "ISO AKUNTANSI"
+      },
+      {
+        "no": 5,
+        "nama": "KONTRAK"
+      },
+      {
+        "no": 6,
+        "nama": "PEDOMAN MUTU"
+      },
+      {
+        "no": 7,
+        "nama": "BERKAS PERSONALIA"
+      },
+      {
+        "no": 8,
+        "nama": "FILE PAJAK"
+      }
+    ]
   }
 ]
