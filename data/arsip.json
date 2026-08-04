@@ -9651,5 +9651,13 @@
         "nama": "DOK LAINNYA 2012"
       }
     ]
+  },
+  {
+    "id": 222,
+    "no_dus": 27,
+    "tahun": "2013-2015",
+    "label": "DUS M27 – 2013-2015",
+    "keterangan": "DOK LAIN-LAIN",
+    "dokumen": []
   }
 ]
