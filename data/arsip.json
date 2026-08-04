@@ -9563,6 +9563,23 @@
     "tahun": "2015-2016",
     "label": "DUS M24 2015",
     "keterangan": "DOK MIX 2014-2015",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "PO 2015"
+      },
+      {
+        "no": 2,
+        "nama": "PO 2016"
+      },
+      {
+        "no": 3,
+        "nama": "MILL CERTIFICATE 2015"
+      },
+      {
+        "no": 4,
+        "nama": "MILL CERTIFICATE 2016"
+      }
+    ]
   }
 ]
