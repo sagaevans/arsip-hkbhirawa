@@ -9526,6 +9526,35 @@
     "tahun": "94-16",
     "label": "DUS M23  94-16",
     "keterangan": "DOK MIX 94-2016",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "PROYEK LAINNYA 2016"
+      },
+      {
+        "no": 2,
+        "nama": "DOK MIX 1994-1995"
+      },
+      {
+        "no": 3,
+        "nama": "DOK BAHAN BAKU 2003"
+      },
+      {
+        "no": 4,
+        "nama": "UM IMPOR LOKAL 2000"
+      },
+      {
+        "no": 5,
+        "nama": "REK KORAN 2009"
+      },
+      {
+        "no": 6,
+        "nama": "MIRO 2013"
+      },
+      {
+        "no": 7,
+        "nama": "DOK ROLL 2013"
+      }
+    ]
   }
 ]
