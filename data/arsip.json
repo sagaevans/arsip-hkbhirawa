@@ -9588,6 +9588,39 @@
     "tahun": "0",
     "label": "DUS M25 – 0",
     "keterangan": "CAMPURAN DOK CUSTOMER DLL",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "WASKITA 2013"
+      },
+      {
+        "no": 2,
+        "nama": "SUBUR BUANA 2013"
+      },
+      {
+        "no": 3,
+        "nama": "SANUR JAYA 2011"
+      },
+      {
+        "no": 4,
+        "nama": "DOK C7 2016"
+      },
+      {
+        "no": 5,
+        "nama": "DOK C7 2015"
+      },
+      {
+        "no": 6,
+        "nama": "TATA BUMI 2011"
+      },
+      {
+        "no": 7,
+        "nama": "MEMO SAMPLE 2013"
+      },
+      {
+        "no": 8,
+        "nama": "WARINGAH 2011"
+      }
+    ]
   }
 ]
