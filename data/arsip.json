@@ -9629,6 +9629,27 @@
     "tahun": "0",
     "label": "DUS M26 – 0",
     "keterangan": "DOK LAIN LAIN",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SARANA METAL 2012"
+      },
+      {
+        "no": 2,
+        "nama": "DOK C7 2013"
+      },
+      {
+        "no": 3,
+        "nama": "DOK BSS 2015"
+      },
+      {
+        "no": 4,
+        "nama": "RANGKA RAYA 2013"
+      },
+      {
+        "no": 5,
+        "nama": "DOK LAINNYA 2012"
+      }
+    ]
   }
 ]
