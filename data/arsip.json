@@ -9581,5 +9581,13 @@
         "nama": "MILL CERTIFICATE 2016"
       }
     ]
+  },
+  {
+    "id": 220,
+    "no_dus": 25,
+    "tahun": "0",
+    "label": "DUS M25 – 0",
+    "keterangan": "CAMPURAN DOK CUSTOMER DLL",
+    "dokumen": []
   }
 ]
