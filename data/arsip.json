@@ -9478,6 +9478,43 @@
     "tahun": "2011",
     "label": "DUS M22 – 2011",
     "keterangan": "CAMPUR 2011-2016",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MURINDA 2011"
+      },
+      {
+        "no": 2,
+        "nama": "NJBP 2011-2013"
+      },
+      {
+        "no": 3,
+        "nama": "NJBP 2014-2015"
+      },
+      {
+        "no": 4,
+        "nama": "NRC 2011"
+      },
+      {
+        "no": 5,
+        "nama": "NINDYA KARYA 2012"
+      },
+      {
+        "no": 6,
+        "nama": "PRAMBANAN 2014"
+      },
+      {
+        "no": 7,
+        "nama": "PROYEK LAINNYA 2012"
+      },
+      {
+        "no": 8,
+        "nama": "PROYEK LAINNYA 2013"
+      },
+      {
+        "no": 9,
+        "nama": "PROYEK LAINNYA 2014"
+      }
+    ]
   }
 ]
