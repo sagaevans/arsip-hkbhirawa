@@ -9679,6 +9679,27 @@
     "tahun": "0",
     "label": "DUS M28 – 0",
     "keterangan": "DOK CUSTOMER DAN LAINNYA",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "SARANA METAL 2014"
+      },
+      {
+        "no": 2,
+        "nama": "SOLUSI INOVASI 2012"
+      },
+      {
+        "no": 3,
+        "nama": "PRIMA BETON 2014"
+      },
+      {
+        "no": 4,
+        "nama": "PULAU INTAN 2011"
+      },
+      {
+        "no": 5,
+        "nama": "DOK LAIN-LAIN 2015"
+      }
+    ]
   }
 ]
