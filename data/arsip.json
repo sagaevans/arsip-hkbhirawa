@@ -9795,5 +9795,13 @@
         "nama": "SURAT PESANAN 2017"
       }
     ]
+  },
+  {
+    "id": 227,
+    "no_dus": 32,
+    "tahun": "M",
+    "label": "DUS M32",
+    "keterangan": "CAMPUR",
+    "dokumen": []
   }
 ]
