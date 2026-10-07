@@ -9715,6 +9715,35 @@
     "tahun": "M",
     "label": "DUS M29",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "KP BALASAN 2015"
+      },
+      {
+        "no": 2,
+        "nama": "SO BSS 2016"
+      },
+      {
+        "no": 3,
+        "nama": "SO 2017"
+      },
+      {
+        "no": 4,
+        "nama": "REK HARIAN BANK MASPION"
+      },
+      {
+        "no": 5,
+        "nama": "KP WRG 2017"
+      },
+      {
+        "no": 6,
+        "nama": "KP SUBUR BUANA"
+      },
+      {
+        "no": 7,
+        "nama": "KP WASKITA KARYA"
+      }
+    ]
   }
 ]
