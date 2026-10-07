@@ -9802,6 +9802,23 @@
     "tahun": "M",
     "label": "DUS M32",
     "keterangan": "CAMPUR",
-    "dokumen": []
+    "dokumen": [
+      {
+        "no": 1,
+        "nama": "MIRO CAMPUR 2014"
+      },
+      {
+        "no": 2,
+        "nama": "DATA CUSTOMER 2015"
+      },
+      {
+        "no": 3,
+        "nama": "SURAT PESANAN 2015"
+      },
+      {
+        "no": 4,
+        "nama": "SURAT PESANAN 2016"
+      }
+    ]
   }
 ]
