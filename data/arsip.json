@@ -9745,5 +9745,13 @@
         "nama": "KP WASKITA KARYA"
       }
     ]
+  },
+  {
+    "id": 225,
+    "no_dus": 30,
+    "tahun": "M",
+    "label": "DUS M30",
+    "keterangan": "CAMPUR",
+    "dokumen": []
   }
 ]
