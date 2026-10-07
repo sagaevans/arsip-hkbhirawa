@@ -9708,5 +9708,13 @@
       }
     ],
     "c7": true
+  },
+  {
+    "id": 224,
+    "no_dus": 29,
+    "tahun": "M",
+    "label": "DUS M29",
+    "keterangan": "CAMPUR",
+    "dokumen": []
   }
 ]
